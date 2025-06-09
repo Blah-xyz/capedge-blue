@@ -91,14 +91,18 @@ export function HeroSection() {
           <AnimatedSection direction="left">
             <div className="space-y-6 relative z-10">
               <div className="inline-flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400">
-                Family Office
+              Portfolio Management Company
               </div>
               <h1 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-900 dark:text-white">
-                <span className="text-blue-600 dark:text-blue-400">Investing</span> in the Future of the Caribbean
+                <span className="text-blue-600 dark:text-blue-400">Investing</span> in the Future
               </h1>
               <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl/relaxed lg:text-lg/relaxed xl:text-xl/relaxed max-w-2xl">
-                Blue Water Equity is a family office focused on strategic investments in startups and private equity
-                opportunities across the Caribbean region.
+                                CapEdge Group, Inc. is a private portfolio management
+                 company focused on making strategic investments in
+                  businesses, alternative investments and enterpise
+              software. We partner with management teams to build
+                businesses and create transformational technology
+         solutions that reshape key markets.
               </p>
 
               {/* Email subscription form */}
