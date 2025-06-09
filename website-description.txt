@@ -1,0 +1,62 @@
+Blue Water Equity Website
+
+Overview
+Blue Water Equity is a family office focused on strategic investments in startups and private equity opportunities across the Caribbean region. This website serves as the digital presence for the company, showcasing its investment approach, portfolio, and impact in the Caribbean market.
+
+Key Features
+
+1. Investment Focus
+- Strategic investments in Caribbean startups and private equity
+- Focus on sustainable business models with positive regional impact
+- Long-term partnership approach beyond just capital
+- Active involvement in strategic decision-making
+
+2. Portfolio Companies
+The website showcases various portfolio companies across different sectors:
+- Caribbean Solar Solutions (Renewable Energy)
+- Island Fresh (Agriculture & Food)
+- CaribbeanTech (Technology)
+- And more...
+
+3. Impact Metrics
+- 25+ Successful Investments
+- 1,200+ Jobs Created
+- $50M+ Capital Deployed
+- 12 Islands Impacted
+
+4. Key Sections
+- Hero Section: Introduction to Blue Water Equity's mission
+- About Section: Company history and heritage
+- Approach Section: Investment strategy and methodology
+- Portfolio Section: Showcase of current investments
+- Impact Section: Quantifiable results and achievements
+- News Section: Latest updates and developments
+- Testimonials: Partner success stories
+- Contact Section: Ways to get in touch
+
+Technical Stack
+- Built with Next.js
+- Modern React components
+- Responsive design
+- Animated sections for enhanced user experience
+- Dark mode support
+
+Contact Information
+- Address: Harbour View Plaza, Suite 302, Bridgetown, Barbados
+- Email: info@bluewaterequity.com
+- Phone: +1 (246) 555-0123
+
+Purpose
+The website serves as a platform to:
+1. Showcase Blue Water Equity's investment portfolio
+2. Highlight the company's impact in the Caribbean region
+3. Connect with potential investment opportunities
+4. Share news and updates about the company and its portfolio
+5. Provide a professional point of contact for business inquiries
+
+Target Audience
+- Entrepreneurs seeking investment
+- Potential co-investors
+- Regional business partners
+- Industry stakeholders
+- Media and press
