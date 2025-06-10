@@ -18,8 +18,7 @@ export function CTASection() {
 							<h2 className="font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
 							Build Great
 
-								<br />
-								investment process?
+						
 							</h2>
 							<p className="mt-4 text-gray-400 max-w-md">
 							Partner with CapEdge Group to build and scale transformational
