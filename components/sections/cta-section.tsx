@@ -16,13 +16,16 @@ export function CTASection() {
 						<AnimatedSection className="max-w-xl">
 							<div className="text-sm text-blue-400 mb-2">TRY IT NOW</div>
 							<h2 className="font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
-								Ready to level up your
+							Build Great
+
 								<br />
 								investment process?
 							</h2>
 							<p className="mt-4 text-gray-400 max-w-md">
-								Supports small businesses with simple financing, powerful
-								integrations, and cash flow management tools.
+							Partner with CapEdge Group to build and scale transformational
+technology platforms that reshape key markets through strategic
+collaboration and hands-on expertise.
+
 							</p>
 						</AnimatedSection>
 						<div className="mt-8 md:mt-0 flex flex-wrap gap-4 md:flex-shrink-0">

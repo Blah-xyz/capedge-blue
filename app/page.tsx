@@ -9,6 +9,8 @@ import { CTASection } from "@/components/sections/cta-section"
 import { FooterSection } from "@/components/sections/footer-section"
 import { useCopilotReadable } from '@copilotkit/react-core'
 import { data } from "@/components/data"
+import { InvestmentApproachSection } from "@/components/sections/investment-approach-section"
+import { WhatWeDoSection } from "@/components/sections/what-we-do-section"
 
 export default function LandingPage() {
   useCopilotReadable({
@@ -21,9 +23,11 @@ export default function LandingPage() {
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
+        <InvestmentApproachSection />
+        <WhatWeDoSection />
         <WhyUsSection />
         <StepsSection />
-        <MissionSection />
+
 
         <CTASection />
 
