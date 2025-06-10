@@ -99,8 +99,9 @@ export function PortfolioSectionCopy() {
                       <AreaChart data={portfolioData}>
                         <defs>
                           <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="#16a34a" stopOpacity={0.3}/>
-                            <stop offset="95%" stopColor="#16a34a" stopOpacity={0.05}/>
+                            <stop offset="5%" stopColor="#1e40af" stopOpacity={0.4}/>
+                            <stop offset="50%" stopColor="#3b82f6" stopOpacity={0.2}/>
+                            <stop offset="95%" stopColor="#60a5fa" stopOpacity={0.05}/>
                           </linearGradient>
                         </defs>
                         <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" opacity={0.3} />
@@ -119,11 +120,11 @@ export function PortfolioSectionCopy() {
                         <Area
                           type="monotone"
                           dataKey="value"
-                          stroke="#16a34a"
-                          strokeWidth={2}
+                          stroke="#1e40af"
+                          strokeWidth={3}
                           fill="url(#colorValue)"
-                          dot={{ fill: '#16a34a', strokeWidth: 1, r: 3 }}
-                          activeDot={{ r: 5, stroke: '#16a34a', strokeWidth: 2 }}
+                          dot={{ fill: '#1e40af', strokeWidth: 2, r: 4 }}
+                          activeDot={{ r: 6, stroke: '#1e40af', strokeWidth: 3, fill: '#3b82f6' }}
                         />
                       </AreaChart>
                     </ChartContainer>
@@ -150,11 +151,11 @@ export function PortfolioSectionCopy() {
               {/* Overflowing Cards - Portfolio Metrics */}
               {/* Left Overflow Card - Growth */}
               <div className="absolute -top-6 -left-6 w-28 bg-gradient-to-br from-white to-slate-50/50 dark:from-slate-800 dark:to-slate-700/30 rounded-xl shadow-xl border border-slate-200/60 dark:border-slate-600/60 p-3 transform rotate-2 z-20 backdrop-blur-sm">
-                <div className="w-6 h-6 bg-gradient-to-br from-green-500 to-green-600 dark:from-green-500 dark:to-green-600 rounded-lg mb-2 flex items-center justify-center shadow-sm">
+                <div className="w-6 h-6 bg-gradient-to-br from-blue-700 to-blue-800 dark:from-blue-600 dark:to-blue-700 rounded-lg mb-2 flex items-center justify-center shadow-sm">
                   <TrendingUp className="w-3 h-3 text-white" />
                 </div>
                 <span className="text-xs font-medium text-slate-700 dark:text-slate-100">Growth</span>
-                <div className="text-sm font-bold text-green-600">+110%</div>
+                <div className="text-sm font-bold text-blue-700">+110%</div>
               </div>
 
               {/* Right Overflow Card - Revenue */}

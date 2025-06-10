@@ -10,7 +10,6 @@ import { FooterSection } from "@/components/sections/footer-section"
 import { useCopilotReadable } from '@copilotkit/react-core'
 import { data } from "@/components/data"
 import { InvestmentApproachSection } from "@/components/sections/investment-approach-section"
-import { WhatWeDoSection } from "@/components/sections/what-we-do-section"
 import { PortfolioSectionCopy } from "@/components/sections/portfolio-section-copy"
 
 export default function LandingPage() {
@@ -25,7 +24,7 @@ export default function LandingPage() {
         <HeroSection />
         <AboutSection />
         <InvestmentApproachSection />
-        <WhatWeDoSection />
+
         <PortfolioSectionCopy />
         <WhyUsSection />
         <StepsSection />
