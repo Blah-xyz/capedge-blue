@@ -2,7 +2,8 @@
 
 import { toast } from "@/hooks/use-toast"
 import { AnimatedSection } from "@/components/animated-section"
-import { Building2, TrendingUp, Users, ArrowRight, ChevronRight } from "lucide-react"
+import { Counter } from "@/components/Counter"
+import { Building2, TrendingUp, Users, ArrowRight } from "lucide-react"
 import { useState } from "react"
 
 export function HeroSection() {
@@ -101,7 +102,7 @@ export function HeroSection() {
                 <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200/50 dark:border-gray-600/50 bg-gradient-to-r from-gray-50/50 to-slate-50/30 dark:from-gray-700/30 dark:to-gray-600/20">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 rounded-full bg-green-500 dark:bg-green-400" />
-                    <span className="text-gray-700 dark:text-gray-300 font-medium text-sm">CapEdge Group since 2024</span>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium text-sm">CapEdge Group</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="text-xs text-gray-500 dark:text-gray-400">Portfolio Dashboard</span>
@@ -217,18 +218,49 @@ export function HeroSection() {
             </div>
           </AnimatedSection>
 
-          {/* Bottom Stats */}
+          {/* Statistics Showcase */}
           <AnimatedSection delay={0.5}>
-            <div className="flex items-center justify-center gap-2 text-gray-500 dark:text-gray-400">
-              <span className="text-sm">Trusted by enterprise partners</span>
-              <div className="flex -space-x-2">
-                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 border-2 border-white dark:border-gray-900" />
-                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-green-500 to-green-600 border-2 border-white dark:border-gray-900" />
-                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 border-2 border-white dark:border-gray-900" />
-                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-gray-600 to-gray-700 border-2 border-white dark:border-gray-900 flex items-center justify-center">
-                  <span className="text-xs text-white font-bold">24+</span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-3xl mx-auto">
+
+              {/* Successful Investments */}
+              <div className="text-center">
+                <Counter
+                  target={25}
+                  duration={2000}
+                  suffix="+"
+                  className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2"
+                />
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  Successful<br />Investments
                 </div>
               </div>
+
+              {/* Success Rate */}
+              <div className="text-center">
+                <Counter
+                  target={98}
+                  duration={2000}
+                  suffix="%"
+                  className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2"
+                />
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  Success Rate
+                </div>
+              </div>
+
+              {/* Average ROI */}
+              <div className="text-center">
+                <Counter
+                  target={120}
+                  duration={2000}
+                  suffix="%+"
+                  className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2"
+                />
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  Average ROI
+                </div>
+              </div>
+
             </div>
           </AnimatedSection>
         </div>
