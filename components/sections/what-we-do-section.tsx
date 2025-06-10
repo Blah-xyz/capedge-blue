@@ -1,58 +1,12 @@
 "use client";
 
 import { AnimatedSection } from "@/components/animated-section";
-import { AnimatedCard } from "@/components/animated-card";
 import { useContactDialog } from "@/contexts/contact-dialog-context";
-import { Building2, Target, TrendingUp, ArrowRight, Sparkles, CheckCircle, Zap, BarChart3 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function WhatWeDoSection() {
 	const { setIsOpen } = useContactDialog();
-
-	const focusAreas = [
-		{
-			icon: Building2,
-			title: "Enterprise Software",
-			description: "Direct investments in innovative business technology platforms that transform how organizations operate and scale.",
-			features: [
-				"SaaS platforms and applications",
-				"Business process automation",
-				"Data analytics and intelligence",
-				"Cloud infrastructure solutions"
-			],
-			iconBg: "from-slate-100 to-white dark:from-slate-700 dark:to-slate-600",
-			accentPattern: "M0,20 Q50,10 100,20 T200,20",
-			delay: 0.1
-		},
-		{
-			icon: Target,
-			title: "Financial Services",
-			description: "Strategic partnerships with financial services companies leveraging transformational technology for growth.",
-			features: [
-				"Fintech innovation platforms",
-				"Payment processing solutions",
-				"Risk management systems",
-				"Regulatory compliance tools"
-			],
-			iconBg: "from-white to-slate-50 dark:from-slate-600 dark:to-slate-700",
-			accentPattern: "M0,15 Q60,5 120,15 T240,15",
-			delay: 0.2
-		},
-		{
-			icon: TrendingUp,
-			title: "Alternative Assets",
-			description: "Building differentiated technologies and distinctive brands through analytical and adaptable investment approaches.",
-			features: [
-				"Technology-driven asset management",
-				"Digital transformation initiatives",
-				"Scalable business models",
-				"Long-term value creation"
-			],
-			iconBg: "from-slate-50 to-slate-100 dark:from-slate-700 dark:to-slate-800",
-			accentPattern: "M0,25 Q40,15 80,25 T160,25",
-			delay: 0.3
-		}
-	];
 
 	return (
 		<section
@@ -67,7 +21,7 @@ export function WhatWeDoSection() {
 
 				{/* Enhanced CTA Section with Deep Background */}
 				<AnimatedSection delay={0.4} className="text-center">
-					<div className="relative bg-gradient-to-br from-red-600 via-red-700 to-red-800 dark:from-red-700 dark:via-red-800 dark:to-red-900 rounded-3xl p-12 lg:p-16 border border-red-500/30 shadow-[0_20px_70px_-10px_rgba(0,0,0,0.2),0_10px_20px_-5px_rgba(220,38,38,0.3)] dark:shadow-[0_20px_70px_-10px_rgba(0,0,0,0.4),0_10px_20px_-5px_rgba(220,38,38,0.2)] overflow-hidden">
+					<div className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-700 dark:via-blue-800 dark:to-blue-900 rounded-3xl p-12 lg:p-16 border border-blue-500/30 shadow-[0_20px_70px_-10px_rgba(0,0,0,0.2),0_10px_20px_-5px_rgba(59,130,246,0.3)] dark:shadow-[0_20px_70px_-10px_rgba(0,0,0,0.4),0_10px_20px_-5px_rgba(59,130,246,0.2)] overflow-hidden">
 						{/* Background Pattern */}
 						<div className="absolute inset-0 opacity-10">
 							<svg className="w-full h-full" viewBox="0 0 400 200" fill="none">
@@ -84,26 +38,26 @@ export function WhatWeDoSection() {
 						<div className="relative z-10">
 							<h3 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
 								Ready to transform your
-								<span className="block bg-gradient-to-r from-red-100 via-white to-red-100 bg-clip-text text-transparent">
+								<span className="block bg-gradient-to-r from-blue-100 via-white to-blue-100 bg-clip-text text-transparent">
 									enterprise technology?
 								</span>
 							</h3>
 
-							<p className="text-xl text-red-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+							<p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
 								Connect with our investment team to explore partnership opportunities and discuss how we can collaborate on your next transformational technology initiative.
 							</p>
 
 							<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
 								<Button
 									onClick={() => setIsOpen(true)}
-									className="bg-white text-red-700 hover:bg-red-50 px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl shadow-white/20 hover:shadow-2xl hover:shadow-white/30 border-2 border-white/20 hover:border-white/40"
+									className="bg-white text-blue-700 hover:bg-blue-50 px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl shadow-white/20 hover:shadow-2xl hover:shadow-white/30 border-2 border-white/20 hover:border-white/40"
 								>
 									Start a Conversation
 									<ArrowRight className="w-5 h-5 ml-2" />
 								</Button>
 
-								<div className="flex items-center gap-2 text-red-100">
-									<div className="w-2 h-2 bg-red-200 rounded-full animate-pulse"></div>
+								<div className="flex items-center gap-2 text-blue-100">
+									<div className="w-2 h-2 bg-blue-200 rounded-full animate-pulse"></div>
 									<span className="text-sm font-medium">Available for immediate consultation</span>
 								</div>
 							</div>

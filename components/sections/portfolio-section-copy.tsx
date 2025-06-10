@@ -48,11 +48,11 @@ export function PortfolioSectionCopy() {
   const { setIsOpen } = useContactDialog();
   return (
     <section id="portfolio" className="pb-32 pt-16 relative overflow-hidden">
-      {/* Refined Background with Subtle Crimson Accents */}
+      {/* Refined Background with Subtle Blue Accents */}
       <div className="absolute inset-0 bg-white dark:bg-slate-950" />
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-red-500/4 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-red-600/3 rounded-full blur-3xl" />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-400/2 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/4 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/3 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-400/2 rounded-full blur-3xl" />
 
       <div className="container relative max-w-7xl mx-auto px-4">
 
@@ -67,7 +67,7 @@ export function PortfolioSectionCopy() {
               <div className="absolute inset-0 rounded-3xl border border-slate-200/50 bg-slate-100 dark:border-slate-700/30 dark:bg-slate-800" />
 
               {/* Gradient Background - Bottom portion */}
-              <div className="absolute bottom-0 left-0 right-0 h-[350px] bg-gradient-to-t from-red-200/30 via-red-50/20 to-slate-100 dark:from-red-900/20 dark:via-red-950/10 dark:to-transparent rounded-b-3xl" />
+              <div className="absolute bottom-0 left-0 right-0 h-[350px] bg-gradient-to-t from-blue-200/30 via-blue-50/20 to-slate-100 dark:from-blue-900/20 dark:via-blue-950/10 dark:to-transparent rounded-b-3xl" />
 
               {/* Main Chart Interface Window - Overflowing from screen */}
               <div className="absolute top-8 left-4 w-[90%] max-w-[500px] bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-slate-200/30 dark:border-slate-700/40 overflow-hidden z-10">
@@ -80,7 +80,7 @@ export function PortfolioSectionCopy() {
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="text-xs text-slate-500 dark:text-slate-400">Live Data</span>
-                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-red-500 to-red-600 dark:from-red-400 dark:to-red-500 flex items-center justify-center shadow-lg">
+                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 flex items-center justify-center shadow-lg">
                       <span className="text-white text-xs font-bold">CG</span>
                     </div>
                   </div>
@@ -132,15 +132,15 @@ export function PortfolioSectionCopy() {
                   {/* Chart Stats */}
                   <div className="grid grid-cols-3 gap-3 mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
                     <div className="text-center">
-                      <div className="text-lg font-bold text-red-600 dark:text-red-400">110%</div>
+                      <div className="text-lg font-bold text-blue-600 dark:text-blue-400">110%</div>
                       <div className="text-xs text-slate-600 dark:text-slate-400">Total Growth</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-red-600 dark:text-red-400">120%+</div>
+                      <div className="text-lg font-bold text-blue-600 dark:text-blue-400">120%+</div>
                       <div className="text-xs text-slate-600 dark:text-slate-400">Current ROI</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-red-600 dark:text-red-400">15%</div>
+                      <div className="text-lg font-bold text-blue-600 dark:text-blue-400">15%</div>
                       <div className="text-xs text-slate-600 dark:text-slate-400">Avg Monthly</div>
                     </div>
                   </div>
@@ -159,11 +159,11 @@ export function PortfolioSectionCopy() {
 
               {/* Right Overflow Card - Revenue */}
               <div className="absolute top-4 -right-8 w-32 bg-gradient-to-br from-white to-slate-50/50 dark:from-slate-800 dark:to-slate-700/30 rounded-xl shadow-xl border border-slate-200/60 dark:border-slate-600/60 p-3 transform -rotate-3 z-20 backdrop-blur-sm">
-                <div className="w-6 h-6 bg-gradient-to-br from-red-500 to-red-600 dark:from-red-500 dark:to-red-600 rounded-lg mb-2 flex items-center justify-center shadow-sm">
+                <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-500 dark:to-blue-600 rounded-lg mb-2 flex items-center justify-center shadow-sm">
                   <Building2 className="w-3 h-3 text-white" />
                 </div>
                 <span className="text-xs font-medium text-slate-700 dark:text-slate-100">ROI</span>
-                <div className="text-sm font-bold text-red-600">120%+</div>
+                <div className="text-sm font-bold text-blue-600">120%+</div>
               </div>
 
               {/* Bottom Overflow Card - Success Rate */}
@@ -176,7 +176,7 @@ export function PortfolioSectionCopy() {
               </div>
 
               {/* Floating elements for depth */}
-              <div className="absolute top-12 right-16 w-2 h-2 bg-gradient-to-br from-red-400 to-red-500 rounded-full opacity-60 animate-pulse" />
+              <div className="absolute top-12 right-16 w-2 h-2 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full opacity-60 animate-pulse" />
               <div className="absolute bottom-24 left-8 w-3 h-3 bg-gradient-to-br from-slate-300 to-slate-400 dark:from-slate-500 dark:to-slate-600 rounded-full opacity-50 animate-bounce" />
               <div className="absolute top-32 left-2 w-2 h-2 bg-gradient-to-br from-slate-300 to-slate-400 dark:from-slate-500 dark:to-slate-600 rounded-full opacity-70" />
 
@@ -190,7 +190,7 @@ export function PortfolioSectionCopy() {
               <div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
                   <span className="text-slate-900 dark:text-white">Our </span>
-                  <span className="text-red-600 dark:text-red-400">Portfolio</span>
+                  <span className="text-blue-600 dark:text-blue-400">Portfolio</span>
                   <br />
                   <span className="bg-gradient-to-r from-slate-600 via-slate-700 to-slate-800 dark:from-slate-300 dark:via-slate-200 dark:to-slate-100 bg-clip-text text-transparent">Impact</span>
                 </h1>
@@ -205,7 +205,7 @@ export function PortfolioSectionCopy() {
               <div className="space-y-4">
                 {portfolioHighlights.map((highlight, index) => (
                   <div key={index} className="flex items-start gap-3 group/item">
-                    <CheckCircle className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                    <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                     <span className="text-slate-600 dark:text-slate-300 leading-relaxed group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">
                       {highlight}
                     </span>
@@ -216,15 +216,15 @@ export function PortfolioSectionCopy() {
               {/* Portfolio Stats */}
               <div className="grid grid-cols-3 gap-4 pt-6">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-red-600 dark:text-red-400">2</div>
+                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">2</div>
                   <div className="text-sm text-slate-600 dark:text-slate-400">Platform Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-red-600 dark:text-red-400">98%</div>
+                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">98%</div>
                   <div className="text-sm text-slate-600 dark:text-slate-400">Success Rate</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-red-600 dark:text-red-400">110%</div>
+                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">110%</div>
                   <div className="text-sm text-slate-600 dark:text-slate-400">Total Growth</div>
                 </div>
               </div>
@@ -233,7 +233,7 @@ export function PortfolioSectionCopy() {
               <div className="pt-4">
                 <button
                   onClick={() => setIsOpen(true)}
-                  className="group relative px-8 py-4 bg-transparent border-2 border-red-600 text-red-600 dark:text-red-400 font-semibold text-lg rounded-full shadow-lg shadow-red-200/20 dark:shadow-red-900/10 hover:bg-red-600 hover:text-white transform hover:scale-105 transition-all duration-300"
+                  className="group relative px-8 py-4 bg-transparent border-2 border-blue-600 text-blue-600 dark:text-blue-400 font-semibold text-lg rounded-full shadow-lg shadow-blue-200/20 dark:shadow-blue-900/10 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300"
                 >
                   <span className="relative z-10 flex items-center gap-2">
                     Explore Portfolio
@@ -249,12 +249,12 @@ export function PortfolioSectionCopy() {
         <div className="relative">
           <AnimatedSection className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 mb-8">
-              <Zap className="w-4 h-4 text-red-600 dark:text-red-400" />
+              <Zap className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Platform Showcase</span>
             </div>
 
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-              <span className="text-red-600 dark:text-red-400">
+              <span className="text-blue-600 dark:text-blue-400">
                 Platform Businesses
               </span>
             </h2>
@@ -274,7 +274,7 @@ export function PortfolioSectionCopy() {
                   <div className="flex items-start justify-between mb-10">
                     <div>
                       <div className="flex items-center gap-3 mb-6">
-                        <div className="w-14 h-14 bg-red-600 rounded-xl flex items-center justify-center">
+                        <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center">
                           <Building2 className="w-7 h-7 text-white" />
                         </div>
                         <div className="px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 rounded-full">
@@ -295,26 +295,26 @@ export function PortfolioSectionCopy() {
                   {/* Features with Checkmarks */}
                   <div className="space-y-6">
                     <div className="flex items-start gap-4 group/item">
-                      <CheckCircle className="w-6 h-6 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                      <CheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                       <span className="text-lg text-slate-700 dark:text-slate-300 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Developed and deployed innovative technology platform</span>
                     </div>
                     <div className="flex items-start gap-4 group/item">
-                      <CheckCircle className="w-6 h-6 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                      <CheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                       <span className="text-lg text-slate-700 dark:text-slate-300 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Analytical growth strategies implementation</span>
                     </div>
                     <div className="flex items-start gap-4 group/item">
-                      <CheckCircle className="w-6 h-6 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                      <CheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                       <span className="text-lg text-slate-700 dark:text-slate-300 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Active management team empowerment</span>
                     </div>
                     <div className="flex items-start gap-4 group/item">
-                      <CheckCircle className="w-6 h-6 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                      <CheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                       <span className="text-lg text-slate-700 dark:text-slate-300 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Comprehensive market analysis and strategic positioning</span>
                     </div>
 
                   </div>
 
                   {/* Bottom Accent */}
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-red-600 rounded-b-2xl" />
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600 rounded-b-2xl" />
                 </div>
               </div>
             </AnimatedSection>
@@ -326,7 +326,7 @@ export function PortfolioSectionCopy() {
                 <div className="flex items-start justify-between mb-10">
                   <div>
                     <div className="flex items-center gap-3 mb-6">
-                      <div className="w-14 h-14 bg-red-700 rounded-xl flex items-center justify-center">
+                      <div className="w-14 h-14 bg-blue-700 rounded-xl flex items-center justify-center">
                         <TrendingUp className="w-7 h-7 text-white" />
                       </div>
                       <div className="px-4 py-2 bg-amber-100 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800 rounded-full">
@@ -347,26 +347,26 @@ export function PortfolioSectionCopy() {
                 {/* Features with Checkmarks */}
                 <div className="space-y-6">
                   <div className="flex items-start gap-4 group/item">
-                    <CheckCircle className="w-6 h-6 text-red-400 dark:text-red-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                    <CheckCircle className="w-6 h-6 text-blue-400 dark:text-blue-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                     <span className="text-lg text-slate-200 dark:text-slate-700 group-hover/item:text-white dark:group-hover/item:text-slate-800 transition-colors duration-200">Successful platform business deployment</span>
                   </div>
                   <div className="flex items-start gap-4 group/item">
-                    <CheckCircle className="w-6 h-6 text-red-400 dark:text-red-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                    <CheckCircle className="w-6 h-6 text-blue-400 dark:text-blue-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                     <span className="text-lg text-slate-200 dark:text-slate-700 group-hover/item:text-white dark:group-hover/item:text-slate-800 transition-colors duration-200">Expertise in financial operations and technology</span>
                   </div>
                   <div className="flex items-start gap-4 group/item">
-                    <CheckCircle className="w-6 h-6 text-red-400 dark:text-red-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                    <CheckCircle className="w-6 h-6 text-blue-400 dark:text-blue-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                     <span className="text-lg text-slate-200 dark:text-slate-700 group-hover/item:text-white dark:group-hover/item:text-slate-800 transition-colors duration-200">Long-term strategic engagement beyond capital</span>
                   </div>
                   <div className="flex items-start gap-4 group/item">
-                    <CheckCircle className="w-6 h-6 text-red-400 dark:text-red-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                    <CheckCircle className="w-6 h-6 text-blue-400 dark:text-blue-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                     <span className="text-lg text-slate-200 dark:text-slate-700 group-hover/item:text-white dark:group-hover/item:text-slate-800 transition-colors duration-200">Advanced analytics and business intelligence</span>
                   </div>
 
                 </div>
 
                 {/* Bottom Accent */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-red-700 rounded-b-2xl" />
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-700 rounded-b-2xl" />
               </div>
             </AnimatedSection>
           </div>
