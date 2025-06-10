@@ -3,8 +3,8 @@ import { Header } from "@/components/header"
 import { HeroSection } from "@/components/sections/hero-section"
 import { AboutSection } from "@/components/sections/about-section"
 import { WhyUsSection } from "@/components/sections/investments-section"
-import { StepsSection } from "@/components/sections/steps-section"
-import { MissionSection } from "@/components/sections/portfolio-section"
+
+
 import { CTASection } from "@/components/sections/cta-section"
 import { FooterSection } from "@/components/sections/footer-section"
 import { useCopilotReadable } from '@copilotkit/react-core'
@@ -27,7 +27,7 @@ export default function LandingPage() {
 
         <PortfolioSectionCopy />
         <WhyUsSection />
-        <StepsSection />
+
 
 
         <CTASection />

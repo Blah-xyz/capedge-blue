@@ -18,7 +18,7 @@ export function AboutSection() {
 	return (
 		<section
 			id="about"
-			className="relative -mt-32 lg:-mt-40 pt-0 lg:pt-20 pb-0 overflow-visible"
+			className="relative -mt-32 lg:-mt-40 pt-0 lg:pt-20 pb-16 overflow-visible"
 		>
 			<div className="container relative">
 				<AnimatedSection className="mx-auto">
@@ -286,7 +286,7 @@ business
 										</div>
 										<div className="space-y-2">
 											<h3 className="font-semibold text-xl sm:text-2xl text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-											Investing in promising solutions 
+											Investing in promising solutions
 											</h3>
 											<p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
 												Supporting cutting-edge solutions that address unique
