@@ -30,13 +30,12 @@ export function AboutSection() {
 									Investment Approach
 								</div>
 								<h2 className="text-4xl sm:text-5xl font-bold tracking-tighter">
-									Strategic investments <br className="hidden sm:block" />
-									across the Caribbean
+								Investment Philosophy
+
 								</h2>
 								<p className="text-gray-600 dark:text-gray-300 text-base lg:text-lg">
-									A family office focused on transformative investments in
-									startups and private equity opportunities, fostering
-									sustainable growth across the Caribbean region.
+								Our systematic approach to investing is built on three guiding
+								principles
 								</p>
 								<div className="relative h-40 w-full overflow-hidden">
 									<svg
@@ -250,7 +249,8 @@ export function AboutSection() {
 										</div>
 										<div className="space-y-2">
 											<h3 className="font-semibold text-xl sm:text-2xl text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-												Strategic partnerships
+											Deepening our knowledge and understanding of the
+business
 											</h3>
 											<p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
 												Long-term partnership approach beyond capital, with
@@ -268,7 +268,7 @@ export function AboutSection() {
 										</div>
 										<div className="space-y-2">
 											<h3 className="font-semibold text-xl sm:text-2xl text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-												Regional impact
+											Understanding operational challenges
 											</h3>
 											<p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
 												Creating sustainable impact across 12 Caribbean islands
@@ -286,7 +286,7 @@ export function AboutSection() {
 										</div>
 										<div className="space-y-2">
 											<h3 className="font-semibold text-xl sm:text-2xl text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-												Innovation focus
+											Investing in promising solutions 
 											</h3>
 											<p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
 												Supporting cutting-edge solutions that address unique
