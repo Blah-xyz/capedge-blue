@@ -213,38 +213,41 @@ export function PortfolioSectionCopy() {
                   </div>
                 ))}
               </div>
-
-              {/* Portfolio Stats */}
-              <div className="grid grid-cols-3 gap-4 pt-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">2</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-400">Platform Businesses</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">98%</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-400">Success Rate</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">110%</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-400">Total Growth</div>
-                </div>
-              </div>
-
-              {/* CTA Button */}
-              <div className="pt-4">
-                <button
-                  onClick={() => setIsOpen(true)}
-                  className="group relative px-8 py-4 bg-transparent border-2 border-blue-600 text-blue-600 dark:text-blue-400 font-semibold text-lg rounded-full shadow-lg shadow-blue-200/20 dark:shadow-blue-900/10 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300"
-                >
-                  <span className="relative z-10 flex items-center gap-2">
-                    Explore Portfolio
-                    <ArrowUpRight className="w-5 h-5 group-hover:transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-                  </span>
-                </button>
-              </div>
             </div>
           </AnimatedSection>
         </div>
+
+        {/* Stats and CTA Section - Below Graph and Headline */}
+        <AnimatedSection delay={0.4} className="text-center mb-32">
+          {/* Portfolio Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">2</div>
+              <div className="text-lg text-slate-600 dark:text-slate-400">Platform Businesses</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">98%</div>
+              <div className="text-lg text-slate-600 dark:text-slate-400">Success Rate</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">110%</div>
+              <div className="text-lg text-slate-600 dark:text-slate-400">Total Growth</div>
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div>
+            <button
+              onClick={() => setIsOpen(true)}
+              className="group relative px-8 py-4 bg-transparent border-2 border-blue-600 text-blue-600 dark:text-blue-400 font-semibold text-lg rounded-full shadow-lg shadow-blue-200/20 dark:shadow-blue-900/10 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                Explore Portfolio
+                <ArrowUpRight className="w-5 h-5 group-hover:transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+              </span>
+            </button>
+          </div>
+        </AnimatedSection>
 
         {/* Platform Businesses Section */}
         <div className="relative">
