@@ -7,74 +7,120 @@ export function InvestmentApproachSection() {
 	return (
 		<section
 			id="investment-approach"
-			className="relative pt-0 lg:pt-20 pb-16 overflow-visible bg-white dark:bg-gray-900"
+			className="py-24 bg-[#002236] dark:bg-[#001a2e]"
 		>
 			<div className="px-6 md:px-8 lg:px-12">
 				<div className="max-w-7xl mx-auto">
-					<AnimatedSection className="mx-auto">
-						<div className="bg-[#002236] dark:bg-[#001a2e] rounded-2xl shadow-2xl p-8 lg:p-12 max-w-6xl mx-auto">
-							<div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
-								{/* Left Content */}
-								<div className="space-y-6">
-									<div className="text-sm text-blue-400 font-semibold tracking-wide">INVESTMENT PHILOSOPHY</div>
-									<h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
-										Our Investment
-										<br />
-										Approach
-									</h2>
-								</div>
-
-								{/* Right Content */}
-								<div className="space-y-6">
-									<p className="text-blue-100/70 leading-relaxed">
-										Three focused steps to identify transformational opportunities in financial services and technology.
-									</p>
-								</div>
-							</div>
-
-							{/* Feature Cards */}
-							<div className="grid md:grid-cols-3 gap-8">
-								{/* DEEPEN */}
-								<div className="space-y-6">
-									<div className="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center">
-										<Search className="w-6 h-6 text-blue-400" />
-									</div>
-									<div className="space-y-3">
-										<h3 className="text-xl font-semibold text-white">DEEPEN</h3>
-										<p className="text-blue-100/60 text-sm leading-relaxed">
-											Stay ahead through comprehensive market research and trend analysis.
-										</p>
-									</div>
-								</div>
-
-								{/* UNDERSTAND */}
-								<div className="space-y-6">
-									<div className="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center">
-										<Brain className="w-6 h-6 text-blue-400" />
-									</div>
-									<div className="space-y-3">
-										<h3 className="text-xl font-semibold text-white">UNDERSTAND</h3>
-										<p className="text-blue-100/60 text-sm leading-relaxed">
-											Identify operational challenges and transformational opportunities.
-										</p>
-									</div>
-								</div>
-
-								{/* INVEST */}
-								<div className="space-y-6">
-									<div className="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center">
-										<Target className="w-6 h-6 text-blue-400" />
-									</div>
-									<div className="space-y-3">
-										<h3 className="text-xl font-semibold text-white">INVEST</h3>
-										<p className="text-blue-100/60 text-sm leading-relaxed">
-											Target businesses with transformational technology and financial services focus.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
+					<AnimatedSection className="max-w-3xl mb-16">
+						<div className="text-sm text-blue-400 mb-2">INVESTMENT PHILOSOPHY</div>
+						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-6">
+							Our Investment Approach
+						</h2>
+						<p className="text-lg text-blue-100/70">
+							Three focused steps to identify transformational opportunities in financial services and technology.
+						</p>
 					</AnimatedSection>
+
+					<div className="grid md:grid-cols-3 gap-8">
+						{/* Step 1 - DEEPEN */}
+						<AnimatedSection delay={0.1} className="relative group">
+							<div className="bg-[#002D47] rounded-3xl p-8 h-full transition-all duration-300 hover:bg-[#003355] border border-blue-900/30 hover:border-blue-700/50">
+								<div className="absolute -top-10 left-6 w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-600/25">
+									<Search className="w-10 h-10 text-white" />
+								</div>
+								<div className="relative">
+									<div className="mb-6 pt-4">
+										<h3 className="text-2xl font-bold text-white mb-1">
+											DEEPEN
+										</h3>
+										<p className="text-blue-400 text-sm">Knowledge & Understanding</p>
+									</div>
+									<p className="text-blue-100/70 mb-6">
+										Stay ahead through comprehensive market research and trend analysis.
+									</p>
+									<div className="space-y-2">
+										{[
+											"Market research",
+											"Trend analysis",
+											"Industry expertise",
+											"Competitive mapping"
+										].map((feature, index) => (
+											<div key={index} className="flex items-center gap-2">
+												<CheckCircle className="w-4 h-4 text-blue-400 flex-shrink-0" />
+												<span className="text-blue-100/60 text-sm">{feature}</span>
+											</div>
+										))}
+									</div>
+								</div>
+							</div>
+						</AnimatedSection>
+
+						{/* Step 2 - UNDERSTAND */}
+						<AnimatedSection delay={0.2} className="relative group">
+							<div className="bg-[#002D47] rounded-3xl p-8 h-full transition-all duration-300 hover:bg-[#003355] border border-blue-900/30 hover:border-blue-700/50">
+								<div className="absolute -top-10 left-6 w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-600/25">
+									<Brain className="w-10 h-10 text-white" />
+								</div>
+								<div className="relative">
+									<div className="mb-6 pt-4">
+										<h3 className="text-2xl font-bold text-white mb-1">
+											UNDERSTAND
+										</h3>
+										<p className="text-blue-400 text-sm">Operational Challenges</p>
+									</div>
+									<p className="text-blue-100/70 mb-6">
+										Identify operational challenges and transformational opportunities.
+									</p>
+									<div className="space-y-2">
+										{[
+											"Challenge assessment",
+											"Process optimization",
+											"Technology gaps",
+											"Strategic mapping"
+										].map((feature, index) => (
+											<div key={index} className="flex items-center gap-2">
+												<CheckCircle className="w-4 h-4 text-blue-400 flex-shrink-0" />
+												<span className="text-blue-100/60 text-sm">{feature}</span>
+											</div>
+										))}
+									</div>
+								</div>
+							</div>
+						</AnimatedSection>
+
+						{/* Step 3 - INVEST */}
+						<AnimatedSection delay={0.3} className="relative group">
+							<div className="bg-[#002D47] rounded-3xl p-8 h-full transition-all duration-300 hover:bg-[#003355] border border-blue-900/30 hover:border-blue-700/50">
+								<div className="absolute -top-10 left-6 w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-600/25">
+									<Target className="w-10 h-10 text-white" />
+								</div>
+								<div className="relative">
+									<div className="mb-6 pt-4">
+										<h3 className="text-2xl font-bold text-white mb-1">
+											INVEST
+										</h3>
+										<p className="text-blue-400 text-sm">Promising Solutions</p>
+									</div>
+									<p className="text-blue-100/70 mb-6">
+										Target businesses with transformational technology and financial services focus.
+									</p>
+									<div className="space-y-2">
+										{[
+											"Technology solutions",
+											"Strategic partnerships",
+											"Financial innovation",
+											"Transformational impact"
+										].map((feature, index) => (
+											<div key={index} className="flex items-center gap-2">
+												<CheckCircle className="w-4 h-4 text-blue-400 flex-shrink-0" />
+												<span className="text-blue-100/60 text-sm">{feature}</span>
+											</div>
+										))}
+									</div>
+								</div>
+							</div>
+						</AnimatedSection>
+					</div>
 				</div>
 			</div>
 		</section>
