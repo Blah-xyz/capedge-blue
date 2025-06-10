@@ -1,16 +1,26 @@
 "use client"
 
-import { ChevronRight, Banknote, Users, Map, Anchor } from "lucide-react"
-import { AnimatedSection } from "@/components/animated-section"
-import Image from "next/image"
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
-import { Counter } from "../Counter"
-import { useState } from "react"
 import { toast } from "@/hooks/use-toast"
+import { AnimatedSection } from "@/components/animated-section"
+import { Building2, TrendingUp, Users, ArrowRight, ChevronRight } from "lucide-react"
+import { useState } from "react"
 
 export function HeroSection() {
-
   const [email, setEmail] = useState("");
+
+  const handleContactClick = () => {
+    // This will trigger the contact dialog - can be connected to contact dialog component
+    toast({
+      title: "Contact Us",
+      description: "Opening contact form...",
+      duration: 3000,
+    });
+  };
+
+  const handleLearnMoreClick = () => {
+    // Scroll to about section
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     if (!email) {
@@ -35,207 +45,190 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 pt-20 pb-48 md:py-32"
+      className="relative min-h-screen pt-32 pb-20 flex items-center overflow-hidden -mt-4"
     >
-      {/* Background Wave Pattern */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-white/50 dark:via-white/5 dark:to-white/10 z-0" />
+      {/* Clean Linear Background - Seamless with header */}
+      <div className="absolute inset-0 -top-4 bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-blue-950/20 dark:to-gray-800"></div>
 
-        {/* Primary Wave Layer */}
-        <svg
-          className="absolute h-[150%] w-[150%] -right-1/4 -top-1/4 text-blue-100/30 dark:text-blue-900/20 rotate-45"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          fill="currentColor"
-        >
-          <path d="M0 100 C 20 90, 40 97, 50 95 C 60 93, 80 97, 100 95 L 100 0 L 0 0 Z" />
-        </svg>
+      <div className="container relative mx-auto px-4 max-w-7xl">
+        {/* Centered Content Layout */}
+        <div className="max-w-4xl mx-auto text-center space-y-16">
 
-        {/* Secondary Wave Layer */}
-        <svg
-          className="absolute h-[150%] w-[150%] -right-1/4 -top-1/4 text-teal-100/20 dark:text-teal-900/10 rotate-45 translate-y-4"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          fill="currentColor"
-        >
-          <path d="M0 100 C 30 98, 50 92, 70 97 C 90 102, 100 98, 100 98 L 100 0 L 0 0 Z" />
-        </svg>
+          {/* Header Content */}
+          <AnimatedSection>
+            <div className="space-y-8">
 
-        {/* Tertiary Wave Layer */}
-        <svg
-          className="absolute h-[150%] w-[150%] -right-1/4 -top-1/4 text-indigo-100/15 dark:text-indigo-900/10 rotate-45 translate-y-8"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          fill="currentColor"
-        >
-          <path d="M0 100 C 40 95, 60 98, 80 93 C 90 91, 100 95, 100 95 L 100 0 L 0 0 Z" />
-        </svg>
-
-        {/* Quaternary Wave Layer */}
-        <svg
-          className="absolute h-[150%] w-[150%] -right-1/4 -top-1/4 text-blue-100/10 dark:text-blue-900/5 rotate-45 translate-y-12"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          fill="currentColor"
-        >
-          <path d="M0 100 C 50 97, 70 93, 90 98 C 95 99, 100 97, 100 97 L 100 0 L 0 0 Z" />
-        </svg>
-
-        {/* Gradient Overlays */}
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-blue-400/10 to-teal-400/10 dark:from-blue-400/5 dark:to-teal-400/5 rounded-full blur-3xl rotate-45" />
-        <div className="absolute bottom-1/4 right-1/3 w-[32rem] h-[32rem] bg-gradient-to-br from-teal-400/10 to-blue-400/10 dark:from-teal-400/5 dark:to-blue-400/5 rounded-full blur-3xl rotate-45" />
-      </div>
-
-      <div className="container relative">
-        <div className="grid gap-16 lg:grid-cols-2 lg:gap-12 items-start lg:items-center">
-          <AnimatedSection direction="left">
-            <div className="space-y-6 relative z-10">
-              <div className="inline-flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400">
-              Portfolio Management Company
-              </div>
-              <h1 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-900 dark:text-white">
-                <span className="text-blue-600 dark:text-blue-400">Investing</span> in the Future
+              {/* Main Headline */}
+              <h1 className="font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight text-gray-900 dark:text-white max-w-3xl mx-auto">
+                <span className="text-blue-600 dark:text-blue-400">Investing</span> in Enterprise Software
+                <br />
+                & Financial Services
               </h1>
-              <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl/relaxed lg:text-lg/relaxed xl:text-xl/relaxed max-w-2xl">
-                                CapEdge Group, Inc. is a private portfolio management
-                 company focused on making strategic investments in
-                  businesses, alternative investments and enterpise
-              software. We partner with management teams to build
-                businesses and create transformational technology
-         solutions that reshape key markets.
+
+              {/* Subtitle */}
+              <p className="text-gray-600 dark:text-gray-400 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto">
+                CapEdge Group, Inc. is a private portfolio management company focused on making strategic investments in
+                businesses, alternative investments and enterprise software. We partner with management teams to build
+                businesses and create transformational technology solutions that reshape key markets.
               </p>
 
-              {/* Email subscription form */}
-              <form onSubmit={handleSubmit} className="max-w-md flex flex-col sm:flex-row gap-4 sm:gap-2 relative z-20">
-                <div className="relative flex-1 group">
-                  <input
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    type="email"
-                    placeholder="Enter your business email"
-                    className="w-full h-12 rounded-lg bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 px-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm transition-shadow duration-200 group-hover:shadow-md"
-                  />
-                  <div className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                    <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-                  </div>
-                </div>
+              {/* CTA Button */}
+              <div className="pt-4">
                 <button
-                  onClick={handleSubmit}
-                  type="submit"
-                  className="h-12 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-400 text-white dark:text-gray-900 px-6 rounded-lg font-medium transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 w-full sm:w-auto"
+                  onClick={handleContactClick}
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-medium text-lg transition-colors duration-200 shadow-lg"
                 >
-                  Get Started
+                  Get started for free
                 </button>
-              </form>
+              </div>
             </div>
           </AnimatedSection>
 
-          <AnimatedSection direction="right" delay={0.2} className="relative">
-            <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
-              {/* Main Investment Card */}
-              <div className="bg-white/80 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 space-y-6 border border-gray-200 dark:border-gray-700 shadow-xl hover:shadow-2xl transition-all duration-300 relative z-10">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
-                    <Anchor className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-gray-900 dark:text-white">CapEdge Group</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Company Overview</p>
-                  </div>
-                </div>
+          {/* Main Illustration - Briefberry Style */}
+          <AnimatedSection delay={0.3}>
+            <div className="relative w-full max-w-6xl mx-auto h-[400px] sm:h-[500px] overflow-visible">
 
-                <div className="space-y-4">
-                  <div className="bg-gray-100 dark:bg-gray-900/50 p-4 rounded-lg group hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-200">
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Investments and KPI Overview</p>
-                    <Counter target={130} duration={2000} prefix="ROE:" suffix="%" className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200 " />
-                  </div>
+              {/* Background Base */}
+              <div className="absolute inset-0 rounded-3xl border border-slate-200/50 bg-slate-100 dark:border-slate-700/30 dark:bg-slate-800" />
 
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="bg-gray-100 dark:bg-gray-900/50 p-4 rounded-lg group hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-200">
-                      <div className="flex items-center gap-2 mb-1">
-                        <Users className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-                        <p className="text-sm text-gray-500 dark:text-gray-400">Companies</p>
-                      </div>
-                      <Counter target={5} duration={2000} suffix="+" className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200 " />
-                    </div>
-                    <div className="bg-gray-100 dark:bg-gray-900/50 p-4 rounded-lg group hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-200">
-                      <div className="flex items-center gap-2 mb-1">
-                        <Map className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-                        <p className="text-sm text-gray-500 dark:text-gray-400">Continents</p>
-                      </div>
-                      <Counter target={2} duration={2000} suffix="+" className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200 " />
+              {/* Creative Gradient Background - Bottom portion with natural theme */}
+              <div className="absolute bottom-0 left-0 right-0 h-[350px] bg-gradient-to-t from-blue-200/30 via-blue-50/20 to-slate-100 dark:from-blue-900/20 dark:via-blue-950/10 dark:to-transparent rounded-b-3xl" />
+
+              {/* Main Interface Window - Expanded to stretch wider */}
+              <div className="absolute top-12 left-4 sm:left-8 w-[90%] sm:w-[650px] max-w-[650px] bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-2xl border border-gray-200/30 dark:border-gray-600/40 overflow-hidden z-10">
+
+                {/* Header Bar */}
+                <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200/50 dark:border-gray-600/50 bg-gradient-to-r from-gray-50/50 to-slate-50/30 dark:from-gray-700/30 dark:to-gray-600/20">
+                  <div className="flex items-center gap-3">
+                    <div className="w-3 h-3 rounded-full bg-green-500 dark:bg-green-400" />
+                    <span className="text-gray-700 dark:text-gray-300 font-medium text-sm">CapEdge Group since 2024</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="text-xs text-gray-500 dark:text-gray-400">Portfolio Dashboard</span>
+                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 flex items-center justify-center shadow-lg">
+                      <span className="text-white text-xs font-bold">CG</span>
                     </div>
                   </div>
                 </div>
 
-                {/* Progress bars */}
-                <div className="space-y-4">
-                  <div>
-                    <div className="flex justify-between text-sm mb-2">
-                      <span className="text-gray-500 dark:text-gray-400">Investment Progress</span>
-                      <span className="text-blue-600 dark:text-blue-400">75%</span>
-                    </div>
-                    <div className="h-1.5 bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
-                      <div className="h-full w-[75%] bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-500 dark:to-blue-300 rounded-full" />
+                {/* Content Sections Inside */}
+                <div className="px-6 py-8 space-y-8">
+
+                  {/* Introduction Section */}
+                  <div className="space-y-4 bg-gradient-to-br from-slate-50 to-gray-50 dark:from-gray-700/40 dark:to-gray-600/30 rounded-xl p-4 w-3/4 border border-gray-200/50 dark:border-gray-600/40">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 text-start">Enterprise Software Focus</h3>
+                    <div className="space-y-3">
+                      <div className="h-3 bg-gray-200/60 dark:bg-gray-600/40 rounded-full w-4/5" />
+                      <div className="h-3 bg-gray-200/60 dark:bg-gray-600/40 rounded-full w-5/5" />
+                      <div className="h-3 bg-gray-200/60 dark:bg-gray-600/40 rounded-full w-1/3" />
                     </div>
                   </div>
 
-                  <div>
-                    <div className="flex justify-between text-sm mb-2">
-                      <span className="text-gray-500 dark:text-gray-400">Portfolio Growth</span>
-                      <span className="text-teal-600 dark:text-teal-400">92%</span>
-                    </div>
-                    <div className="h-1.5 bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
-                      <div className="h-full w-[92%] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-500 dark:to-teal-300 rounded-full" />
-                    </div>
-                  </div>
-
-                  <div>
-                    <div className="flex justify-between text-sm mb-2">
-                      <span className="text-gray-500 dark:text-gray-400">Regional Impact</span>
-                      <span className="text-indigo-600 dark:text-indigo-400">83%</span>
-                    </div>
-                    <div className="h-1.5 bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
-                      <div className="h-full w-[83%] bg-gradient-to-r from-indigo-600 to-indigo-400 dark:from-indigo-500 dark:to-indigo-300 rounded-full" />
+                  {/* Goal Section with Progress Bar */}
+                  <div className="space-y-4 bg-white dark:bg-gray-700/50 rounded-xl p-4 w-3/4 border border-gray-200/30 dark:border-gray-600/30 shadow-sm">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 text-start">Portfolio Growth</h3>
+                    <div className="space-y-3">
+                      <div className="w-full bg-gray-200/50 dark:bg-gray-600/30 rounded-full h-3">
+                        <div className="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 h-3 rounded-full w-3/4 shadow-sm" />
+                      </div>
+                      <div className="h-3 bg-gray-100 dark:bg-gray-700/20 rounded-full w-full" />
+                      <div className="h-3 bg-gray-100 dark:bg-gray-700/20 rounded-full w-4/5" />
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Front Credit Card */}
-              <div className="absolute -top-6 right-4 w-48 h-32 bg-gradient-to-br from-teal-500 to-blue-500 dark:from-teal-400 dark:to-blue-400 rounded-xl p-4 shadow-xl transform rotate-6 hover:rotate-0 hover:scale-105 transition-all duration-300 group z-20 animate-float">
-                <div className="flex justify-between items-start">
-                  <Banknote className="w-8 h-8 text-white/90" />
-                  <div className="flex gap-1">
-                    <div className="w-1 h-1 rounded-full bg-white/70" />
-                    <div className="w-1 h-1 rounded-full bg-white/70" />
-                    <div className="w-1 h-1 rounded-full bg-white/70" />
-                    <div className="w-1 h-1 rounded-full bg-white/70" />
-                  </div>
+              {/* Floating Selection Panel */}
+              <div className="absolute top-32 right-4 sm:right-12 w-[280px] sm:w-[300px] bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/40 dark:border-gray-600/40 overflow-visible z-20">
+
+                {/* Selection Panel Header */}
+                <div className="px-6 py-4 border-b border-gray-200/50 dark:border-gray-600/50 bg-gradient-to-r from-slate-50/30 to-gray-50/20 dark:from-gray-700/30 dark:to-gray-600/20">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 text-start">Investment Focus</h3>
                 </div>
-                <div className="mt-auto">
-                  <div className="text-white/90 text-xs mb-1">Investment Account</div>
-                  <div className="text-white font-medium tracking-wider">•••• 4891</div>
+
+                {/* Interactive Selection Cards - 2x2 Grid */}
+                <div className="p-6">
+                  <div className="grid grid-cols-2 gap-4 relative bg-white/50 dark:bg-gray-800/50">
+
+                    {/* Card 1 - Enterprise Software (HOVERED/ELEVATED) */}
+                    <div className="relative transform -translate-y-4 shadow-2xl bg-white  rounded-xl p-5 cursor-pointer z-30 transition-all duration-200 ">
+                      <div className="w-10 h-10 bg-white/20 dark:bg-white/30 backdrop-blur-sm rounded-lg mb-4 flex items-center justify-center">
+                        <Building2 className="w-5 h-5 text-blue-500" />
+                      </div>
+                      <div className="text-sm font-semibold ">Enterprise Software</div>
+                    </div>
+
+                    {/* Card 2 - Financial Services */}
+                    <div className="bg-gradient-to-br from-slate-50 to-gray-50 dark:from-gray-700/40 dark:to-gray-600/30 border border-gray-200/60 dark:border-gray-600/60 rounded-xl p-5 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:from-gray-100 hover:to-slate-100 dark:hover:from-gray-700/50 dark:hover:to-gray-600/40">
+                      <div className="w-10 h-10 border border-gray-200/60 rounded-lg mb-4 flex items-center justify-center">
+                        <TrendingUp className="w-5 h-5 text-gray-700" />
+                      </div>
+                      <div className="text-sm text-gray-700 dark:text-gray-100 font-medium">Financial Services</div>
+                    </div>
+
+                    {/* Card 3 - Portfolio Management */}
+                    <div className="bg-gradient-to-br from-slate-50 to-gray-50 dark:from-gray-700/30 dark:to-gray-600/40 border border-gray-200/60 dark:border-gray-600/60 rounded-xl p-5 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:from-gray-100 hover:to-slate-100 dark:hover:from-gray-700/40 dark:hover:to-gray-600/50">
+                      <div className="w-10 h-10 border border-gray-200/60 rounded-lg mb-4 flex items-center justify-center">
+                        <Users className="w-5 h-5 text-gray-700" />
+                      </div>
+                      <div className="text-sm text-gray-700 dark:text-gray-100 font-medium">Portfolio Management</div>
+                    </div>
+
+                    {/* Card 4 - Technology Solutions */}
+                    <div className="bg-gradient-to-br from-slate-50 to-gray-50 dark:from-gray-700/40 dark:to-gray-600/30 border border-gray-200/60 dark:border-gray-600/60 rounded-xl p-5 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:from-gray-100 hover:to-slate-100 dark:hover:from-gray-700/50 dark:hover:to-gray-600/40">
+                      <div className="w-10 h-10 border border-gray-200/60 rounded-lg mb-4 flex items-center justify-center">
+                        <ArrowRight className="w-5 h-5 text-gray-700" />
+                      </div>
+                      <div className="text-sm text-gray-700 dark:text-gray-100 font-medium">Technology Solutions</div>
+                    </div>
+
+                    {/* Mouse Cursor - Positioned over the elevated card */}
+                    <div className="absolute top-1 left-20 z-40 pointer-events-none animate-ping transition-all">
+                      <svg className="w-5 h-5 text-gray-800 transform rotate-12" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.414l.707-.707zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"/>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <style jsx>{`
-                @keyframes float {
-                  0%, 100% { transform: translateY(0) rotate(6deg); }
-                  50% { transform: translateY(-10px) rotate(6deg); }
-                }
-                @keyframes float-fast {
-                  0%, 100% { transform: translateY(0); }
-                  50% { transform: translateY(-6px); }
-                }
-                .animate-float {
-                  animation: float 4s ease-in-out infinite;
-                }
-                .animate-float-fast {
-                  animation: float-fast 3s ease-in-out infinite;
-                }
-              `}</style>
+              {/* Overflowing Cards - Positioned to extend beyond boundaries */}
+              {/* Left Overflow Card - Portfolio */}
+              <div className="absolute -top-10 -left-8 w-32 bg-gradient-to-br from-white to-slate-50/50 dark:from-gray-800 dark:to-gray-700/30 rounded-xl shadow-xl border border-gray-200/60 dark:border-gray-600/60 p-3 transform rotate-0 z-10 backdrop-blur-sm animate-bounce">
+                <div className="w-6 h-6 bg-gradient-to-br from-indigo-500 to-indigo-600 dark:from-indigo-500 dark:to-indigo-600 rounded-lg mb-2 flex items-center justify-center shadow-sm">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                    <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3z" clipRule="evenodd"/>
+                  </svg>
+                </div>
+                <span className="text-xs font-medium text-gray-700 dark:text-gray-100">Portfolio</span>
+              </div>
+
+              {/* Right Overflow Card - Extending beyond floating panel */}
+              <div className="absolute top-2 -right-12 w-36 bg-gradient-to-br from-white to-slate-50/50 dark:from-gray-800 dark:to-gray-700/30 rounded-xl shadow-xl border border-gray-200/60 dark:border-gray-600/60 p-3 transform -rotate-3 z-25 backdrop-blur-sm">
+                <div className="w-6 h-6 bg-gradient-to-br from-teal-500 to-teal-600 dark:from-teal-500 dark:to-teal-600 rounded-lg mb-2 flex items-center justify-center shadow-sm">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/>
+                  </svg>
+                </div>
+                <span className="text-xs font-medium text-gray-700 dark:text-gray-100">Analytics</span>
+              </div>
+
+            </div>
+          </AnimatedSection>
+
+          {/* Bottom Stats */}
+          <AnimatedSection delay={0.5}>
+            <div className="flex items-center justify-center gap-2 text-gray-500 dark:text-gray-400">
+              <span className="text-sm">Trusted by enterprise partners</span>
+              <div className="flex -space-x-2">
+                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 border-2 border-white dark:border-gray-900" />
+                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-green-500 to-green-600 border-2 border-white dark:border-gray-900" />
+                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 border-2 border-white dark:border-gray-900" />
+                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-gray-600 to-gray-700 border-2 border-white dark:border-gray-900 flex items-center justify-center">
+                  <span className="text-xs text-white font-bold">24+</span>
+                </div>
+              </div>
             </div>
           </AnimatedSection>
         </div>
