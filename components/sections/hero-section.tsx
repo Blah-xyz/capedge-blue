@@ -222,29 +222,29 @@ export function HeroSection() {
           <AnimatedSection delay={0.5}>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-3xl mx-auto">
 
-              {/* Successful Investments */}
+              {/* continents */}
               <div className="text-center">
                 <Counter
-                  target={25}
+                  target={2}
                   duration={2000}
                   suffix="+"
                   className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2"
                 />
                 <div className="text-sm text-gray-600 dark:text-gray-400">
-                  Successful<br />Investments
+                  Continents
                 </div>
               </div>
 
-              {/* Success Rate */}
+              {/* Companies */}
               <div className="text-center">
                 <Counter
-                  target={98}
+                  target={5}
                   duration={2000}
                   suffix="%"
                   className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2"
                 />
                 <div className="text-sm text-gray-600 dark:text-gray-400">
-                  Success Rate
+                  Companies
                 </div>
               </div>
 
