@@ -140,15 +140,15 @@ export function HeroSection() {
                     <Anchor className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-gray-900 dark:text-white">Blue Water Equity</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Investment Portfolio</p>
+                    <h3 className="font-medium text-gray-900 dark:text-white">CapEdge Group</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Company Overview</p>
                   </div>
                 </div>
 
                 <div className="space-y-4">
                   <div className="bg-gray-100 dark:bg-gray-900/50 p-4 rounded-lg group hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-200">
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Total Investments</p>
-                    <Counter target={50} duration={2000} prefix="$" suffix="M+" className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200 " />
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Investments and KPI Overview</p>
+                    <Counter target={130} duration={2000} prefix="ROE:" suffix="%" className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200 " />
                   </div>
 
                   <div className="grid grid-cols-2 gap-3">
@@ -157,14 +157,14 @@ export function HeroSection() {
                         <Users className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                         <p className="text-sm text-gray-500 dark:text-gray-400">Companies</p>
                       </div>
-                      <Counter target={25} duration={2000} suffix="+" className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200 " />
+                      <Counter target={5} duration={2000} suffix="+" className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200 " />
                     </div>
                     <div className="bg-gray-100 dark:bg-gray-900/50 p-4 rounded-lg group hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-200">
                       <div className="flex items-center gap-2 mb-1">
                         <Map className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-                        <p className="text-sm text-gray-500 dark:text-gray-400">Islands</p>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">Continents</p>
                       </div>
-                      <Counter target={12} duration={2000} suffix="+" className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200 " />
+                      <Counter target={2} duration={2000} suffix="+" className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200 " />
                     </div>
                   </div>
                 </div>
