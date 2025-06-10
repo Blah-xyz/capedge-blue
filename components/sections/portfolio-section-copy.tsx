@@ -266,107 +266,107 @@ export function PortfolioSectionCopy() {
 
           {/* Clean Portfolio Cards */}
           <div className="relative max-w-7xl mx-auto">
-            {/* Enterprise Platform Alpha - Left Side */}
+            {/* Enterprise Platform Alpha - Left Side - Purple Theme */}
             <AnimatedSection delay={0.2} className="relative mb-12 md:mb-0">
               <div className="md:w-2/3 relative">
-                <div className="bg-white dark:bg-slate-900 rounded-2xl p-10 border border-slate-200 dark:border-slate-700 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[400px]">
+                <div className="bg-purple-50 dark:bg-purple-950 rounded-2xl p-10 border border-purple-200 dark:border-purple-800 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[400px]">
                   {/* Header */}
                   <div className="flex items-start justify-between mb-10">
                     <div>
                       <div className="flex items-center gap-3 mb-6">
-                        <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center">
+                        <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center">
                           <Building2 className="w-7 h-7 text-white" />
                         </div>
-                        <div className="px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 rounded-full">
+                        <div className="px-4 py-2 bg-emerald-100 dark:bg-emerald-900 border border-emerald-200 dark:border-emerald-700 rounded-full">
                           <span className="text-emerald-700 dark:text-emerald-300 text-sm font-medium">Active</span>
                         </div>
                       </div>
-                      <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-3">Enterprise Platform Alpha</h3>
-                      <p className="text-lg text-slate-600 dark:text-slate-400">Next-generation enterprise solution</p>
+                      <h3 className="text-4xl font-bold text-purple-900 dark:text-purple-100 mb-3">Enterprise Platform Alpha</h3>
+                      <p className="text-lg text-purple-700 dark:text-purple-300">Next-generation enterprise solution</p>
                     </div>
                     <button
                       onClick={() => setIsOpen(true)}
-                      className="p-4 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-700 transition-all duration-300 group/btn"
+                      className="p-4 bg-purple-100 dark:bg-purple-900 hover:bg-purple-200 dark:hover:bg-purple-800 rounded-xl border border-purple-200 dark:border-purple-700 transition-all duration-300 group/btn"
                     >
-                      <ArrowUpRight className="w-6 h-6 text-slate-600 dark:text-slate-400 group-hover/btn:transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300" />
+                      <ArrowUpRight className="w-6 h-6 text-purple-600 dark:text-purple-400 group-hover/btn:transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300" />
                     </button>
                   </div>
 
                   {/* Features with Checkmarks */}
                   <div className="space-y-6">
                     <div className="flex items-start gap-4 group/item">
-                      <CheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                      <span className="text-lg text-slate-700 dark:text-slate-300 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Developed and deployed innovative technology platform</span>
+                      <CheckCircle className="w-6 h-6 text-purple-600 dark:text-purple-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                      <span className="text-lg text-purple-800 dark:text-purple-200 group-hover/item:text-purple-900 dark:group-hover/item:text-purple-100 transition-colors duration-200">Developed and deployed innovative technology platform</span>
                     </div>
                     <div className="flex items-start gap-4 group/item">
-                      <CheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                      <span className="text-lg text-slate-700 dark:text-slate-300 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Analytical growth strategies implementation</span>
+                      <CheckCircle className="w-6 h-6 text-purple-600 dark:text-purple-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                      <span className="text-lg text-purple-800 dark:text-purple-200 group-hover/item:text-purple-900 dark:group-hover/item:text-purple-100 transition-colors duration-200">Analytical growth strategies implementation</span>
                     </div>
                     <div className="flex items-start gap-4 group/item">
-                      <CheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                      <span className="text-lg text-slate-700 dark:text-slate-300 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Active management team empowerment</span>
+                      <CheckCircle className="w-6 h-6 text-purple-600 dark:text-purple-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                      <span className="text-lg text-purple-800 dark:text-purple-200 group-hover/item:text-purple-900 dark:group-hover/item:text-purple-100 transition-colors duration-200">Active management team empowerment</span>
                     </div>
                     <div className="flex items-start gap-4 group/item">
-                      <CheckCircle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                      <span className="text-lg text-slate-700 dark:text-slate-300 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Comprehensive market analysis and strategic positioning</span>
+                      <CheckCircle className="w-6 h-6 text-purple-600 dark:text-purple-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                      <span className="text-lg text-purple-800 dark:text-purple-200 group-hover/item:text-purple-900 dark:group-hover/item:text-purple-100 transition-colors duration-200">Comprehensive market analysis and strategic positioning</span>
                     </div>
 
                   </div>
 
                   {/* Bottom Accent */}
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600 rounded-b-2xl" />
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-purple-600 rounded-b-2xl" />
                 </div>
               </div>
             </AnimatedSection>
 
-            {/* Business Solutions Beta - Right Side */}
+            {/* Business Solutions Beta - Right Side - Teal Theme */}
             <AnimatedSection delay={0.4} className="md:absolute md:top-24 md:right-0 md:w-2/3">
-              <div className="bg-slate-900 dark:bg-white rounded-2xl p-10 border border-slate-700 dark:border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[400px]">
+              <div className="bg-teal-50 dark:bg-teal-950 rounded-2xl p-10 border border-teal-200 dark:border-teal-800 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[400px]">
                 {/* Header */}
                 <div className="flex items-start justify-between mb-10">
                   <div>
                     <div className="flex items-center gap-3 mb-6">
-                      <div className="w-14 h-14 bg-blue-700 rounded-xl flex items-center justify-center">
+                      <div className="w-14 h-14 bg-teal-600 rounded-xl flex items-center justify-center">
                         <TrendingUp className="w-7 h-7 text-white" />
                       </div>
-                      <div className="px-4 py-2 bg-amber-100 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800 rounded-full">
+                      <div className="px-4 py-2 bg-amber-100 dark:bg-amber-900 border border-amber-200 dark:border-amber-700 rounded-full">
                         <span className="text-amber-700 dark:text-amber-300 text-sm font-medium">Thriving</span>
                       </div>
                     </div>
-                    <h3 className="text-4xl font-bold text-white dark:text-slate-900 mb-3">Business Solutions Beta</h3>
-                    <p className="text-lg text-slate-300 dark:text-slate-600">Comprehensive business platform</p>
+                    <h3 className="text-4xl font-bold text-teal-900 dark:text-teal-100 mb-3">Business Solutions Beta</h3>
+                    <p className="text-lg text-teal-700 dark:text-teal-300">Comprehensive business platform</p>
                   </div>
                   <button
                     onClick={() => setIsOpen(true)}
-                    className="p-4 bg-slate-800 dark:bg-slate-100 hover:bg-slate-700 dark:hover:bg-slate-200 rounded-xl border border-slate-700 dark:border-slate-200 transition-all duration-300 group/btn"
+                    className="p-4 bg-teal-100 dark:bg-teal-900 hover:bg-teal-200 dark:hover:bg-teal-800 rounded-xl border border-teal-200 dark:border-teal-700 transition-all duration-300 group/btn"
                   >
-                    <ArrowUpRight className="w-6 h-6 text-slate-300 dark:text-slate-600 group-hover/btn:transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300" />
+                    <ArrowUpRight className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/btn:transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300" />
                   </button>
                 </div>
 
                 {/* Features with Checkmarks */}
                 <div className="space-y-6">
                   <div className="flex items-start gap-4 group/item">
-                    <CheckCircle className="w-6 h-6 text-blue-400 dark:text-blue-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                    <span className="text-lg text-slate-200 dark:text-slate-700 group-hover/item:text-white dark:group-hover/item:text-slate-800 transition-colors duration-200">Successful platform business deployment</span>
+                    <CheckCircle className="w-6 h-6 text-teal-600 dark:text-teal-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                    <span className="text-lg text-teal-800 dark:text-teal-200 group-hover/item:text-teal-900 dark:group-hover/item:text-teal-100 transition-colors duration-200">Successful platform business deployment</span>
                   </div>
                   <div className="flex items-start gap-4 group/item">
-                    <CheckCircle className="w-6 h-6 text-blue-400 dark:text-blue-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                    <span className="text-lg text-slate-200 dark:text-slate-700 group-hover/item:text-white dark:group-hover/item:text-slate-800 transition-colors duration-200">Expertise in financial operations and technology</span>
+                    <CheckCircle className="w-6 h-6 text-teal-600 dark:text-teal-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                    <span className="text-lg text-teal-800 dark:text-teal-200 group-hover/item:text-teal-900 dark:group-hover/item:text-teal-100 transition-colors duration-200">Expertise in financial operations and technology</span>
                   </div>
                   <div className="flex items-start gap-4 group/item">
-                    <CheckCircle className="w-6 h-6 text-blue-400 dark:text-blue-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                    <span className="text-lg text-slate-200 dark:text-slate-700 group-hover/item:text-white dark:group-hover/item:text-slate-800 transition-colors duration-200">Long-term strategic engagement beyond capital</span>
+                    <CheckCircle className="w-6 h-6 text-teal-600 dark:text-teal-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                    <span className="text-lg text-teal-800 dark:text-teal-200 group-hover/item:text-teal-900 dark:group-hover/item:text-teal-100 transition-colors duration-200">Long-term strategic engagement beyond capital</span>
                   </div>
                   <div className="flex items-start gap-4 group/item">
-                    <CheckCircle className="w-6 h-6 text-blue-400 dark:text-blue-600 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                    <span className="text-lg text-slate-200 dark:text-slate-700 group-hover/item:text-white dark:group-hover/item:text-slate-800 transition-colors duration-200">Advanced analytics and business intelligence</span>
+                    <CheckCircle className="w-6 h-6 text-teal-600 dark:text-teal-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                    <span className="text-lg text-teal-800 dark:text-teal-200 group-hover/item:text-teal-900 dark:group-hover/item:text-teal-100 transition-colors duration-200">Advanced analytics and business intelligence</span>
                   </div>
 
                 </div>
 
                 {/* Bottom Accent */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-700 rounded-b-2xl" />
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-teal-600 rounded-b-2xl" />
               </div>
             </AnimatedSection>
           </div>
