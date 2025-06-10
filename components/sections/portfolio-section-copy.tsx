@@ -36,11 +36,11 @@ const portfolioHighlights = [
 const chartConfig = {
   value: {
     label: "Portfolio Value",
-    color: "#dc2626", // red-600
+    color: "#16a34a", // green-600
   },
   growth: {
     label: "Growth %",
-    color: "#ef4444", // red-500
+    color: "#22c55e", // green-500
   },
 }
 
@@ -56,6 +56,13 @@ export function PortfolioSectionCopy() {
 
       <div className="container relative max-w-7xl mx-auto px-4">
 
+        {/* Our Impact Badge */}
+        <AnimatedSection className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+            <TrendingUp className="w-4 h-4 text-green-600 dark:text-green-400" />
+            <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Our Impact</span>
+          </div>
+        </AnimatedSection>
 
         {/* Hero-Style Layout - Graph Left, Headline Right */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-32">
@@ -99,9 +106,9 @@ export function PortfolioSectionCopy() {
                       <AreaChart data={portfolioData}>
                         <defs>
                           <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="#1e40af" stopOpacity={0.4}/>
-                            <stop offset="50%" stopColor="#3b82f6" stopOpacity={0.2}/>
-                            <stop offset="95%" stopColor="#60a5fa" stopOpacity={0.05}/>
+                            <stop offset="5%" stopColor="#15803d" stopOpacity={0.4}/>
+                            <stop offset="50%" stopColor="#16a34a" stopOpacity={0.2}/>
+                            <stop offset="95%" stopColor="#22c55e" stopOpacity={0.05}/>
                           </linearGradient>
                         </defs>
                         <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" opacity={0.3} />
@@ -120,11 +127,11 @@ export function PortfolioSectionCopy() {
                         <Area
                           type="monotone"
                           dataKey="value"
-                          stroke="#1e40af"
+                          stroke="#15803d"
                           strokeWidth={3}
                           fill="url(#colorValue)"
-                          dot={{ fill: '#1e40af', strokeWidth: 2, r: 4 }}
-                          activeDot={{ r: 6, stroke: '#1e40af', strokeWidth: 3, fill: '#3b82f6' }}
+                          dot={{ fill: '#15803d', strokeWidth: 2, r: 4 }}
+                          activeDot={{ r: 6, stroke: '#15803d', strokeWidth: 3, fill: '#16a34a' }}
                         />
                       </AreaChart>
                     </ChartContainer>
@@ -133,15 +140,15 @@ export function PortfolioSectionCopy() {
                   {/* Chart Stats */}
                   <div className="grid grid-cols-3 gap-3 mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
                     <div className="text-center">
-                      <div className="text-lg font-bold text-blue-600 dark:text-blue-400">110%</div>
+                      <div className="text-lg font-bold text-green-600 dark:text-green-400">110%</div>
                       <div className="text-xs text-slate-600 dark:text-slate-400">Total Growth</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-blue-600 dark:text-blue-400">120%+</div>
+                      <div className="text-lg font-bold text-green-600 dark:text-green-400">120%+</div>
                       <div className="text-xs text-slate-600 dark:text-slate-400">Current ROI</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-blue-600 dark:text-blue-400">15%</div>
+                      <div className="text-lg font-bold text-green-600 dark:text-green-400">15%</div>
                       <div className="text-xs text-slate-600 dark:text-slate-400">Avg Monthly</div>
                     </div>
                   </div>
