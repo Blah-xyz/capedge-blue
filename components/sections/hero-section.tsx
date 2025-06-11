@@ -358,7 +358,7 @@ export function HeroSection() {
                     </div>
 
                     {/* Mouse Cursor - Positioned over the elevated card */}
-                    <div className="absolute top-0.5 sm:top-1 left-16 sm:left-20 z-40 pointer-events-none animate-ping transition-all">
+                    <div className="absolute top-0.5 sm:top-1 left-16 sm:left-20 z-40 pointer-events-none transition-all">
                       <svg className="w-4 sm:w-5 h-4 sm:h-5 transform rotate-12" fill="currentColor" viewBox="0 0 20 20" style={{ color: '#1f2937' }}>
                         <path d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.414l.707-.707zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"/>
                       </svg>
@@ -369,7 +369,7 @@ export function HeroSection() {
 
               {/* Overflowing Cards - Photorealistic floating cards */}
               {/* Left Overflow Card - Portfolio */}
-              <div className="hidden lg:block absolute -top-10 -left-8 w-32 rounded-xl p-3 transform rotate-0 z-10 animate-bounce"
+              <div className="hidden lg:block absolute -top-10 -left-8 w-32 rounded-xl p-3 transform rotate-0 z-10 "
                    style={{
                      background: `
                        linear-gradient(135deg,
@@ -440,7 +440,7 @@ export function HeroSection() {
                   target={25}
                   duration={2000}
                   suffix="+"
-                  className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2"
+                  className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
                 />
                 <div className="text-sm text-gray-600 dark:text-gray-400">
                   Successful Investments
@@ -453,7 +453,7 @@ export function HeroSection() {
                   target={98}
                   duration={2000}
                   suffix="%"
-                  className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2"
+                  className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
                 />
                 <div className="text-sm text-gray-600 dark:text-gray-400">
                   Success Rate
@@ -466,7 +466,7 @@ export function HeroSection() {
                   target={120}
                   duration={2000}
                   suffix="%+"
-                  className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2"
+                  className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
                 />
                 <div className="text-sm text-gray-600 dark:text-gray-400">
                   Average ROI
