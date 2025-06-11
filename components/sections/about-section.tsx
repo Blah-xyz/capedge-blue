@@ -2,11 +2,11 @@
 
 import { CheckCircle } from "lucide-react";
 
-// Large Realistic Phone SVG Illustration (partial view)
+// Realistic Phone SVG Illustration (partial view)
 function PhoneSVG() {
   return (
-    <div className="relative flex items-center justify-center overflow-hidden h-[700px] w-full">
-      <div className="relative w-[380px] h-[900px] transform translate-y-40 scale-110">
+    <div className="relative flex items-center justify-center overflow-hidden h-[600px] w-full">
+      <div className="relative w-[360px] h-[650px] transform translate-y-32 scale-95">
         {/* Phone Shadow */}
         <div className="absolute inset-0 bg-black/20 rounded-[5rem] blur-3xl translate-x-4 translate-y-8 scale-105"></div>
 
@@ -39,184 +39,195 @@ function PhoneSVG() {
                 </div>
               </div>
 
-              {/* App Header */}
-              <div className="mx-6 mb-6 bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 text-center shadow-lg">
-                <h1 className="text-white text-3xl font-bold tracking-wide">CapEdge</h1>
-                <p className="text-blue-100 text-sm mt-2">Portfolio Management</p>
+              {/* Search Bar */}
+              <div className="mx-4 mb-4 bg-white/95 backdrop-blur rounded-xl p-3 shadow-lg border border-white/20">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-2.5 bg-gray-100 rounded-lg px-3 py-2 flex-1 mr-3">
+                    <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <div className="flex-1 text-blue-600 font-medium text-sm">www.capedge</div>
+                    <div className="w-0.5 h-4 bg-blue-600 animate-pulse"></div>
+                  </div>
+                  {/* User Avatar */}
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-sm">
+                    <span className="text-white text-xs font-semibold">JD</span>
+                  </div>
+                </div>
               </div>
 
               {/* Navigation */}
-              <div className="mx-6 mb-6 bg-white/95 backdrop-blur rounded-2xl p-2 flex shadow-lg">
-                <div className="flex-1 bg-blue-600 rounded-xl py-3 text-center shadow-sm">
-                  <span className="text-white text-base font-semibold">Portfolio</span>
+              <div className="mx-4 mb-4 bg-white/95 backdrop-blur rounded-xl p-1.5 flex shadow-lg">
+                <div className="flex-1 bg-blue-600 rounded-lg py-2 text-center shadow-sm">
+                  <span className="text-white text-sm font-semibold">Dashboard</span>
                 </div>
-                <div className="flex-1 py-3 text-center">
-                  <span className="text-slate-600 text-base">Analytics</span>
+                <div className="flex-1 py-2 text-center">
+                  <span className="text-slate-600 text-sm">Investments</span>
                 </div>
-                <div className="flex-1 py-3 text-center">
-                  <span className="text-slate-600 text-base">Reports</span>
+                <div className="flex-1 py-2 text-center">
+                  <span className="text-slate-600 text-sm">Reports</span>
                 </div>
               </div>
 
               {/* Main Content Area */}
-              <div className="mx-6 space-y-4 pb-20">
+              <div className="mx-4 space-y-3 pb-16">
 
                 {/* Portfolio Performance Graph */}
-                <div className="bg-white/95 backdrop-blur rounded-2xl p-5 shadow-lg border border-white/20">
-                  <div className="flex justify-between items-center mb-4">
+                <div className="bg-white/95 backdrop-blur rounded-xl p-4 shadow-lg border border-white/20">
+                  <div className="flex justify-between items-center mb-3">
                     <div>
-                      <h3 className="text-base font-semibold text-slate-800">Portfolio Performance</h3>
+                      <h3 className="text-sm font-semibold text-slate-800">Portfolio Performance</h3>
                       <p className="text-xs text-slate-500">Last 12 months</p>
                     </div>
                     <div className="text-right">
-                      <div className="text-xl font-bold text-green-600">+24.8%</div>
+                      <div className="text-lg font-bold text-green-600">+32.4%</div>
                       <div className="text-xs text-slate-500">Total Return</div>
                     </div>
                   </div>
 
                   {/* Compact Graph */}
-                  <div className="relative h-24 mb-3">
-                    <svg className="absolute inset-0 w-full h-full" viewBox="0 0 300 96">
+                  <div className="relative h-20 mb-3">
+                    <svg className="absolute inset-0 w-full h-full" viewBox="0 0 300 80">
                       <defs>
                         <linearGradient id="graphGradient" x1="0%" y1="0%" x2="0%" y2="100%">
                           <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.3" />
                           <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.05" />
                         </linearGradient>
                       </defs>
-                      <path d="M 0 80 L 50 75 L 100 65 L 150 55 L 200 45 L 250 35 L 300 25 L 300 96 L 0 96 Z" fill="url(#graphGradient)" />
-                      <path d="M 0 80 L 50 75 L 100 65 L 150 55 L 200 45 L 250 35 L 300 25" stroke="#3b82f6" strokeWidth="2" fill="none" />
-                      <circle cx="150" cy="55" r="3" fill="#3b82f6" />
-                      <circle cx="300" cy="25" r="3" fill="#3b82f6" />
+                      <path d="M 0 65 L 50 60 L 100 50 L 150 40 L 200 30 L 250 20 L 300 15 L 300 80 L 0 80 Z" fill="url(#graphGradient)" />
+                      <path d="M 0 65 L 50 60 L 100 50 L 150 40 L 200 30 L 250 20 L 300 15" stroke="#3b82f6" strokeWidth="2" fill="none" />
+                      <circle cx="150" cy="40" r="2.5" fill="#3b82f6" />
+                      <circle cx="300" cy="15" r="2.5" fill="#3b82f6" />
                     </svg>
                   </div>
 
-                  <div className="grid grid-cols-3 gap-3 text-center">
+                  <div className="grid grid-cols-3 gap-2 text-center">
                     <div>
-                      <div className="text-sm font-semibold text-slate-800">$2.4M</div>
-                      <div className="text-xs text-slate-500">Total Value</div>
+                      <div className="text-sm font-semibold text-slate-800">$125M</div>
+                      <div className="text-xs text-slate-500">AUM</div>
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-blue-600">5</div>
-                      <div className="text-xs text-slate-500">Holdings</div>
+                      <div className="text-sm font-semibold text-blue-600">25+</div>
+                      <div className="text-xs text-slate-500">Investments</div>
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-green-600">+18%</div>
-                      <div className="text-xs text-slate-500">This Month</div>
+                      <div className="text-sm font-semibold text-green-600">98%</div>
+                      <div className="text-xs text-slate-500">Success Rate</div>
                     </div>
                   </div>
                 </div>
 
-                {/* Active Investments */}
-                <div className="bg-white/95 backdrop-blur rounded-2xl p-5 shadow-lg border border-white/20">
-                  <h3 className="text-base font-semibold text-slate-800 mb-4">Active Investments</h3>
-                  <div className="space-y-3">
+                {/* Top Investments */}
+                <div className="bg-white/95 backdrop-blur rounded-xl p-4 shadow-lg border border-white/20">
+                  <h3 className="text-sm font-semibold text-slate-800 mb-3">Top Investments</h3>
+                  <div className="space-y-2.5">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-                          <span className="text-blue-600 font-bold text-xs">FS</span>
+                      <div className="flex items-center space-x-2.5">
+                        <div className="w-7 h-7 bg-blue-100 rounded-lg flex items-center justify-center">
+                          <span className="text-blue-600 font-bold text-xs">ES</span>
                         </div>
                         <div>
-                          <div className="text-sm font-medium text-slate-800">FinTech Solutions</div>
-                          <div className="text-xs text-slate-500">Enterprise Software</div>
+                          <div className="text-sm font-medium text-slate-800">Enterprise SaaS</div>
+                          <div className="text-xs text-slate-500">B2B Software</div>
                         </div>
                       </div>
                       <div className="text-right">
-                        <div className="text-sm font-semibold text-green-600">+32%</div>
-                        <div className="text-xs text-slate-500">$480K</div>
+                        <div className="text-sm font-semibold text-green-600">+45%</div>
+                        <div className="text-xs text-slate-500">$18.2M</div>
                       </div>
                     </div>
 
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
-                          <span className="text-purple-600 font-bold text-xs">DS</span>
+                      <div className="flex items-center space-x-2.5">
+                        <div className="w-7 h-7 bg-purple-100 rounded-lg flex items-center justify-center">
+                          <span className="text-purple-600 font-bold text-xs">AI</span>
                         </div>
                         <div>
-                          <div className="text-sm font-medium text-slate-800">DataStream AI</div>
-                          <div className="text-xs text-slate-500">Analytics Platform</div>
+                          <div className="text-sm font-medium text-slate-800">AI Analytics</div>
+                          <div className="text-xs text-slate-500">Data Platform</div>
                         </div>
                       </div>
                       <div className="text-right">
-                        <div className="text-sm font-semibold text-green-600">+28%</div>
-                        <div className="text-xs text-slate-500">$620K</div>
+                        <div className="text-sm font-semibold text-green-600">+38%</div>
+                        <div className="text-xs text-slate-500">$12.8M</div>
                       </div>
                     </div>
 
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
-                          <span className="text-orange-600 font-bold text-xs">CP</span>
+                      <div className="flex items-center space-x-2.5">
+                        <div className="w-7 h-7 bg-orange-100 rounded-lg flex items-center justify-center">
+                          <span className="text-orange-600 font-bold text-xs">FT</span>
                         </div>
                         <div>
-                          <div className="text-sm font-medium text-slate-800">CloudPay</div>
-                          <div className="text-xs text-slate-500">Payment Solutions</div>
+                          <div className="text-sm font-medium text-slate-800">FinTech Suite</div>
+                          <div className="text-xs text-slate-500">Financial Services</div>
                         </div>
                       </div>
                       <div className="text-right">
-                        <div className="text-sm font-semibold text-green-600">+15%</div>
-                        <div className="text-xs text-slate-500">$350K</div>
+                        <div className="text-sm font-semibold text-green-600">+29%</div>
+                        <div className="text-xs text-slate-500">$9.4M</div>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Market Insights */}
-                <div className="bg-white/95 backdrop-blur rounded-2xl p-5 shadow-lg border border-white/20">
-                  <h3 className="text-base font-semibold text-slate-800 mb-4">Market Insights</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                <div className="bg-white/95 backdrop-blur rounded-xl p-4 shadow-lg border border-white/20">
+                  <h3 className="text-sm font-semibold text-slate-800 mb-3">Market Insights</h3>
+                  <div className="space-y-2.5">
+                    <div className="flex items-start space-x-2.5">
+                      <div className="w-2 h-2 bg-green-500 rounded-full mt-1.5"></div>
                       <div>
-                        <div className="text-sm font-medium text-slate-800">Enterprise Software Surge</div>
-                        <div className="text-xs text-slate-500">SaaS valuations up 18% this quarter</div>
+                        <div className="text-sm font-medium text-slate-800">Enterprise SaaS Growth</div>
+                        <div className="text-xs text-slate-500">B2B software market up 24% YoY</div>
                       </div>
                     </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <div className="flex items-start space-x-2.5">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-1.5"></div>
                       <div>
-                        <div className="text-sm font-medium text-slate-800">AI Integration Trends</div>
-                        <div className="text-xs text-slate-500">75% of portfolio companies adopting AI</div>
+                        <div className="text-sm font-medium text-slate-800">AI Adoption Accelerating</div>
+                        <div className="text-xs text-slate-500">85% of enterprises investing in AI</div>
                       </div>
                     </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-orange-500 rounded-full mt-2"></div>
+                    <div className="flex items-start space-x-2.5">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full mt-1.5"></div>
                       <div>
-                        <div className="text-sm font-medium text-slate-800">Q4 Outlook Positive</div>
-                        <div className="text-xs text-slate-500">Expected 12% growth in tech sector</div>
+                        <div className="text-sm font-medium text-slate-800">Strong Exit Environment</div>
+                        <div className="text-xs text-slate-500">Record M&A activity in tech sector</div>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Recent Activity */}
-                <div className="bg-white/95 backdrop-blur rounded-2xl p-5 shadow-lg border border-white/20">
-                  <h3 className="text-base font-semibold text-slate-800 mb-4">Recent Activity</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                <div className="bg-white/95 backdrop-blur rounded-xl p-4 shadow-lg border border-white/20">
+                  <h3 className="text-sm font-semibold text-slate-800 mb-3">Recent Activity</h3>
+                  <div className="space-y-2.5">
+                    <div className="flex items-center space-x-2.5">
+                      <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
                         <span className="text-green-600 text-xs">↗</span>
                       </div>
                       <div className="flex-1">
-                        <div className="text-sm text-slate-800">Investment in CloudPay completed</div>
-                        <div className="text-xs text-slate-500">2 hours ago</div>
+                        <div className="text-sm text-slate-800">New SaaS investment closed</div>
+                        <div className="text-xs text-slate-500">4 hours ago</div>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                    <div className="flex items-center space-x-2.5">
+                      <div className="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center">
                         <span className="text-blue-600 text-xs">📊</span>
                       </div>
                       <div className="flex-1">
-                        <div className="text-sm text-slate-800">Q3 portfolio review published</div>
-                        <div className="text-xs text-slate-500">1 day ago</div>
+                        <div className="text-sm text-slate-800">Q4 portfolio report released</div>
+                        <div className="text-xs text-slate-500">2 days ago</div>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
+                    <div className="flex items-center space-x-2.5">
+                      <div className="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center">
                         <span className="text-purple-600 text-xs">🤝</span>
                       </div>
                       <div className="flex-1">
-                        <div className="text-sm text-slate-800">Partnership with DataStream AI</div>
-                        <div className="text-xs text-slate-500">3 days ago</div>
+                        <div className="text-sm text-slate-800">Strategic partnership announced</div>
+                        <div className="text-xs text-slate-500">1 week ago</div>
                       </div>
                     </div>
                   </div>
@@ -293,17 +304,15 @@ export function AboutSection() {
             </div>
 
             <p className="text-xl lg:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed">
-              CapEdge Group, Inc. is a private portfolio management company focused on making strategic investments in
-              businesses, alternative investments and enterprise software. We partner with management teams to build
-              transformational technology solutions.
+              CapEdge Group is a private investment firm focused on enterprise software and strategic partnerships with management teams to build transformational technology solutions.
             </p>
 
-            <div className="space-y-5 mt-6">
+            <div className="space-y-4 mt-6">
               <div className="flex items-start gap-3 group/item">
                 <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                 <div>
                   <h4 className="text-xl font-semibold text-slate-900 dark:text-white mb-1">Enterprise Software Focus</h4>
-                  <p className="text-lg text-slate-600 dark:text-slate-400 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Specialized expertise in enterprise software and financial services technology</p>
+                  <p className="text-lg text-slate-600 dark:text-slate-400 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Specialized expertise in B2B software and financial technology</p>
                 </div>
               </div>
 
@@ -311,7 +320,7 @@ export function AboutSection() {
                 <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                 <div>
                   <h4 className="text-xl font-semibold text-slate-900 dark:text-white mb-1">Strategic Partnerships</h4>
-                  <p className="text-lg text-slate-600 dark:text-slate-400 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Long-term partnerships with management teams beyond just capital</p>
+                  <p className="text-lg text-slate-600 dark:text-slate-400 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Long-term partnerships beyond capital investment</p>
                 </div>
               </div>
 
@@ -319,7 +328,7 @@ export function AboutSection() {
                 <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
                 <div>
                   <h4 className="text-xl font-semibold text-slate-900 dark:text-white mb-1">Market Transformation</h4>
-                  <p className="text-lg text-slate-600 dark:text-slate-400 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Creating solutions that reshape key markets through innovation</p>
+                  <p className="text-lg text-slate-600 dark:text-slate-400 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Building solutions that reshape markets through innovation</p>
                 </div>
               </div>
             </div>
