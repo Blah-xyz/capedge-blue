@@ -60,7 +60,7 @@ export function HeroSection() {
             <div className="space-y-8">
 
               {/* Main Headline */}
-              <h1 className="font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight text-gray-900 dark:text-white max-w-3xl mx-auto">
+              <h1 className="font-bold text-5xl lg:text-6xl xl:text-7xl sm:text-5xl  leading-tight text-gray-900 dark:text-white max-w-3xl mx-auto">
                 <span className="text-blue-600 dark:text-blue-400">Investing</span> in the Future
                 <br />
 

@@ -288,15 +288,15 @@ export function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div className="space-y-6">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
-              <span className="text-sm font-medium text-slate-700 dark:text-slate-300">About CapEdge</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2  rounded-full border border-blue-600 dark:border-slate-700 shadow-sm">
+              <span className="text-sm font-medium text-blue-600">About CapEdge</span>
             </div>
 
             <div>
-              <h3 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-slate-900 dark:text-white">
+              <h3 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-slate-900 dark:text-white">
                 Building the Future
                 <br />
-                <span className="text-slate-700 dark:text-slate-300">of Enterprise Software.</span>
+                <span className="">of Enterprise Software.</span>
               </h3>
             </div>
 
