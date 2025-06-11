@@ -40,13 +40,13 @@ export function Header() {
 
 	return (
 		<>
-			<header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+			<header className="sticky top-0 z-50 w-full border-b border-blue-200/30 dark:border-slate-700/30 bg-gradient-to-br from-blue-100/95 via-blue-50/95 to-blue-100/95 dark:from-slate-900/95 dark:via-slate-800/95 dark:to-slate-900/95 backdrop-blur supports-[backdrop-filter]:bg-gradient-to-br supports-[backdrop-filter]:from-blue-100/60 supports-[backdrop-filter]:via-blue-50/60 supports-[backdrop-filter]:to-blue-100/60 dark:supports-[backdrop-filter]:from-slate-900/60 dark:supports-[backdrop-filter]:via-slate-800/60 dark:supports-[backdrop-filter]:to-slate-900/60">
 				<div className="container flex h-16 items-center justify-between">
-					<div className="flex items-center gap-2">
-						<div className="h-8 w-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
-							<span className="text-white font-bold text-sm">CE</span>
+					<div className="flex items-center gap-3">
+						<div className="h-8 w-8 bg-gradient-to-br from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
+							<span className="text-white font-bold text-sm">CG</span>
 						</div>
-						<span className="text-xl font-display font-bold">
+						<span className="text-xl font-display font-bold text-gray-900 dark:text-white">
 							CapEdge Group
 						</span>
 					</div>
@@ -56,7 +56,7 @@ export function Header() {
 								key={item.href}
 								href={item.href}
 								onClick={(e) => handleClick(e, item.href)}
-								className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+								className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
 							>
 								{item.label}
 							</Link>

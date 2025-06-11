@@ -5,17 +5,14 @@ import { AnimatedSection } from "@/components/animated-section"
 import { Counter } from "@/components/Counter"
 import { Building2, TrendingUp, Users, ArrowRight } from "lucide-react"
 import { useState } from "react"
+import { useContactDialog } from "@/contexts/contact-dialog-context"
 
 export function HeroSection() {
   const [email, setEmail] = useState("");
+  const { setIsOpen } = useContactDialog();
 
   const handleContactClick = () => {
-    // This will trigger the contact dialog - can be connected to contact dialog component
-    toast({
-      title: "Contact Us",
-      description: "Opening contact form...",
-      duration: 3000,
-    });
+    setIsOpen(true);
   };
 
   const handleLearnMoreClick = () => {
