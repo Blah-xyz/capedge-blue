@@ -25,8 +25,8 @@ export function InvestmentApproachSection() {
 						{/* Step 1 - DEEPEN */}
 						<AnimatedSection delay={0.1} className="relative group">
 							<div className="bg-[#002D47] rounded-3xl p-8 h-full transition-all duration-300 hover:bg-[#003355] border border-blue-900/30 hover:border-blue-700/50">
-								<div className="absolute -top-10 left-6 w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-600/25">
-									<Search className="w-10 h-10 text-white" />
+								<div className="absolute -top-10 left-6 w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-600/25">
+									<Search className="w-6 h-6 text-white" />
 								</div>
 								<div className="relative">
 									<div className="mb-6 pt-4">
@@ -58,8 +58,8 @@ export function InvestmentApproachSection() {
 						{/* Step 2 - UNDERSTAND */}
 						<AnimatedSection delay={0.2} className="relative group">
 							<div className="bg-[#002D47] rounded-3xl p-8 h-full transition-all duration-300 hover:bg-[#003355] border border-blue-900/30 hover:border-blue-700/50">
-								<div className="absolute -top-10 left-6 w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-600/25">
-									<Brain className="w-10 h-10 text-white" />
+								<div className="absolute -top-10 left-6 w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-600/25">
+									<Brain className="w-6 h-6 text-white" />
 								</div>
 								<div className="relative">
 									<div className="mb-6 pt-4">
@@ -91,8 +91,8 @@ export function InvestmentApproachSection() {
 						{/* Step 3 - INVEST */}
 						<AnimatedSection delay={0.3} className="relative group">
 							<div className="bg-[#002D47] rounded-3xl p-8 h-full transition-all duration-300 hover:bg-[#003355] border border-blue-900/30 hover:border-blue-700/50">
-								<div className="absolute -top-10 left-6 w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-600/25">
-									<Target className="w-10 h-10 text-white" />
+								<div className="absolute -top-10 left-6 w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-600/25">
+									<Target className="w-6 h-6 text-white" />
 								</div>
 								<div className="relative">
 									<div className="mb-6 pt-4">
