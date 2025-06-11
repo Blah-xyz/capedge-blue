@@ -144,8 +144,8 @@ export function PortfolioSectionCopy() {
                       <div className="text-xs text-slate-600 dark:text-slate-400">Total Growth</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-green-600 dark:text-green-400">120%+</div>
-                      <div className="text-xs text-slate-600 dark:text-slate-400">Current ROI</div>
+                      <div className="text-lg font-bold text-green-600 dark:text-green-400">99.9%</div>
+                      <div className="text-xs text-slate-600 dark:text-slate-400">Success Rate</div>
                     </div>
                     <div className="text-center">
                       <div className="text-lg font-bold text-green-600 dark:text-green-400">15%</div>
@@ -170,8 +170,8 @@ export function PortfolioSectionCopy() {
                 <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-500 dark:to-blue-600 rounded-lg mb-2 flex items-center justify-center shadow-sm">
                   <Building2 className="w-3 h-3 text-white" />
                 </div>
-                <span className="text-xs font-medium text-slate-700 dark:text-slate-100">ROI</span>
-                <div className="text-sm font-bold text-blue-600">120%+</div>
+                <span className="text-xs font-medium text-slate-700 dark:text-slate-100">Transactions</span>
+                <div className="text-sm font-bold text-blue-600">$3B+</div>
               </div>
 
               {/* Bottom Overflow Card - Success Rate */}
@@ -179,8 +179,8 @@ export function PortfolioSectionCopy() {
                 <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-500 dark:to-blue-600 rounded-lg mb-2 flex items-center justify-center shadow-sm">
                   <CheckCircle className="w-3 h-3 text-white" />
                 </div>
-                <span className="text-xs font-medium text-slate-700 dark:text-slate-100">Success</span>
-                <div className="text-sm font-bold text-blue-600">99.9%</div>
+                <span className="text-xs font-medium text-slate-700 dark:text-slate-100">Users</span>
+                <div className="text-sm font-bold text-blue-600">750K+</div>
               </div>
 
               {/* Floating elements for depth */}
@@ -229,16 +229,16 @@ export function PortfolioSectionCopy() {
           {/* Portfolio Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">2</div>
-              <div className="text-lg text-slate-600 dark:text-slate-400">Platform Businesses</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">25+</div>
+              <div className="text-lg text-slate-600 dark:text-slate-400">Successful Investments</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">98%</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">99.9%</div>
               <div className="text-lg text-slate-600 dark:text-slate-400">Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">110%</div>
-              <div className="text-lg text-slate-600 dark:text-slate-400">Total Growth</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">$3B+</div>
+              <div className="text-lg text-slate-600 dark:text-slate-400">Transactions Processed</div>
             </div>
           </div>
 

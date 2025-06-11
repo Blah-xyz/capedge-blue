@@ -46,7 +46,7 @@ function PhoneSVG() {
                     <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <div className="flex-1 text-blue-600 font-medium text-sm">www.capedge</div>
+                    <div className="flex-1 text-blue-600 font-medium text-sm">capedgegroup.com</div>
                     <div className="w-0.5 h-4 bg-blue-600 animate-pulse"></div>
                   </div>
                   {/* User Avatar */}

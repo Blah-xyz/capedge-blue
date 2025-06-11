@@ -61,7 +61,7 @@ export function WhyUsSection() {
 								Successful Investments
 							</div>
 							<p className="text-gray-600 dark:text-gray-400">
-								Proven track record across the Caribbean region
+								Proven track record in enterprise software investments
 							</p>
 						</div>
 					</AnimatedSection>
@@ -74,9 +74,10 @@ export function WhyUsSection() {
 						<div className="space-y-4">
 							<div className="relative">
 								<Counter
-									target={12}
+									target={3}
 									duration={2000}
-									suffix="+"
+									prefix="$"
+									suffix="B+"
 									className="text-5xl font-bold text-blue-600 dark:text-blue-400"
 								/>
 								<svg
@@ -103,11 +104,10 @@ export function WhyUsSection() {
 								</svg>
 							</div>
 							<div className="text-xl font-semibold dark:text-gray-100">
-								Strategic Support
+								Transactions Processed
 							</div>
 							<p className="text-gray-600 dark:text-gray-400">
-								Active involvement in strategic decision-making and operational
-								guidance
+								Total transaction volume processed through our portfolio platforms
 							</p>
 						</div>
 					</AnimatedSection>
@@ -120,7 +120,7 @@ export function WhyUsSection() {
 						<div className="space-y-4">
 							<div className="relative">
 								<Counter
-									target={98}
+									target={99.9}
 									duration={2000}
 									suffix="%"
 									className="text-5xl font-bold text-blue-600 dark:text-blue-400"
@@ -163,11 +163,10 @@ export function WhyUsSection() {
 								</svg>
 							</div>
 							<div className="text-xl font-semibold dark:text-gray-100">
-								Growth Rate
+								Success Rate
 							</div>
 							<p className="text-gray-600 dark:text-gray-400">
-								Focus on long-term value creation and sustainable business
-								practices
+								Exceptional success rate across our enterprise software investment portfolio
 							</p>
 						</div>
 					</AnimatedSection>
@@ -185,7 +184,7 @@ export function WhyUsSection() {
 								<p className="text-gray-600 dark:text-gray-400">
 									Drive digital transformation through strategic investments in enterprise
 									software and financial technology. Our portfolio companies have processed
-									$3B+ in transactions and serve 750K+ active users globally.
+									$3B+ in transactions and serve 750K+ active users globally with a 99.9% success rate.
 								</p>
 								<div className="h-1 w-32 bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-500 rounded-full" />
 								<div className="flex gap-8 mt-6">

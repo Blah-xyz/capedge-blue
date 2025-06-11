@@ -1,37 +1,34 @@
-Blue Water Equity Website
+CapEdge Group Website
 
 Overview
-Blue Water Equity is a family office focused on strategic investments in startups and private equity opportunities across the Caribbean region. This website serves as the digital presence for the company, showcasing its investment approach, portfolio, and impact in the Caribbean market.
+CapEdge Group is a private investment firm focused on strategic investments in enterprise software and financial services. This website serves as the digital presence for the company, showcasing its investment approach, portfolio, and global impact in the technology sector.
 
 Key Features
 
 1. Investment Focus
-- Strategic investments in Caribbean startups and private equity
-- Focus on sustainable business models with positive regional impact
+- Strategic investments in enterprise software and financial technology
+- Focus on scalable technology platforms with global market potential
 - Long-term partnership approach beyond just capital
-- Active involvement in strategic decision-making
+- Active involvement in strategic decision-making and operational guidance
 
 2. Portfolio Companies
-The website showcases various portfolio companies across different sectors:
-- Caribbean Solar Solutions (Renewable Energy)
-- Island Fresh (Agriculture & Food)
-- CaribbeanTech (Technology)
-- And more...
+The website showcases platform businesses across enterprise software:
+- Enterprise Platform Alpha (Next-generation enterprise solution)
+- Business Solutions Beta (Comprehensive business platform)
+- And more innovative technology platforms...
 
 3. Impact Metrics
 - 25+ Successful Investments
-- 1,200+ Jobs Created
-- $50M+ Capital Deployed
-- 12 Islands Impacted
+- $3B+ Transactions Processed
+- 750K+ Active Users
+- 98% Success Rate
 
 4. Key Sections
-- Hero Section: Introduction to Blue Water Equity's mission
-- About Section: Company history and heritage
-- Approach Section: Investment strategy and methodology
-- Portfolio Section: Showcase of current investments
-- Impact Section: Quantifiable results and achievements
-- News Section: Latest updates and developments
-- Testimonials: Partner success stories
+- Hero Section: Introduction to CapEdge Group's mission
+- About Section: Company focus on enterprise software
+- Investment Approach Section: Technology investment strategy and methodology
+- Portfolio Section: Showcase of platform businesses
+- Why CapEdge Section: Technology excellence and achievements
 - Contact Section: Ways to get in touch
 
 Technical Stack
@@ -42,16 +39,16 @@ Technical Stack
 - Dark mode support
 
 Contact Information
-- Address: Harbour View Plaza, Suite 302, Bridgetown, Barbados
-- Email: info@bluewaterequity.com
-- Phone: +1 (246) 555-0123
+- Email: invest@capedgegroup.com
+- Phone: +1 (555) 123-4567
+- Global presence with focus on enterprise software markets
 
 Purpose
 The website serves as a platform to:
-1. Showcase Blue Water Equity's investment portfolio
-2. Highlight the company's impact in the Caribbean region
-3. Connect with potential investment opportunities
-4. Share news and updates about the company and its portfolio
+1. Showcase CapEdge Group's enterprise software investment portfolio
+2. Highlight the company's impact in the global technology sector
+3. Connect with potential technology platform investment opportunities
+4. Share news and updates about the company and its portfolio companies
 5. Provide a professional point of contact for business inquiries
 
 Target Audience

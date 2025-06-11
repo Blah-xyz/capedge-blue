@@ -445,7 +445,7 @@ export function HeroSection() {
               {/* Success Rate */}
               <div className="text-center">
                 <Counter
-                  target={98}
+                  target={99.9}
                   duration={2000}
                   suffix="%"
                   className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
@@ -455,16 +455,17 @@ export function HeroSection() {
                 </div>
               </div>
 
-              {/* Average ROI */}
+              {/* Transactions Processed */}
               <div className="text-center">
                 <Counter
-                  target={120}
+                  target={3}
                   duration={2000}
-                  suffix="%+"
+                  prefix="$"
+                  suffix="B+"
                   className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
                 />
                 <div className="text-sm text-gray-600 dark:text-gray-400">
-                  Average ROI
+                  Transactions Processed
                 </div>
               </div>
 
