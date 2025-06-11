@@ -9,7 +9,7 @@ export function WhyUsSection() {
 			<div className="container">
 				<AnimatedSection className="mx-auto max-w-3xl text-center mb-16">
 					<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">
-						Why Blue Water Equity
+						Why CapEdge Group
 					</h2>
 				</AnimatedSection>
 
