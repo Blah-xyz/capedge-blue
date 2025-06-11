@@ -38,19 +38,7 @@ export function InvestmentApproachSection() {
 									<p className="text-blue-100/70 mb-6">
 										Stay ahead through comprehensive market research and trend analysis.
 									</p>
-									<div className="space-y-2">
-										{[
-											"Market research",
-											"Trend analysis",
-											"Industry expertise",
-											"Competitive mapping"
-										].map((feature, index) => (
-											<div key={index} className="flex items-center gap-2">
-												<CheckCircle className="w-4 h-4 text-blue-400 flex-shrink-0" />
-												<span className="text-blue-100/60 text-sm">{feature}</span>
-											</div>
-										))}
-									</div>
+								
 								</div>
 							</div>
 						</AnimatedSection>
@@ -71,19 +59,7 @@ export function InvestmentApproachSection() {
 									<p className="text-blue-100/70 mb-6">
 										Identify operational challenges and transformational opportunities.
 									</p>
-									<div className="space-y-2">
-										{[
-											"Challenge assessment",
-											"Process optimization",
-											"Technology gaps",
-											"Strategic mapping"
-										].map((feature, index) => (
-											<div key={index} className="flex items-center gap-2">
-												<CheckCircle className="w-4 h-4 text-blue-400 flex-shrink-0" />
-												<span className="text-blue-100/60 text-sm">{feature}</span>
-											</div>
-										))}
-									</div>
+
 								</div>
 							</div>
 						</AnimatedSection>
@@ -104,19 +80,7 @@ export function InvestmentApproachSection() {
 									<p className="text-blue-100/70 mb-6">
 										Target businesses with transformational technology and financial services focus.
 									</p>
-									<div className="space-y-2">
-										{[
-											"Technology solutions",
-											"Strategic partnerships",
-											"Financial innovation",
-											"Transformational impact"
-										].map((feature, index) => (
-											<div key={index} className="flex items-center gap-2">
-												<CheckCircle className="w-4 h-4 text-blue-400 flex-shrink-0" />
-												<span className="text-blue-100/60 text-sm">{feature}</span>
-											</div>
-										))}
-									</div>
+
 								</div>
 							</div>
 						</AnimatedSection>
