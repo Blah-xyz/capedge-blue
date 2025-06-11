@@ -1,43 +1,43 @@
 export const data = {
-	name: "Blue Water Equity",
-	role: "Family Office Investment Firm",
+	name: "CapEdge Group",
+	role: "Enterprise Software Investment Firm",
 	description:
-		"A family office focused on strategic investments in startups and private equity opportunities, fostering sustainable growth across the Caribbean region.",
+		"Private investment firm focused on strategic investments in enterprise software and financial services. We partner with management teams to build transformational technology platforms globally.",
 	contact: {
-		email: "invest@bluewaterequity.com",
-		phone: "+1 (123) 456-7890",
-		location: "Caribbean Region",
+		email: "invest@capedgegroup.com",
+		phone: "+1 (555) 123-4567",
+		location: "Global",
 	},
 	stats: {
 		totalInvestments: "25+",
-		totalCapital: "$50M+",
-		jobsCreated: "1,200+",
-		islandsPresence: 12,
-		revenueIncrease: "24%",
-		annualRevenue: "180K",
-		runwayMonths: "10+",
+		totalCapital: "$3B+",
+		transactionsProcessed: "$3B+",
+		activeUsers: "750K+",
+		successRate: "99.9%",
+		averageROI: "120%+",
+		platformBusinesses: "2",
 	},
 	workflow: {
 		steps: [
 			{
 				id: 1,
-				title: "Initial Consultation",
+				title: "Initial Assessment",
 				description:
-					"Connect with our team to discuss your investment goals and explore opportunities",
+					"Connect with our team to discuss your technology platform and growth objectives",
 				icon: "MessagesSquare",
 			},
 			{
 				id: 2,
-				title: "Strategic Planning",
+				title: "Strategic Partnership",
 				description:
-					"Develop a customized investment strategy aligned with Caribbean market opportunities",
+					"Develop a customized growth strategy aligned with enterprise software market opportunities",
 				icon: "Target",
 			},
 			{
 				id: 3,
-				title: "Active Growth",
+				title: "Platform Scaling",
 				description:
-					"Watch your investment grow while we provide ongoing support and strategic guidance",
+					"Scale your platform with our operational expertise and strategic guidance",
 				icon: "TrendingUp",
 			},
 		],
@@ -47,81 +47,81 @@ export const data = {
 			id: 1,
 			title: "Strategic Investments",
 			subtitle: "INVESTMENT APPROACH",
-			heading: "Regional",
-			subheading: "Impact.",
+			heading: "Enterprise",
+			subheading: "Software.",
 			description:
 				"Long-term partnership approach beyond capital, with active involvement in strategic decision-making and operational guidance.",
 		},
 		{
 			id: 2,
-			title: "Sustainable Growth",
+			title: "Technology Excellence",
 			subtitle: "OUR FOCUS",
-			heading: "Innovation",
-			subheading: "Driven.",
+			heading: "Platform",
+			subheading: "Innovation.",
 			description:
-				"Supporting cutting-edge solutions that address unique Caribbean challenges and opportunities while ensuring sustainable business practices.",
+				"Supporting cutting-edge enterprise software solutions that transform markets through innovative technology platforms.",
 		},
 		{
 			id: 3,
-			title: "Regional Development",
-			subtitle: "OUR IMPACT",
-			heading: "Caribbean",
-			subheading: "Future.",
+			title: "Global Impact",
+			subtitle: "OUR REACH",
+			heading: "Transformational",
+			subheading: "Solutions.",
 			description:
-				"Creating sustainable impact across 12 Caribbean islands through strategic investments and job creation.",
+				"Creating lasting value through strategic investments in enterprise software platforms with global market reach.",
 		},
 	],
 	portfolio: {
-		companies: ["Caribbean Solar Solutions", "Island Fresh", "CaribbeanTech"],
+		companies: ["Enterprise Platform Alpha", "Business Solutions Beta"],
 		highlights: [
 			{
-				metric: "15%",
-				description: "Increase in job creation across portfolio companies",
+				metric: "99.9%",
+				description: "Success rate across portfolio companies",
 			},
 			{
-				metric: "10,000",
-				description: "Tons of carbon emissions reduced annually",
+				metric: "$3B+",
+				description: "Transactions processed through our platforms",
 			},
 			{
-				metric: "50,000",
-				description: "Caribbean businesses connected to global markets",
+				metric: "750K+",
+				description: "Active users served by portfolio companies",
 			},
 		],
 	},
 	news: [
 		{
 			title:
-				"Blue Water Equity Announces $10M Investment in Sustainable Tourism",
-			date: "April 15, 2023",
+				"CapEdge Group Announces Strategic Investment in Enterprise Platform Alpha",
+			date: "April 15, 2024",
 			excerpt:
-				"New partnership aims to develop eco-friendly resorts across the Eastern Caribbean islands.",
+				"New partnership aims to scale innovative enterprise software solutions globally.",
 		},
 		{
 			title:
-				"Portfolio Company CaribbeanTech Secures Major International Partnership",
-			date: "February 28, 2023",
+				"Portfolio Company Business Solutions Beta Achieves $1B Transaction Milestone",
+			date: "February 28, 2024",
 			excerpt:
-				"The e-commerce platform will now connect Caribbean businesses to European markets.",
+				"The platform business reaches significant transaction volume, demonstrating market leadership.",
 		},
 		{
-			title: "Blue Water Equity Hosts Regional Investment Summit in Barbados",
-			date: "January 10, 2023",
+			title: "CapEdge Group Hosts Enterprise Software Investment Summit",
+			date: "January 10, 2024",
 			excerpt:
-				"The event brought together entrepreneurs and investors from across the Caribbean region.",
+				"The event brought together technology leaders and investors from across the enterprise software ecosystem.",
 		},
 	],
 	approach: [
-		"Thorough due diligence with local context in mind",
+		"Thorough due diligence with enterprise software market expertise",
 		"Long-term partnership approach beyond just capital",
-		"Focus on sustainable business models with positive regional impact",
-		"Active involvement in strategic decision-making",
-		"Connection to our extensive network of regional experts",
+		"Focus on scalable technology platforms with global market potential",
+		"Active involvement in strategic decision-making and operational guidance",
+		"Connection to our extensive network of technology and industry experts",
 	],
 	quickLinks: [
 		{ name: "About", href: "#about" },
-		{ name: "Why Us", href: "#why-us" },
-		{ name: "Impact", href: "#impact" },
-		{ name: "News", href: "#news" },
+		{ name: "Investment Approach", href: "#investment-approach" },
+		{ name: "Portfolio", href: "#portfolio" },
+		{ name: "Why CapEdge", href: "#why-us" },
 		{ name: "Contact", href: "#contact" },
 	],
 };
