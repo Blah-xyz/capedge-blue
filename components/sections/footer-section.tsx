@@ -8,29 +8,54 @@ export function FooterSection() {
         <div className="grid gap-12 md:grid-cols-4 lg:gap-16">
           <div>
             <Link href="/" className="text-xl font-bold">
-              Blue Water Equity
+              CapEdge Group
             </Link>
+            <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+              Private investment firm focused on enterprise software and strategic partnerships.
+            </p>
           </div>
 
           <div>
-
             <ul className="space-y-3">
-              <li>
-                Solutions
+              <li className="font-semibold text-gray-900 dark:text-white">
+                Investment Focus
               </li>
               <li>
                 <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                  Small Business
+                  Enterprise Software
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                  Financials
+                  Financial Technology
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                  Customers
+                  B2B Platforms
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                  Portfolio
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul className="space-y-3">
+              <li className="font-semibold text-gray-900 dark:text-white">
+                Company
+              </li>
+              <li>
+                <Link href="#about" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                  Investment Approach
                 </Link>
               </li>
               <li>
@@ -38,27 +63,8 @@ export function FooterSection() {
                   Team
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          <div>
-
-            <ul className="space-y-3">
               <li>
-                Company
-              </li>
-              <li>
-                <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                  Career
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                <Link href="#contact" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                   Contact
                 </Link>
               </li>
@@ -66,24 +72,28 @@ export function FooterSection() {
           </div>
 
           <div>
-
             <ul className="space-y-3">
-              <li>
-                Learn
+              <li className="font-semibold text-gray-900 dark:text-white">
+                Resources
               </li>
               <li>
                 <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                  Blog
+                  Market Insights
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                  Guides
+                  Industry Reports
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
-                  Templates
+                  Success Stories
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                  News & Updates
                 </Link>
               </li>
             </ul>
@@ -92,7 +102,7 @@ export function FooterSection() {
 
         <div className="mt-16 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="text-sm text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} Blue Water Equity. All Rights Reserved.
+            © {new Date().getFullYear()} CapEdge Group. All Rights Reserved.
           </div>
           <div className="flex items-center gap-4">
             <div className="text-sm text-gray-600 dark:text-gray-400">Follow us on</div>

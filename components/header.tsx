@@ -32,9 +32,9 @@ export function Header() {
 	const menuItems = [
 		{ href: "#home", label: "Home" },
 		{ href: "#about", label: "About" },
-		{ href: "#why-us", label: "Why Us" },
-		{ href: "#steps", label: "Steps" },
-		{ href: "#mission", label: "Mission" },
+		{ href: "#investment-approach", label: "Investment Approach" },
+		{ href: "#portfolio", label: "Portfolio" },
+		{ href: "#why-us", label: "Why CapEdge" },
 		{ href: "#contact", label: "Contact" },
 	];
 
@@ -43,9 +43,11 @@ export function Header() {
 			<header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
 				<div className="container flex h-16 items-center justify-between">
 					<div className="flex items-center gap-2">
-						<Anchor className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+						<div className="h-8 w-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
+							<span className="text-white font-bold text-sm">CE</span>
+						</div>
 						<span className="text-xl font-display font-bold">
-							Blue Water Equity
+							CapEdge Group
 						</span>
 					</div>
 					<nav className="hidden md:flex gap-6">

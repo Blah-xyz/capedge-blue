@@ -23,8 +23,8 @@ export default function ContactDialog() {
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
 		toast({
-			title: "Thank you!",
-			description: "We've received your contact information. Our team will be in touch soon.",
+			title: "Thank you for your interest!",
+			description: "Our CapEdge Group investment team will be in touch within 24 hours.",
 			duration: 5000,
 		});
 		setIsOpen(false);
@@ -37,10 +37,10 @@ export default function ContactDialog() {
 				<div className="text-center space-y-4">
 					<DialogHeader>
 						<DialogTitle className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-							Join Our Investment Network
+							Partner with CapEdge Group
 						</DialogTitle>
 						<DialogDescription className="text-gray-600 dark:text-gray-300 text-lg">
-							Get exclusive access to Caribbean investment opportunities
+							Connect with our enterprise software investment experts
 						</DialogDescription>
 					</DialogHeader>
 
@@ -60,7 +60,7 @@ export default function ContactDialog() {
 							type="submit"
 							className="w-full h-12 text-lg font-semibold bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white transition-all duration-200"
 						>
-							Get Started <ArrowRight className="ml-2 h-5 w-5" />
+							Connect with Us <ArrowRight className="ml-2 h-5 w-5" />
 						</Button>
 					</form>
 
@@ -69,12 +69,16 @@ export default function ContactDialog() {
 							{[...Array(3)].map((_, i) => (
 								<div
 									key={i}
-									className="h-8 w-8 rounded-full bg-gray-200 dark:bg-gray-700 border-2 border-white dark:border-gray-800"
-								/>
+									className="h-8 w-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 border-2 border-white dark:border-gray-800 flex items-center justify-center"
+								>
+									<span className="text-white text-xs font-semibold">
+										{i === 0 ? 'CE' : i === 1 ? 'ES' : 'AI'}
+									</span>
+								</div>
 							))}
 						</div>
 						<p className="text-sm text-gray-600 dark:text-gray-400">
-							Join <span className="font-bold"><Counter   suffix="+" target={200} /></span> investors already in our network
+							Trusted by <span className="font-bold"><Counter suffix="+" target={25} /></span> enterprise software companies
 						</p>
 					</div>
 				</div>
