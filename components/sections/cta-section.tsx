@@ -16,9 +16,7 @@ export function CTASection() {
 						<AnimatedSection className="max-w-xl">
 							<div className="text-sm text-blue-400 mb-2">TRY IT NOW</div>
 							<h2 className="font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
-							Build Great
-
-						
+								Ready to Scale Your Enterprise Platform?
 							</h2>
 							<p className="mt-4 text-gray-400 max-w-md">
 							Partner with CapEdge Group to build and scale transformational

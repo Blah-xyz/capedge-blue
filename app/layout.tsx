@@ -52,8 +52,8 @@ export default function RootLayout({
 				<CopilotKit publicApiKey={process.env.COPILOT_CLOUD_PUBLIC_API_KEY}>
 					<ThemeProvider
 						attribute="class"
-						defaultTheme="system"
-						enableSystem
+						defaultTheme="light"
+						enableSystem={false}
 						disableTransitionOnChange
 					>
 						<ContactDialogProvider>

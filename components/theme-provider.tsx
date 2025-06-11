@@ -7,9 +7,10 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   return (
     <NextThemesProvider {...props}>
       {children}
-      <div className="fixed bottom-4 right-4 z-50 md:top-4 md:bottom-auto">
+      {/* Dark mode toggle commented out - light mode only */}
+      {/* <div className="fixed bottom-4 right-4 z-50 md:top-4 md:bottom-auto">
         <ThemeToggle />
-      </div>
+      </div> */}
     </NextThemesProvider>
   )
 }
