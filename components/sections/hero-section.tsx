@@ -61,16 +61,14 @@ export function HeroSection() {
 
               {/* Main Headline */}
               <h1 className="font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight text-gray-900 dark:text-white max-w-3xl mx-auto">
-                <span className="text-blue-600 dark:text-blue-400">Investing</span> in Enterprise Software
+                <span className="text-blue-600 dark:text-blue-400">Investing</span> in the Future
                 <br />
-                & Financial Services
+
               </h1>
 
               {/* Subtitle */}
               <p className="text-gray-600 dark:text-gray-400 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto">
-                CapEdge Group, Inc. is a private portfolio management company focused on making strategic investments in
-                businesses, alternative investments and enterprise software. We partner with management teams to build
-                businesses and create transformational technology solutions that reshape key markets.
+                CapEdge Group, Inc. is a private investment firm focused on strategic investments in enterprise software and financial services. We partner with management teams to build transformational solutions.
               </p>
 
               {/* CTA Button */}
