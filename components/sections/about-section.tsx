@@ -285,47 +285,54 @@ export function AboutSection() {
   return (
     <section id="about" className="relative py-24 px-4 md:px-8 bg-white dark:bg-gray-900 overflow-visible">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          <div className="space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="space-y-6 lg:pr-6">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2  rounded-full border border-blue-600 dark:border-slate-700 shadow-sm">
-              <span className="text-sm font-medium text-blue-600">About CapEdge</span>
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-50 rounded-full border border-blue-200 shadow-sm">
+              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+              <span className="text-sm font-semibold text-blue-700 uppercase tracking-wide">About CapEdge</span>
             </div>
 
-            <div>
-              <h3 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-slate-900 dark:text-white">
+            <div className="space-y-4">
+              <h2 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] text-gray-900">
                 Building the Future
                 <br />
-                <span className="">of Enterprise Software.</span>
-              </h3>
+                <span className="text-blue-600">of Enterprise Software.</span>
+              </h2>
+
+              <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed font-light max-w-2xl">
+                CapEdge Group partners with visionary management teams to build transformational technology platforms that reshape key markets through strategic collaboration and hands-on expertise.
+              </p>
             </div>
 
-            <p className="text-xl lg:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed">
-              CapEdge Group is a private investment firm focused on enterprise software and strategic partnerships with management teams to build transformational technology solutions.
-            </p>
-
-            <div className="space-y-4 mt-6">
-              <div className="flex items-start gap-3 group/item">
-                <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                <div>
-                  <h4 className="text-xl font-semibold text-slate-900 dark:text-white mb-1">Enterprise Software Focus</h4>
-                  <p className="text-lg text-slate-600 dark:text-slate-400 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Specialized expertise in B2B software and financial technology</p>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3 group/item hover:bg-blue-50/50 p-3 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-7 h-7 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
+                </div>
+                <div className="space-y-0.5">
+                  <h4 className="text-lg font-bold text-gray-900">Enterprise Software Focus</h4>
+                  <p className="text-base text-gray-600 leading-relaxed">Specialized expertise in B2B software and financial technology platforms</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 group/item">
-                <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                <div>
-                  <h4 className="text-xl font-semibold text-slate-900 dark:text-white mb-1">Strategic Partnerships</h4>
-                  <p className="text-lg text-slate-600 dark:text-slate-400 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Long-term partnerships beyond capital investment</p>
+              <div className="flex items-start gap-3 group/item hover:bg-blue-50/50 p-3 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-7 h-7 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
+                </div>
+                <div className="space-y-0.5">
+                  <h4 className="text-lg font-bold text-gray-900">Strategic Partnerships</h4>
+                  <p className="text-base text-gray-600 leading-relaxed">Long-term partnerships that go beyond capital investment</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 group/item">
-                <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                <div>
-                  <h4 className="text-xl font-semibold text-slate-900 dark:text-white mb-1">Market Transformation</h4>
-                  <p className="text-lg text-slate-600 dark:text-slate-400 group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">Building solutions that reshape markets through innovation</p>
+              <div className="flex items-start gap-3 group/item hover:bg-blue-50/50 p-3 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-7 h-7 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5">
+                  <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
+                </div>
+                <div className="space-y-0.5">
+                  <h4 className="text-lg font-bold text-gray-900">Market Transformation</h4>
+                  <p className="text-base text-gray-600 leading-relaxed">Building solutions that reshape markets through innovation</p>
                 </div>
               </div>
             </div>
