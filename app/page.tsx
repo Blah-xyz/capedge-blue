@@ -7,16 +7,18 @@ import { WhyUsSection } from "@/components/sections/investments-section"
 
 import { CTASection } from "@/components/sections/cta-section"
 import { FooterSection } from "@/components/sections/footer-section"
-import { useCopilotReadable } from '@copilotkit/react-core'
-import { data } from "@/components/data"
+// Copilot chat commented out
+// import { useCopilotReadable } from '@copilotkit/react-core'
+// import { data } from "@/components/data"
 import { InvestmentApproachSection } from "@/components/sections/investment-approach-section"
 import { PortfolioSectionCopy } from "@/components/sections/portfolio-section-copy"
 
 export default function LandingPage() {
-  useCopilotReadable({
-    description: "CapEdge Group - Enterprise Software Investment Firm",
-    value: data,
-  });
+  // Copilot chat commented out
+  // useCopilotReadable({
+  //   description: "CapEdge Group - Enterprise Software Investment Firm",
+  //   value: data,
+  // });
   return (
     <div className="flex min-h-screen flex-col relative">
       <Header />

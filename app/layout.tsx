@@ -1,14 +1,15 @@
 import type React from "react";
 import "@/app/globals.css";
-import "@copilotkit/react-ui/styles.css";
+// Copilot chat commented out
+// import "@copilotkit/react-ui/styles.css";
 
 
 
 import ContactDialog from "@/components/sections/contact-dialogue";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ContactDialogProvider } from "@/contexts/contact-dialog-context";
-import { CopilotKit } from "@copilotkit/react-core";
-import { CopilotPopup } from "@copilotkit/react-ui";
+// import { CopilotKit } from "@copilotkit/react-core";
+// import { CopilotPopup } from "@copilotkit/react-ui";
 import { Toaster } from "@/components/ui/toaster"
 
 
@@ -49,7 +50,8 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={`${cormorant.variable} ${outfit.variable} font-sans`}>
-				<CopilotKit publicApiKey={process.env.COPILOT_CLOUD_PUBLIC_API_KEY}>
+				{/* Copilot chat commented out */}
+				{/* <CopilotKit publicApiKey={process.env.COPILOT_CLOUD_PUBLIC_API_KEY}> */}
 					<ThemeProvider
 						attribute="class"
 						defaultTheme="light"
@@ -61,8 +63,8 @@ export default function RootLayout({
 							<ContactDialog />
 						</ContactDialogProvider>
 					</ThemeProvider>
-					<CopilotPopup />
-				</CopilotKit>
+					{/* <CopilotPopup /> */}
+				{/* </CopilotKit> */}
 				<Toaster />
 			</body>
 		</html>
