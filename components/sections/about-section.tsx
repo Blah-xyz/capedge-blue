@@ -269,10 +269,7 @@ function PhoneSVG() {
             <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
           </div>
 
-          {/* Antenna Lines */}
-          <div className="absolute top-20 left-0 w-full h-px bg-gray-400/30"></div>
-          <div className="absolute top-40 left-0 w-full h-px bg-gray-400/30"></div>
-          <div className="absolute bottom-20 left-0 w-full h-px bg-gray-400/30"></div>
+
 
           {/* Apple Logo Area (subtle) */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-10 opacity-5">

@@ -77,7 +77,7 @@ export function HeroSection() {
                   onClick={handleContactClick}
                   className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-medium text-lg transition-colors duration-200 shadow-lg"
                 >
-                  Get started for free
+                  Partner with us
                 </button>
               </div>
             </div>
