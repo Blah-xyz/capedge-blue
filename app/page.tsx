@@ -14,7 +14,7 @@ import { PortfolioSectionCopy } from "@/components/sections/portfolio-section-co
 
 export default function LandingPage() {
   useCopilotReadable({
-    description: "CapEdge Group - Enterprise Software Investment Firm",
+    description: "Blue Water Equity Ltd - Caribbean Investment Family Office",
     value: data,
   });
   return (

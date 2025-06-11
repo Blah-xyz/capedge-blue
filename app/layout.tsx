@@ -36,9 +36,9 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-	title: "CapEdge Group - Enterprise Software Investment Firm",
+	title: "Blue Water Equity Ltd - Caribbean Investment Family Office",
 	description:
-		"Private investment firm focused on strategic investments in enterprise software and financial services. Building transformational technology platforms globally.",
+		"A family office focused on investments in startups & private equity in the Caribbean.",
 };
 
 export default function RootLayout({
