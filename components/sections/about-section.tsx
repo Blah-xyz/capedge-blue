@@ -5,16 +5,16 @@ import { Building2, Users, Target } from "lucide-react";
 // Large Realistic Phone SVG Illustration (partial view)
 function PhoneSVG() {
   return (
-    <div className="relative flex items-center justify-center overflow-hidden h-[600px] w-full">
-      <div className="relative w-[380px] h-[760px] transform translate-y-32 scale-110">
+    <div className="relative flex items-center justify-center overflow-hidden h-[700px] w-full">
+      <div className="relative w-[380px] h-[900px] transform translate-y-40 scale-110">
         {/* Phone Shadow */}
         <div className="absolute inset-0 bg-black/20 rounded-[4rem] blur-3xl translate-x-4 translate-y-8 scale-105"></div>
 
         {/* Phone Body - iPhone Style */}
-        <div className="relative w-full h-full bg-gradient-to-br from-gray-200 via-gray-100 to-gray-300 rounded-[4rem] p-2 shadow-2xl border border-gray-300/80">
+        <div className="relative w-full h-full bg-gradient-to-br from-gray-200 via-gray-100 to-gray-300 rounded-[5rem] p-2 shadow-2xl border border-gray-300/80">
 
           {/* Screen */}
-          <div className="w-full h-full bg-black rounded-[3.5rem] overflow-hidden relative shadow-inner border border-gray-800">
+          <div className="w-full h-full bg-black rounded-[4.5rem] overflow-hidden relative shadow-inner border border-gray-800">
 
             {/* Dynamic Island */}
             <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-28 h-7 bg-black rounded-full z-10"></div>
@@ -275,9 +275,9 @@ function PhoneSVG() {
 
 export function AboutSection() {
   return (
-    <section id="about" className="relative py-24 px-4 md:px-8 bg-white dark:bg-gray-900">
+    <section id="about" className="relative py-24 px-4 md:px-8 bg-white dark:bg-gray-900 overflow-visible">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div className="space-y-8">
             <div>
               <h2 className="text-sm font-semibold tracking-wider text-blue-600 uppercase mb-3">ABOUT US</h2>
