@@ -177,39 +177,39 @@ export function WhyUsSection() {
 				<AnimatedSection delay={0.4} className="mt-8">
 					<div className="bg-gradient-to-br from-blue-50/80 to-indigo-50/80 dark:from-gray-900/40 dark:to-gray-800/40 backdrop-blur-sm rounded-3xl p-8 shadow-sm dark:border dark:border-gray-800">
 						<div className="grid md:grid-cols-2 gap-8 items-start">
-							{/* Left side with Regional Impact content */}
+							{/* Left side with Technology Excellence content */}
 							<div className="space-y-4 pt-4 relative">
 								<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl dark:text-white">
-									Regional Impact
+									Technology Excellence
 								</h2>
 								<p className="text-gray-600 dark:text-gray-400">
-									Generate sustainable returns while making a significant impact
-									across the Caribbean region. Our investments have created over
-									1,200 jobs and deployed $50M+ in capital across 12 islands.
+									Drive digital transformation through strategic investments in enterprise
+									software and financial technology. Our portfolio companies have processed
+									$3B+ in transactions and serve 750K+ active users globally.
 								</p>
 								<div className="h-1 w-32 bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-500 rounded-full" />
 								<div className="flex gap-8 mt-6">
 									<div>
 										<Counter
-											target={50}
+											target={3}
 											duration={2000}
 											prefix="$"
-											suffix="M+"
+											suffix="B+"
 											className="text-3xl font-bold text-blue-600 dark:text-blue-400"
 										/>
 										<div className="text-sm text-gray-600 dark:text-gray-400">
-											Capital Deployed
+											Transactions Processed
 										</div>
 									</div>
 									<div>
 										<Counter
-											target={1200}
+											target={750}
 											duration={2000}
-											suffix="+"
+											suffix="K+"
 											className="text-3xl font-bold text-blue-600 dark:text-blue-400"
 										/>
 										<div className="text-sm text-gray-600 dark:text-gray-400">
-											Jobs Created
+											Active Users
 										</div>
 									</div>
 								</div>
