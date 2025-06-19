@@ -87,13 +87,48 @@ export function PlatformBusinessesSection() {
   const IconComponent = business.icon
 
   return (
-    <section className="min-h-[90vh] bg-white dark:bg-slate-900 flex items-center overflow-hidden py-16">
-      <div className="container mx-auto px-4 py-12">
+    <section
+      className="bg-white dark:bg-slate-900 flex items-center overflow-hidden"
+      style={{ height: 'calc(100vh - 4rem)', paddingTop: '4rem', paddingBottom: '4rem' }}
+    >
+      <div className="container mx-auto px-4">
         {/* Header Badge */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
             <Zap className="w-4 h-4 text-blue-600 dark:text-blue-400" />
             <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Platform Showcase</span>
+          </div>
+        </div>
+
+        {/* Top Navigation - Moved from bottom */}
+        <div className="mb-8 flex items-center justify-between">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={business.id}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <span className="text-slate-400 dark:text-slate-500 text-sm">{String(business.id).padStart(2, '0')}.</span>
+              <h3 className="text-slate-900 dark:text-white text-lg font-medium">{business.title}</h3>
+              <p className="text-slate-500 dark:text-slate-400 uppercase text-sm tracking-wider mt-1">{business.subtitle}</p>
+            </motion.div>
+          </AnimatePresence>
+
+          <div className="flex gap-2">
+            <button
+              onClick={previousBusiness}
+              className="h-10 w-10 rounded bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            >
+              <ArrowLeft className="h-4 w-4 text-slate-600 dark:text-slate-400" />
+            </button>
+            <button
+              onClick={nextBusiness}
+              className="h-10 w-10 rounded bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors"
+            >
+              <ArrowRight className="h-4 w-4 text-white" />
+            </button>
           </div>
         </div>
 
@@ -179,37 +214,7 @@ export function PlatformBusinessesSection() {
           </div>
         </div>
 
-        {/* Bottom Navigation */}
-        <div className="mt-12 flex items-center justify-between">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={business.id}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 20 }}
-              transition={{ duration: 0.5 }}
-            >
-              <span className="text-slate-400 dark:text-slate-500 text-sm">{String(business.id).padStart(2, '0')}.</span>
-              <h3 className="text-slate-900 dark:text-white text-lg font-medium">{business.title}</h3>
-              <p className="text-slate-500 dark:text-slate-400 uppercase text-sm tracking-wider mt-1">{business.subtitle}</p>
-            </motion.div>
-          </AnimatePresence>
 
-          <div className="flex gap-2">
-            <button
-              onClick={previousBusiness}
-              className="h-10 w-10 rounded bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
-            >
-              <ArrowLeft className="h-4 w-4 text-slate-600 dark:text-slate-400" />
-            </button>
-            <button
-              onClick={nextBusiness}
-              className="h-10 w-10 rounded bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors"
-            >
-              <ArrowRight className="h-4 w-4 text-white" />
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   )
