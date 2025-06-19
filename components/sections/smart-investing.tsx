@@ -2,58 +2,95 @@
 
 import { CheckCircle } from "lucide-react";
 
-// Smart Investing Video Component
-function SmartInvestingVideo() {
-  // TODO: Replace with your video URL
-  const videoUrl = "YOUR_VIDEO_URL_HERE";
-
+// Skewed Graph Mesh with Zigzag Line SVG
+function SkewedGraphSVG() {
   return (
     <div className="relative flex items-center justify-center overflow-hidden h-[600px] w-full">
-      <div className="relative w-full max-w-lg h-[400px] transform scale-95">
+      <div className="relative w-[500px] h-[400px] transform scale-95">
 
-        {/* Video Card Container */}
-        <div className="relative w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 dark:from-gray-950 dark:via-gray-900 dark:to-blue-950 rounded-3xl shadow-2xl border border-gray-700/50 dark:border-gray-600/50 overflow-hidden">
+        <svg
+          className="w-full h-full"
+          viewBox="0 0 500 400"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            {/* Arrow marker - smaller size, green to match zigzag line */}
+            <marker id="arrowhead" markerWidth="8" markerHeight="6"
+              refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#10b981" />
+            </marker>
+          </defs>
 
-          {/* Video Element */}
-          <video
-            className="w-full h-full object-cover rounded-3xl"
-            autoPlay
-            loop
-            muted
-            playsInline
-            controls
-          >
-            <source src={videoUrl} type="video/mp4" />
+          {/* Graph Mesh - No background, transparent */}
+          <g>
+            {/* Vertical grid lines - black */}
+            <g stroke="#000000" strokeWidth="3" opacity="0.6">
+              <line x1="100" y1="80" x2="100" y2="330" />
+              <line x1="150" y1="80" x2="150" y2="330" />
+              <line x1="200" y1="80" x2="200" y2="330" />
+              <line x1="250" y1="80" x2="250" y2="330" />
+              <line x1="300" y1="80" x2="300" y2="330" />
+              <line x1="350" y1="80" x2="350" y2="330" />
+            </g>
 
-            {/* Fallback content when no video URL is provided */}
-            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold mb-2">Smart Investing</h3>
-                <p className="text-blue-100">Add your video URL</p>
-              </div>
-            </div>
-          </video>
+            {/* Horizontal grid lines - black */}
+            <g stroke="#000000" strokeWidth="3" opacity="0.6">
+              <line x1="50" y1="120" x2="400" y2="120" />
+              <line x1="50" y1="160" x2="400" y2="160" />
+              <line x1="50" y1="200" x2="400" y2="200" />
+              <line x1="50" y1="240" x2="400" y2="240" />
+              <line x1="50" y1="280" x2="400" y2="280" />
+            </g>
+          </g>
 
-          {/* Corner Badge */}
-          <div className="absolute top-4 right-4 bg-blue-600/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium border border-white/20">
-            Smart Investing
-          </div>
-        </div>
+          {/* Simplified Zigzag Line with 5 corners */}
+          <g>
+            {/* Main zigzag path - solid green throughout */}
+            <path
+              d="M 60 300
+                 L 150 250
+                 L 220 280
+                 L 290 200
+                 L 360 230
+                 L 450 150"
+              stroke="#10b981"
+              strokeWidth="8"
+              fill="none"
+              markerEnd="url(#arrowhead)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
 
-        {/* Floating Elements Around Video */}
-        <div className="absolute -top-4 -right-4 w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-20 blur-xl animate-pulse"></div>
-        <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full opacity-15 blur-xl animate-pulse" style={{animationDelay: '1s'}}></div>
+            {/* Data points on the zigzag line - green */}
+            <g fill="#10b981">
+              <circle cx="150" cy="250" r="4" />
+              <circle cx="220" cy="280" r="4" />
+              <circle cx="290" cy="200" r="4" />
+              <circle cx="360" cy="230" r="4" />
+              <circle cx="450" cy="150" r="4" />
+            </g>
 
-        {/* Decorative Elements */}
-        <div className="absolute -top-2 left-8 w-4 h-4 bg-blue-500 rounded-full opacity-60 animate-bounce"></div>
-        <div className="absolute -bottom-2 right-12 w-3 h-3 bg-purple-500 rounded-full opacity-60 animate-bounce" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute top-1/2 -left-2 w-2 h-2 bg-green-500 rounded-full opacity-60 animate-ping"></div>
-        <div className="absolute top-1/3 -right-2 w-2 h-2 bg-yellow-500 rounded-full opacity-60 animate-ping" style={{animationDelay: '1.5s'}}></div>
+            {/* Glowing effect for the line - green */}
+            <path
+              d="M 60 300
+                 L 150 250
+                 L 220 280
+                 L 290 200
+                 L 360 230
+                 L 450 150"
+              stroke="#10b981"
+              strokeWidth="12"
+              fill="none"
+              opacity="0.3"
+              filter="blur(3px)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
+
+
+        </svg>
+
       </div>
     </div>
   );
@@ -68,9 +105,9 @@ export function SmartInvestingSection() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Smart Investing Video on the left side */}
+          {/* Skewed Graph on the left side */}
           <div className="relative flex items-center justify-center lg:justify-start order-2 lg:order-1">
-            <SmartInvestingVideo />
+            <SkewedGraphSVG />
           </div>
 
           {/* Content on the right side */}
