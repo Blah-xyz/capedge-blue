@@ -22,7 +22,7 @@ export function WhyUsSection() {
 						<div className="space-y-4">
 							<div className="relative">
 								<Counter
-									target={25}
+									target={17}
 									duration={2000}
 									suffix="+"
 									className="text-5xl font-bold text-blue-600 dark:text-blue-400"
@@ -61,7 +61,7 @@ export function WhyUsSection() {
 								Successful Investments
 							</div>
 							<p className="text-gray-600 dark:text-gray-400">
-								Proven track record in enterprise software investments
+								Proven track record in enterprise software and business investments
 							</p>
 						</div>
 					</AnimatedSection>
@@ -74,10 +74,10 @@ export function WhyUsSection() {
 						<div className="space-y-4">
 							<div className="relative">
 								<Counter
-									target={3}
+									target={137}
 									duration={2000}
-									prefix="$"
-									suffix="B+"
+									prefix=""
+									suffix="%"
 									className="text-5xl font-bold text-blue-600 dark:text-blue-400"
 								/>
 								<svg
@@ -183,35 +183,11 @@ export function WhyUsSection() {
 								</h2>
 								<p className="text-gray-600 dark:text-gray-400">
 									Drive digital transformation through strategic investments in enterprise
-									software and financial technology. Our portfolio companies have processed
-									$3B+ in transactions and serve 750K+ active users globally with a 99.9% success rate.
+									software and financial technology. Our portfolio companies have and continues to trend at a growth rate
+									and rate of return investment of 100%+ with a 99.9% success rate.
 								</p>
 								<div className="h-1 w-32 bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-500 rounded-full" />
-								<div className="flex gap-8 mt-6">
-									<div>
-										<Counter
-											target={3}
-											duration={2000}
-											prefix="$"
-											suffix="B+"
-											className="text-3xl font-bold text-blue-600 dark:text-blue-400"
-										/>
-										<div className="text-sm text-gray-600 dark:text-gray-400">
-											Transactions Processed
-										</div>
-									</div>
-									<div>
-										<Counter
-											target={750}
-											duration={2000}
-											suffix="K+"
-											className="text-3xl font-bold text-blue-600 dark:text-blue-400"
-										/>
-										<div className="text-sm text-gray-600 dark:text-gray-400">
-											Active Users
-										</div>
-									</div>
-								</div>
+
 
 								{/* Decorative Shapes */}
 								<div className="absolute -bottom-48 left-0 right-0 h-32 overflow-hidden">
@@ -339,278 +315,7 @@ export function WhyUsSection() {
 									</div>
 								</div>
 							</div>
-							{/* Right side with the graph */}
-							<div className="relative">
-								<div className="aspect-[4/3] rounded-2xl bg-white/80 dark:bg-gray-900/40 p-8 pb-12 shadow-lg dark:border dark:border-gray-800">
-									<div className="h-full flex flex-col">
-										<div className="flex items-center justify-between mb-4">
-											<div className="space-y-1">
-												<div className="text-sm font-medium dark:text-gray-400">
-													Portfolio Performance
-												</div>
-												<div className="flex items-center gap-4">
-													<Counter
-														target={93}
-														duration={2000}
-														suffix="%"
-														className="text-2xl font-bold text-blue-600 dark:text-blue-400"
-													/>
-													<div className="flex items-center gap-4 text-sm">
-														<div className="flex items-center gap-2">
-															<div className="w-3 h-3 rounded-full bg-cyan-400" />
-															<span className="text-gray-600 dark:text-gray-400">
-																Primary Markets
-															</span>
-														</div>
-														<div className="flex items-center gap-2">
-															<div className="w-3 h-3 rounded-full bg-blue-600" />
-															<span className="text-gray-600 dark:text-gray-400">
-																Secondary Markets
-															</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="text-sm text-gray-500 dark:text-gray-500">
-												Last 12 Months
-											</div>
-										</div>
-
-										<div className="flex-1 relative h-[calc(100%-2rem)]">
-											<svg
-												className="w-full h-full"
-												viewBox="0 0 300 180"
-												preserveAspectRatio="none"
-												role="img"
-												aria-label="Portfolio performance chart showing market trends over 12 months"
-											>
-												<defs>
-													<linearGradient
-														id="barGradient1"
-														x1="0"
-														y1="0"
-														x2="0"
-														y2="1"
-													>
-														<stop
-															offset="0%"
-															stopColor="#22D3EE"
-															stopOpacity="0.4"
-														/>
-														<stop
-															offset="100%"
-															stopColor="#22D3EE"
-															stopOpacity="0.05"
-														/>
-													</linearGradient>
-													<linearGradient
-														id="barGradient2"
-														x1="0"
-														y1="0"
-														x2="0"
-														y2="1"
-													>
-														<stop
-															offset="0%"
-															stopColor="#2563EB"
-															stopOpacity="0.4"
-														/>
-														<stop
-															offset="100%"
-															stopColor="#2563EB"
-															stopOpacity="0.05"
-														/>
-													</linearGradient>
-												</defs>
-
-												<g className="text-xs fill-gray-400">
-													<text
-														x="15"
-														y="35"
-														className="text-[8px] font-medium"
-													>
-														100%
-													</text>
-													<text
-														x="15"
-														y="75"
-														className="text-[8px] font-medium"
-													>
-														75%
-													</text>
-													<text
-														x="15"
-														y="115"
-														className="text-[8px] font-medium"
-													>
-														50%
-													</text>
-													<text
-														x="15"
-														y="155"
-														className="text-[8px] font-medium"
-													>
-														25%
-													</text>
-													<text
-														x="15"
-														y="175"
-														className="text-[8px] font-medium"
-													>
-														0%
-													</text>
-												</g>
-
-												<g className="text-gray-200 dark:text-gray-800">
-													<path
-														d="M40 30 L280 30"
-														strokeWidth="0.5"
-														stroke="currentColor"
-														strokeDasharray="2 2"
-													/>
-													<path
-														d="M40 70 L280 70"
-														strokeWidth="0.5"
-														stroke="currentColor"
-														strokeDasharray="2 2"
-													/>
-													<path
-														d="M40 110 L280 110"
-														strokeWidth="0.5"
-														stroke="currentColor"
-														strokeDasharray="2 2"
-													/>
-													<path
-														d="M40 150 L280 150"
-														strokeWidth="0.5"
-														stroke="currentColor"
-														strokeDasharray="2 2"
-													/>
-												</g>
-
-												<g>
-													<rect
-														x="45"
-														y="95"
-														width="10"
-														height="85"
-														fill="url(#barGradient1)"
-														rx="2"
-													/>
-													<rect
-														x="85"
-														y="85"
-														width="10"
-														height="95"
-														fill="url(#barGradient1)"
-														rx="2"
-													/>
-													<rect
-														x="125"
-														y="75"
-														width="10"
-														height="105"
-														fill="url(#barGradient1)"
-														rx="2"
-													/>
-													<rect
-														x="165"
-														y="65"
-														width="10"
-														height="115"
-														fill="url(#barGradient1)"
-														rx="2"
-													/>
-													<rect
-														x="205"
-														y="55"
-														width="10"
-														height="125"
-														fill="url(#barGradient1)"
-														rx="2"
-													/>
-													<rect
-														x="245"
-														y="45"
-														width="10"
-														height="135"
-														fill="url(#barGradient1)"
-														rx="2"
-													/>
-
-													<rect
-														x="57"
-														y="105"
-														width="10"
-														height="75"
-														fill="url(#barGradient2)"
-														rx="2"
-													/>
-													<rect
-														x="97"
-														y="95"
-														width="10"
-														height="85"
-														fill="url(#barGradient2)"
-														rx="2"
-													/>
-													<rect
-														x="137"
-														y="85"
-														width="10"
-														height="95"
-														fill="url(#barGradient2)"
-														rx="2"
-													/>
-													<rect
-														x="177"
-														y="75"
-														width="10"
-														height="105"
-														fill="url(#barGradient2)"
-														rx="2"
-													/>
-													<rect
-														x="217"
-														y="65"
-														width="10"
-														height="115"
-														fill="url(#barGradient2)"
-														rx="2"
-													/>
-													<rect
-														x="257"
-														y="55"
-														width="10"
-														height="125"
-														fill="url(#barGradient2)"
-														rx="2"
-													/>
-												</g>
-
-												<line
-													x1="40"
-													y1="180"
-													x2="280"
-													y2="180"
-													stroke="currentColor"
-													strokeWidth="1"
-													className="text-gray-300 dark:text-gray-700"
-												/>
-											</svg>
-
-											<div className="absolute bottom-[-20px] left-[40px] right-[20px] flex justify-between text-xs text-gray-400 dark:text-gray-500">
-												<span className="font-medium">Mar</span>
-												<span className="font-medium">May</span>
-												<span className="font-medium">Jul</span>
-												<span className="font-medium">Sep</span>
-												<span className="font-medium">Nov</span>
-												<span className="font-medium">Jan</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+					
 						</div>
 					</div>
 				</AnimatedSection>
