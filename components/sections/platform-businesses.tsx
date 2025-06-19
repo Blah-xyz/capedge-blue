@@ -167,14 +167,14 @@ export function PlatformBusinessesSection() {
               >
                 {/* Card with linear gradient background and partial image */}
                 <div className="relative rounded-2xl shadow-sm h-96" style={{
-                  background: 'linear-gradient(to bottom, white 0%, #f3f4f6 25%, #e5e7eb 50%, #e5e7eb 100%)'
+                  background: 'linear-gradient(to top, white 0%, #f3f4f6 25%, #e5e7eb 50%, #e5e7eb 100%)'
                 }}>
                   {/* Image cut and squeezed, extending past card borders */}
-                  <div className="absolute bottom-0 right-0 w-4/5 h-4/5 rounded-tl-xl overflow-hidden">
+                  <div className="absolute bottom-0 right-0 w-4/5 h-4/5 rounded-tl-xl overflow-hidden ">
                     <Image
                       src={business.imageUrl}
                       alt={business.title}
-                      className="w-[120%] h-[120%] object-cover relative opacity-90 rounded-tl-xl"
+                      className="w-[120%] h-[120%] object-cover relative border  rounded-tl-xl shadow-2xl"
                       style={{ objectPosition: 'center center' }}
                       width={600}
                       height={400}

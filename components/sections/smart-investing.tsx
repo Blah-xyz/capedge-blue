@@ -5,7 +5,7 @@ import { CheckCircle } from "lucide-react";
 // Overlapping Cards Component
 function OverlappingCards() {
   return (
-    <div className="relative flex items-center justify-center h-[400px] md:h-[500px] lg:h-[600px] w-full">
+    <div className="relative flex items-center justify-center h-[400px] md:h-[500px] lg:h-[600px] w-full mx-auto">
       <div className="relative w-[320px] md:w-[500px] lg:w-[650px] h-[300px] md:h-[400px] lg:h-[500px]">
 
         {/* Card 1 - Back card (Real Investment Image with Graph) */}
@@ -48,7 +48,7 @@ function OverlappingCards() {
               <div className="text-gray-300 text-xs space-y-1">
                 <div>john.smith@capedge.com</div>
                 <div>+1 (555) 123-4567</div>
-                <div>www.capedgegroup.com</div>
+                <div className="text-blue-300 hidden md:block lg:block">www.capedgegroup.com</div>
               </div>
             </div>
           </div>
