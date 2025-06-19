@@ -9,7 +9,7 @@ function OverlappingCards() {
       <div className="relative w-[650px] h-[500px]">
 
         {/* Card 1 - Back card */}
-        <div className="absolute top-0 left-0 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[-8deg] z-10">
+        <div className="absolute top-[60px] left-0 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[-8deg] z-10">
           <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 flex items-center justify-center">
             <div className="text-center p-8">
               <div className="w-20 h-20 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
@@ -23,7 +23,7 @@ function OverlappingCards() {
         </div>
 
         {/* Card 2 - Middle card */}
-        <div className="absolute top-16 left-20 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[2deg] z-20">
+        <div className="absolute top-[76px] left-20 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[2deg] z-20">
           <div className="w-full h-full bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 flex items-center justify-center">
             <div className="text-center p-8">
               <div className="w-20 h-20 bg-green-600 rounded-full mx-auto mb-6 flex items-center justify-center">
@@ -37,7 +37,7 @@ function OverlappingCards() {
         </div>
 
         {/* Card 3 - Front card */}
-        <div className="absolute top-32 left-40 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-xl overflow-hidden transform rotate-[8deg] z-30">
+        <div className="absolute top-[92px] left-40 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-xl overflow-hidden transform rotate-[8deg] z-30">
           <div className="w-full h-full bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800 flex items-center justify-center">
             <div className="text-center p-8">
               <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
