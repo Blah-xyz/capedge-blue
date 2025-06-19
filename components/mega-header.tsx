@@ -19,98 +19,98 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
 
-const products = [
+const investments = [
   {
-    title: "Analytics Dashboard",
-    href: "/products/analytics",
-    description: "Advanced analytics and reporting tools for your business.",
+    title: "Enterprise Software",
+    href: "#portfolio",
+    description: "Strategic investments in transformational enterprise software platforms.",
     featured: true,
   },
   {
-    title: "CRM Platform",
-    href: "/products/crm",
-    description: "Complete customer relationship management solution.",
-    featured: false,
-  },
-  {
-    title: "E-commerce Suite",
-    href: "/products/ecommerce",
-    description: "Full-featured online store and inventory management.",
+    title: "Financial Services",
+    href: "#portfolio",
+    description: "Technology-driven financial services and fintech solutions.",
     featured: true,
   },
   {
-    title: "Marketing Automation",
-    href: "/products/marketing",
-    description: "Streamline your marketing campaigns and workflows.",
+    title: "Platform Businesses",
+    href: "#platform-businesses",
+    description: "Scalable technology platforms with global market potential.",
     featured: false,
   },
   {
-    title: "Project Management",
-    href: "/products/projects",
-    description: "Collaborate and manage projects with your team.",
+    title: "Growth Capital",
+    href: "#investment-approach",
+    description: "Capital for expanding technology companies and market leaders.",
     featured: false,
   },
   {
-    title: "API Platform",
-    href: "/products/api",
-    description: "Robust APIs for developers and integrations.",
+    title: "Strategic Partnerships",
+    href: "#about",
+    description: "Long-term partnerships beyond capital with operational guidance.",
+    featured: false,
+  },
+  {
+    title: "Market Transformation",
+    href: "#why-us",
+    description: "Investments that reshape key markets through innovation.",
     featured: false,
   },
 ]
 
-const solutions = [
+const approach = [
   {
-    title: "For Startups",
-    href: "/solutions/startups",
-    description: "Scale your startup with our comprehensive toolkit.",
+    title: "Investment Philosophy",
+    href: "#investment-approach",
+    description: "Our three-step approach: Deepen, Understand, Invest.",
   },
   {
-    title: "For Enterprise",
-    href: "/solutions/enterprise",
-    description: "Enterprise-grade solutions for large organizations.",
+    title: "Due Diligence",
+    href: "#investment-approach",
+    description: "Thorough analysis with enterprise software market expertise.",
   },
   {
-    title: "For Developers",
-    href: "/solutions/developers",
-    description: "Developer-first tools and APIs.",
+    title: "Partnership Model",
+    href: "#about",
+    description: "Active involvement in strategic decision-making and guidance.",
   },
   {
-    title: "For E-commerce",
-    href: "/solutions/ecommerce",
-    description: "Complete e-commerce solutions and integrations.",
+    title: "Value Creation",
+    href: "#why-us",
+    description: "Building transformational technology platforms that scale globally.",
   },
 ]
 
-const resources = [
+const company = [
   {
-    title: "Documentation",
-    href: "/docs",
-    description: "Comprehensive guides and API references.",
+    title: "About CapEdge",
+    href: "#about",
+    description: "Learn about our mission to build the future of enterprise software.",
   },
   {
-    title: "Blog",
-    href: "/blog",
-    description: "Latest news, updates, and industry insights.",
+    title: "Portfolio",
+    href: "#portfolio",
+    description: "Explore our successful investments and platform businesses.",
   },
   {
-    title: "Case Studies",
-    href: "/case-studies",
-    description: "Success stories from our customers.",
+    title: "Platform Businesses",
+    href: "#platform-businesses",
+    description: "Next-generation enterprise solutions and business platforms.",
   },
   {
-    title: "Help Center",
-    href: "/help",
-    description: "Get support and find answers to common questions.",
+    title: "Why CapEdge",
+    href: "#why-us",
+    description: "Technology excellence and our track record of success.",
   },
   {
-    title: "Community",
-    href: "/community",
-    description: "Connect with other users and developers.",
+    title: "Investment Insights",
+    href: "#insights",
+    description: "Market analysis and perspectives from our investment team.",
   },
   {
-    title: "Webinars",
-    href: "/webinars",
-    description: "Join our live sessions and workshops.",
+    title: "Contact Us",
+    href: "#contact",
+    description: "Partner with us to scale your enterprise platform.",
   },
 ]
 
@@ -170,45 +170,45 @@ export function MegaHeader() {
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">A</span>
+              <span className="text-primary-foreground font-bold text-sm">C</span>
             </div>
-            <span className="hidden font-bold sm:inline-block">Acme Corp</span>
+            <span className="hidden font-bold sm:inline-block">CapEdge Group</span>
           </Link>
         </div>
 
         {/* Desktop Navigation */}
         <NavigationMenu className="hidden lg:flex">
           <NavigationMenuList>
-            {/* Products Mega Menu */}
+            {/* Investments Mega Menu */}
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Investments</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="grid gap-3 p-6 md:w-[500px] lg:w-[700px] lg:grid-cols-2">
                   <div className="space-y-3">
-                    <h4 className="text-sm font-medium leading-none mb-3">Featured Products</h4>
+                    <h4 className="text-sm font-medium leading-none mb-3">Focus Areas</h4>
                     <ul className="space-y-2">
-                      {products
-                        .filter((product) => product.featured)
-                        .map((product) => (
+                      {investments
+                        .filter((investment) => investment.featured)
+                        .map((investment) => (
                           <ListItem
-                            key={product.title}
-                            title={product.title}
-                            href={product.href}
-                            featured={product.featured}
+                            key={investment.title}
+                            title={investment.title}
+                            href={investment.href}
+                            featured={investment.featured}
                           >
-                            {product.description}
+                            {investment.description}
                           </ListItem>
                         ))}
                     </ul>
                   </div>
                   <div className="space-y-3">
-                    <h4 className="text-sm font-medium leading-none mb-3">All Products</h4>
+                    <h4 className="text-sm font-medium leading-none mb-3">Investment Strategy</h4>
                     <ul className="space-y-2">
-                      {products
-                        .filter((product) => !product.featured)
-                        .map((product) => (
-                          <ListItem key={product.title} title={product.title} href={product.href}>
-                            {product.description}
+                      {investments
+                        .filter((investment) => !investment.featured)
+                        .map((investment) => (
+                          <ListItem key={investment.title} title={investment.title} href={investment.href}>
+                            {investment.description}
                           </ListItem>
                         ))}
                     </ul>
@@ -217,28 +217,28 @@ export function MegaHeader() {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            {/* Solutions Menu */}
+            {/* Approach Menu */}
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Approach</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
-                  {solutions.map((solution) => (
-                    <ListItem key={solution.title} title={solution.title} href={solution.href}>
-                      {solution.description}
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-1">
+                  {approach.map((item) => (
+                    <ListItem key={item.title} title={item.title} href={item.href}>
+                      {item.description}
                     </ListItem>
                   ))}
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            {/* Resources Menu */}
+            {/* Company Menu */}
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Company</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-2">
-                  {resources.map((resource) => (
-                    <ListItem key={resource.title} title={resource.title} href={resource.href}>
-                      {resource.description}
+                  {company.map((item) => (
+                    <ListItem key={item.title} title={item.title} href={item.href}>
+                      {item.description}
                     </ListItem>
                   ))}
                 </ul>
@@ -247,9 +247,9 @@ export function MegaHeader() {
 
             {/* Simple Links */}
             <NavigationMenuItem>
-              <Link href="/pricing" legacyBehavior passHref>
+              <Link href="#portfolio" legacyBehavior passHref>
                 <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                  Pricing
+                  Portfolio
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -260,9 +260,9 @@ export function MegaHeader() {
         <div className="flex md:hidden">
           <Link href="/" className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">A</span>
+              <span className="text-primary-foreground font-bold text-sm">C</span>
             </div>
-            <span className="font-bold">Acme</span>
+            <span className="font-bold">CapEdge</span>
           </Link>
         </div>
 
@@ -284,63 +284,63 @@ export function MegaHeader() {
                 <div className="flex items-center justify-between pb-4 border-b">
                   <div className="flex items-center space-x-2">
                     <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                      <span className="text-primary-foreground font-bold text-sm">A</span>
+                      <span className="text-primary-foreground font-bold text-sm">C</span>
                     </div>
-                    <span className="font-bold">Acme Corp</span>
+                    <span className="font-bold">CapEdge Group</span>
                   </div>
                   <ThemeToggle />
                 </div>
 
-                {/* Mobile Products */}
+                {/* Mobile Investments */}
                 <div className="space-y-3">
-                  <h4 className="font-medium">Products</h4>
+                  <h4 className="font-medium">Investments</h4>
                   <div className="space-y-2 pl-4">
-                    {products.map((product) => (
+                    {investments.slice(0, 4).map((investment) => (
                       <Link
-                        key={product.title}
-                        href={product.href}
+                        key={investment.title}
+                        href={investment.href}
                         className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                       >
-                        {product.title}
+                        {investment.title}
                       </Link>
                     ))}
                   </div>
                 </div>
 
-                {/* Mobile Solutions */}
+                {/* Mobile Approach */}
                 <div className="space-y-3">
-                  <h4 className="font-medium">Solutions</h4>
+                  <h4 className="font-medium">Approach</h4>
                   <div className="space-y-2 pl-4">
-                    {solutions.map((solution) => (
+                    {approach.map((item) => (
                       <Link
-                        key={solution.title}
-                        href={solution.href}
+                        key={item.title}
+                        href={item.href}
                         className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                       >
-                        {solution.title}
+                        {item.title}
                       </Link>
                     ))}
                   </div>
                 </div>
 
-                {/* Mobile Resources */}
+                {/* Mobile Company */}
                 <div className="space-y-3">
-                  <h4 className="font-medium">Resources</h4>
+                  <h4 className="font-medium">Company</h4>
                   <div className="space-y-2 pl-4">
-                    {resources.map((resource) => (
+                    {company.slice(0, 4).map((item) => (
                       <Link
-                        key={resource.title}
-                        href={resource.href}
+                        key={item.title}
+                        href={item.href}
                         className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                       >
-                        {resource.title}
+                        {item.title}
                       </Link>
                     ))}
                   </div>
                 </div>
 
-                <Link href="/pricing" className="font-medium hover:text-primary transition-colors">
-                  Pricing
+                <Link href="#portfolio" className="font-medium hover:text-primary transition-colors">
+                  Portfolio
                 </Link>
               </nav>
             </SheetContent>
