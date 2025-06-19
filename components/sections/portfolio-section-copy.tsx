@@ -49,8 +49,7 @@ export function PortfolioSectionCopy() {
   return (
     <section
       id="portfolio"
-      className="relative overflow-hidden flex items-center min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)]"
-      style={{ paddingTop: '4rem', paddingBottom: '4rem' }}
+      className="relative overflow-hidden flex items-center min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)] py-8 md:py-16"
     >
       {/* Refined Background with Subtle Blue Accents */}
       <div className="absolute inset-0 bg-white dark:bg-slate-950" />
@@ -61,7 +60,7 @@ export function PortfolioSectionCopy() {
       <div className="container relative max-w-7xl mx-auto px-4">
 
         {/* Our Impact Badge */}
-        <AnimatedSection className="text-center mb-16">
+        <AnimatedSection className="text-center mb-8 md:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
             <TrendingUp className="w-4 h-4 text-green-600 dark:text-green-400" />
             <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Our Impact</span>
@@ -69,7 +68,7 @@ export function PortfolioSectionCopy() {
         </AnimatedSection>
 
         {/* Hero-Style Layout - Graph Left, Headline Right */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-32">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Side - Portfolio Performance Chart with Screen Overflow Effect */}
           <AnimatedSection className="relative">
             <div className="relative w-full max-w-2xl mx-auto h-[500px] overflow-visible">
