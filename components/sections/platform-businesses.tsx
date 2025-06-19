@@ -140,7 +140,7 @@ export function PlatformBusinessesSection() {
                 className="space-y-6"
               >
                 <div>
-                  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
+                  <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold  mb-6 tracking-tight leading-tight">
                     <span className="text-slate-900 dark:text-white">{business.heading}</span>
                     <br />
                     <span className="text-blue-600 dark:text-blue-400">{business.subheading}</span>

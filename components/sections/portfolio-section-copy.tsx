@@ -59,7 +59,7 @@ export function PortfolioSectionCopy() {
 
       <div className="container relative max-w-7xl mx-auto px-4">
 
-      
+
 
         {/* Hero-Style Layout - Graph Left, Headline Right */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -186,7 +186,7 @@ export function PortfolioSectionCopy() {
             <div className="space-y-8">
               {/* Main Headline */}
               <div>
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight mb-6 leading-tight">
                   <span className="text-slate-900 dark:text-white">Our </span>
                   <span className="text-blue-600 dark:text-blue-400">Portfolio</span>
                   <br />
