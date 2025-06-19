@@ -157,9 +157,10 @@ export function PlatformBusinessesSection() {
                   {/* Image that appears cut off on the right */}
                   <div className="relative h-64 overflow-hidden">
                     <img
-                      src={`https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center`}
+                      src={`https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=left`}
                       alt={business.title}
-                      className="w-[120%] h-full object-cover object-left"
+                      className="w-[140%] h-full object-cover -ml-4"
+                      style={{ objectPosition: 'left center' }}
                     />
                   </div>
 
