@@ -4,6 +4,7 @@
 import { ArrowLeft, ArrowRight, Building2, TrendingUp, Users, Zap } from 'lucide-react'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 // Define the platform business type
 type PlatformBusiness = {
@@ -166,11 +167,13 @@ export function PlatformBusinessesSection() {
                 }}>
                   {/* Image cut and squeezed, extending past card borders */}
                   <div className="absolute bottom-0 right-0 w-4/5 h-4/5 rounded-tl-xl overflow-hidden">
-                    <img
+                    <Image
                       src={`https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center`}
                       alt={business.title}
                       className="w-[120%] h-[120%] object-cover relative opacity-90 rounded-tl-xl"
                       style={{ objectPosition: 'center center' }}
+                      width={600}
+                      height={400}
                     />
                     {/* Subtle overlay for better integration */}
                     <div className="absolute inset-0 bg-gray-900/5 rounded-tl-xl"></div>
