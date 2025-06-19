@@ -76,50 +76,7 @@ export function HeroSection() {
                 </button>
               </div>
 
-              {/* Statistics Showcase - Moved to left column */}
-              <div className="pt-8">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-                  {/* Successful Investments */}
-                  <div className="text-left">
-                    <Counter
-                      target={25}
-                      duration={2000}
-                      suffix="+"
-                      className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
-                    />
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
-                      Successful Investments
-                    </div>
-                  </div>
-
-                  {/* Success Rate */}
-                  <div className="text-left">
-                    <Counter
-                      target={99.9}
-                      duration={2000}
-                      suffix="%"
-                      className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
-                    />
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
-                      Success Rate
-                    </div>
-                  </div>
-
-                  {/* Transactions Processed */}
-                  <div className="text-left">
-                    <Counter
-                      target={3}
-                      duration={2000}
-                      prefix="$"
-                      suffix="B+"
-                      className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
-                    />
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
-                      Transactions Processed
-                    </div>
-                  </div>
-                </div>
-              </div>
+           
             </div>
           </AnimatedSection>
 
