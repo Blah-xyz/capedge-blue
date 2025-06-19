@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/sections/hero-section"
 import { AboutSection } from "@/components/sections/about-section"
 import { WhyUsSection } from "@/components/sections/investments-section"
 import { SmartInvestingSection } from "@/components/sections/smart-investing"
+import { PlatformBusinessesSection } from "@/components/sections/platform-businesses"
 
 
 import { CTASection } from "@/components/sections/cta-section"
@@ -31,6 +32,7 @@ export default function LandingPage() {
         <InvestmentApproachSection />
 
         <PortfolioSectionCopy />
+        <PlatformBusinessesSection />
         <WhyUsSection />
 
 
