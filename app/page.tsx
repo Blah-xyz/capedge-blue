@@ -9,6 +9,8 @@ import { PlatformBusinessesSection } from "@/components/sections/platform-busine
 
 import { CTASection } from "@/components/sections/cta-section"
 import { FooterSection } from "@/components/sections/footer-section"
+import { MegaHeader } from "@/components/mega-header"
+
 // Copilot chat commented out
 // import { useCopilotReadable } from '@copilotkit/react-core'
 // import { data } from "@/components/data"
@@ -23,7 +25,8 @@ export default function LandingPage() {
   // });
   return (
     <div className="flex min-h-screen flex-col relative">
-      <Header />
+      <MegaHeader />
+      {/* <Header /> */}
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
