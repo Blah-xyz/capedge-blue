@@ -49,22 +49,20 @@ export function HeroSection() {
       <div className="absolute inset-0 -top-4 bg-gradient-to-br from-blue-100 via-blue-50 to-blue-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
 
       <div className="container relative mx-auto px-4 max-w-7xl">
-        {/* Centered Content Layout */}
-        <div className="max-w-4xl mx-auto text-center space-y-16">
+        {/* Two-Column Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[600px]">
 
-          {/* Header Content */}
+          {/* Left Column - Header Content */}
           <AnimatedSection>
-            <div className="space-y-8">
+            <div className="space-y-8 text-left">
 
               {/* Main Headline */}
-              <h1 className="font-bold text-5xl lg:text-6xl xl:text-7xl sm:text-5xl  leading-tight text-gray-900 dark:text-white max-w-3xl mx-auto">
+              <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight text-gray-900 dark:text-white">
                 <span className="text-blue-600 dark:text-blue-400">Investing</span> in the Future
-                <br />
-
               </h1>
 
               {/* Subtitle */}
-              <p className="text-gray-600 dark:text-gray-400 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-400 text-lg sm:text-xl leading-relaxed max-w-xl">
                 CapEdge Group, Inc. is a private investment firm focused on strategic investments in enterprise software and financial services. We partner with management teams to build transformational solutions.
               </p>
 
@@ -77,10 +75,55 @@ export function HeroSection() {
                   Partner with us
                 </button>
               </div>
+
+              {/* Statistics Showcase - Moved to left column */}
+              <div className="pt-8">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                  {/* Successful Investments */}
+                  <div className="text-left">
+                    <Counter
+                      target={25}
+                      duration={2000}
+                      suffix="+"
+                      className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
+                    />
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                      Successful Investments
+                    </div>
+                  </div>
+
+                  {/* Success Rate */}
+                  <div className="text-left">
+                    <Counter
+                      target={99.9}
+                      duration={2000}
+                      suffix="%"
+                      className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
+                    />
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                      Success Rate
+                    </div>
+                  </div>
+
+                  {/* Transactions Processed */}
+                  <div className="text-left">
+                    <Counter
+                      target={3}
+                      duration={2000}
+                      prefix="$"
+                      suffix="B+"
+                      className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
+                    />
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                      Transactions Processed
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </AnimatedSection>
 
-          {/* Main Illustration - Photorealistic Style */}
+          {/* Right Column - Main Illustration */}
           <AnimatedSection delay={0.3}>
             <div className="relative w-full max-w-6xl mx-auto h-[300px] sm:h-[400px] lg:h-[500px] overflow-visible">
 
@@ -425,52 +468,6 @@ export function HeroSection() {
             </div>
           </AnimatedSection>
 
-          {/* Statistics Showcase */}
-          <AnimatedSection delay={0.5}>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-3xl mx-auto">
-
-              {/* Successful Investments */}
-              <div className="text-center">
-                <Counter
-                  target={25}
-                  duration={2000}
-                  suffix="+"
-                  className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
-                />
-                <div className="text-sm text-gray-600 dark:text-gray-400">
-                  Successful Investments
-                </div>
-              </div>
-
-              {/* Success Rate */}
-              <div className="text-center">
-                <Counter
-                  target={99.9}
-                  duration={2000}
-                  suffix="%"
-                  className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
-                />
-                <div className="text-sm text-gray-600 dark:text-gray-400">
-                  Success Rate
-                </div>
-              </div>
-
-              {/* Transactions Processed */}
-              <div className="text-center">
-                <Counter
-                  target={3}
-                  duration={2000}
-                  prefix="$"
-                  suffix="B+"
-                  className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2"
-                />
-                <div className="text-sm text-gray-600 dark:text-gray-400">
-                  Transactions Processed
-                </div>
-              </div>
-
-            </div>
-          </AnimatedSection>
         </div>
       </div>
     </section>
