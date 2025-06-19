@@ -333,8 +333,6 @@ export function AboutSection() {
         </div>
       </div>
 
-      {/* Light blue background separator */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-blue-50 dark:bg-blue-900/20"></div>
     </section>
   );
 }

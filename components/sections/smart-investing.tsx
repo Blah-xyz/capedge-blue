@@ -285,7 +285,7 @@ export function SmartInvestingSection() {
   return (
     <section
       id="smart-investing"
-      className="relative px-4 md:px-8 bg-gradient-to-br from-gray-50 via-blue-50/30 to-gray-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 overflow-visible flex items-center"
+      className="relative px-4 md:px-8 bg-blue-50 dark:bg-gray-800 overflow-visible flex items-center"
       style={{ height: 'calc(100vh - 4rem)', paddingTop: '6rem', paddingBottom: '6rem' }}
     >
       <div className="max-w-7xl mx-auto">
