@@ -63,7 +63,7 @@ export function HeroSection() {
 
               {/* Subtitle */}
               <p className="text-gray-600 dark:text-gray-400 text-lg sm:text-xl leading-relaxed max-w-xl">
-                CapEdge Group, Inc. is a private investment firm focused on strategic investments in enterprise software and financial services. We partner with management teams to build transformational solutions.
+                CapEdge Group, Inc. is a private investment firm focused on strategic investments in enterprise software and Businesses. We partner with management teams to build transformational solutions.
               </p>
 
               {/* CTA Button */}
@@ -76,7 +76,7 @@ export function HeroSection() {
                 </button>
               </div>
 
-           
+
             </div>
           </AnimatedSection>
 
