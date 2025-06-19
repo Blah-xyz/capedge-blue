@@ -285,7 +285,7 @@ export function SmartInvestingSection() {
   return (
     <section
       id="smart-investing"
-      className="relative px-4 md:px-8 bg-white dark:bg-gray-900 overflow-visible flex items-center"
+      className="relative px-4 md:px-8 bg-gradient-to-br from-gray-50 via-blue-50/30 to-gray-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 overflow-visible flex items-center"
       style={{ height: 'calc(100vh - 4rem)', paddingTop: '6rem', paddingBottom: '6rem' }}
     >
       <div className="max-w-7xl mx-auto">
@@ -297,12 +297,6 @@ export function SmartInvestingSection() {
 
           {/* Content on the right side */}
           <div className="space-y-6 lg:pl-6 order-1 lg:order-2">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-50 rounded-full border border-blue-200 shadow-sm">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span className="text-sm font-semibold text-blue-700 uppercase tracking-wide">About CapEdge</span>
-            </div>
-
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-[1.1] text-black dark:text-white">
                 Unlocking Financial

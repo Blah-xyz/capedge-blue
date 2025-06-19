@@ -291,44 +291,38 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6 lg:pr-6">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-50 rounded-full border border-blue-200 shadow-sm">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span className="text-sm font-semibold text-blue-700 uppercase tracking-wide">About CapEdge</span>
-            </div>
-
             <div className="space-y-4">
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-[1.1] text-gray-900">
+              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-[1.1] text-gray-900 dark:text-white">
                 Building the Future
                 <br />
                 <span className="text-blue-600">of Enterprise Software.</span>
               </h2>
 
-              <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed font-light max-w-2xl">
+              <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed font-light max-w-2xl">
                 We partner with visionary teams to build transformational technology platforms.
               </p>
             </div>
 
             <div className="space-y-3">
-              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 p-2 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center">
+              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 dark:hover:bg-blue-900/20 p-2 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
                   <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
                 </div>
-                <h4 className="text-lg font-bold text-gray-900">Enterprise Software Focus</h4>
+                <h4 className="text-lg font-bold text-gray-900 dark:text-white">Enterprise Software Focus</h4>
               </div>
 
-              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 p-2 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center">
+              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 dark:hover:bg-blue-900/20 p-2 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
                   <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
                 </div>
-                <h4 className="text-lg font-bold text-gray-900">Strategic Partnerships</h4>
+                <h4 className="text-lg font-bold text-gray-900 dark:text-white">Strategic Partnerships</h4>
               </div>
 
-              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 p-2 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center">
+              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 dark:hover:bg-blue-900/20 p-2 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
                   <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
                 </div>
-                <h4 className="text-lg font-bold text-gray-900">Market Transformation</h4>
+                <h4 className="text-lg font-bold text-gray-900 dark:text-white">Market Transformation</h4>
               </div>
             </div>
           </div>
@@ -338,6 +332,9 @@ export function AboutSection() {
           </div>
         </div>
       </div>
+
+      {/* Light blue background separator */}
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-blue-50 dark:bg-blue-900/20"></div>
     </section>
   );
 }
