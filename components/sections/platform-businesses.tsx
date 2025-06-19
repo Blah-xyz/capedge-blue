@@ -88,13 +88,7 @@ export function PlatformBusinessesSection() {
       className="bg-white dark:bg-slate-900 flex items-center overflow-hidden min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)] py-8 md:py-16"
     >
       <div className="container mx-auto px-4 max-w-7xl">
-        {/* Header Badge */}
-        <div className="text-center mb-4 md:mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
-            <Zap className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-            <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Platform Showcase</span>
-          </div>
-        </div>
+      
 
         {/* Top Navigation - Moved from bottom */}
         <div className="mb-4 md:mb-8 flex items-center justify-between">

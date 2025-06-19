@@ -59,13 +59,7 @@ export function PortfolioSectionCopy() {
 
       <div className="container relative max-w-7xl mx-auto px-4">
 
-        {/* Our Impact Badge */}
-        <AnimatedSection className="text-center mb-8 md:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
-            <TrendingUp className="w-4 h-4 text-green-600 dark:text-green-400" />
-            <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Our Impact</span>
-          </div>
-        </AnimatedSection>
+      
 
         {/* Hero-Style Layout - Graph Left, Headline Right */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
