@@ -8,85 +8,8 @@ function OverlappingCards() {
     <div className="relative flex items-center justify-center h-[600px] w-full">
       <div className="relative w-[650px] h-[500px]">
 
-        {/* Card 1 - Back card (Real Dollar Bills) */}
+        {/* Card 1 - Back card (Real Investment Image with Graph) */}
         <div className="absolute top-[60px] left-0 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[-8deg] z-10">
-          <div className="w-full h-full relative">
-            {/* Real Dollar Bills Pattern */}
-            <div className="absolute inset-0">
-              <div className="grid grid-cols-2 gap-1 p-2 h-full">
-                {[...Array(4)].map((_, i) => (
-                  <div key={i} className="relative bg-green-100 border border-green-300 rounded-sm overflow-hidden">
-                    {/* Dollar Bill Design */}
-                    <div className="w-full h-full bg-gradient-to-r from-green-100 to-green-50 p-2 text-xs">
-                      <div className="border border-green-400 h-full rounded-sm relative">
-                        <div className="absolute top-1 left-1 text-green-800 font-bold">$100</div>
-                        <div className="absolute top-1 right-1 text-green-800 font-bold">$100</div>
-                        <div className="absolute bottom-1 left-1 text-green-800 font-bold">$100</div>
-                        <div className="absolute bottom-1 right-1 text-green-800 font-bold">$100</div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="w-8 h-8 bg-green-200 rounded-full border border-green-400 flex items-center justify-center">
-                            <span className="text-green-800 font-bold text-xs">$</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="text-center p-8 relative z-10">
-                <div className="w-16 h-16 bg-green-600/90 backdrop-blur-sm rounded-full mx-auto mb-3 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-white drop-shadow-lg">Cash Flow</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Card 2 - Middle card (Real Dollar Coins) */}
-        <div className="absolute top-[76px] left-20 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[2deg] z-20">
-          <div className="w-full h-full relative">
-            {/* Real Dollar Coins Pattern */}
-            <div className="absolute inset-0">
-              <div className="flex flex-wrap gap-2 p-4 justify-center items-center h-full">
-                {[...Array(15)].map((_, i) => (
-                  <div key={i} className="relative">
-                    {/* Realistic Dollar Coin */}
-                    <div className="w-12 h-12 bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-500 rounded-full border-2 border-yellow-600 shadow-md relative overflow-hidden">
-                      {/* Coin Edge */}
-                      <div className="absolute inset-1 border border-yellow-600 rounded-full">
-                        {/* Coin Face */}
-                        <div className="w-full h-full flex flex-col items-center justify-center text-yellow-800">
-                          <div className="text-xs font-bold leading-none">$1</div>
-                          <div className="text-[6px] font-semibold">USA</div>
-                        </div>
-                      </div>
-                      {/* Coin Shine Effect */}
-                      <div className="absolute top-1 left-1 w-2 h-2 bg-yellow-200 rounded-full opacity-60"></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="text-center p-8 relative z-10">
-                <div className="w-16 h-16 bg-yellow-600/90 backdrop-blur-sm rounded-full mx-auto mb-3 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold text-white drop-shadow-lg">Returns</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Card 3 - Front card (Real Investment Image) */}
-        <div className="absolute top-[92px] left-40 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-xl overflow-hidden transform rotate-[8deg] z-30">
           <div className="w-full h-full relative">
             {/* Real Investment Image */}
             <img
@@ -94,16 +17,85 @@ function OverlappingCards() {
               alt="Investment and Financial Growth"
               className="w-full h-full object-cover"
             />
+          </div>
+        </div>
 
-            {/* Overlay with content */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end">
-              <div className="text-center p-6 w-full">
-                <div className="w-16 h-16 bg-blue-600/90 backdrop-blur-sm rounded-full mx-auto mb-3 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        {/* Card 2 - Middle card (Business Card) */}
+        <div className="absolute top-[76px] left-20 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[2deg] z-20">
+          <div className="w-full h-full relative">
+            {/* Business Card Design */}
+            <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 p-8 flex flex-col justify-between">
+              {/* Top Section - Logo/Company */}
+              <div className="flex justify-between items-start">
+                <div>
+                  <div className="text-blue-400 text-2xl font-bold">CapEdge</div>
+                  <div className="text-blue-300 text-sm">GROUP</div>
+                </div>
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-white drop-shadow-lg">Smart Investing</h3>
+              </div>
+
+              {/* Middle Section - Name & Title */}
+              <div className="text-white">
+                <div className="text-xl font-bold">John Smith</div>
+                <div className="text-blue-300 text-sm">Investment Manager</div>
+              </div>
+
+              {/* Bottom Section - Contact */}
+              <div className="text-gray-300 text-xs space-y-1">
+                <div>john.smith@capedge.com</div>
+                <div>+1 (555) 123-4567</div>
+                <div>www.capedgegroup.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Card 3 - Front card (Credit Card) */}
+        <div className="absolute top-[92px] left-40 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-xl overflow-hidden transform rotate-[8deg] z-30">
+          <div className="w-full h-full relative">
+            {/* Credit Card Design */}
+            <div className="w-full h-full bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 p-6 flex flex-col justify-between relative overflow-hidden">
+              {/* Background Pattern */}
+              <div className="absolute inset-0 opacity-10">
+                <div className="absolute top-4 right-4 w-32 h-32 border-2 border-white rounded-full"></div>
+                <div className="absolute bottom-4 left-4 w-24 h-24 border border-white rounded-full"></div>
+              </div>
+
+              {/* Top Section - Bank/Card Type */}
+              <div className="flex justify-between items-start relative z-10">
+                <div className="text-white">
+                  <div className="text-lg font-bold">CapEdge</div>
+                  <div className="text-blue-200 text-xs">PREMIUM</div>
+                </div>
+                <div className="text-white text-right">
+                  <div className="text-xs">VISA</div>
+                </div>
+              </div>
+
+              {/* Middle Section - Chip & Number */}
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-8 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-md border border-yellow-600"></div>
+                </div>
+                <div className="text-white text-lg font-mono tracking-wider">
+                  4532 •••• •••• 8901
+                </div>
+              </div>
+
+              {/* Bottom Section - Name & Expiry */}
+              <div className="flex justify-between items-end text-white relative z-10">
+                <div>
+                  <div className="text-xs text-blue-200">CARDHOLDER</div>
+                  <div className="text-sm font-semibold">JOHN SMITH</div>
+                </div>
+                <div className="text-right">
+                  <div className="text-xs text-blue-200">EXPIRES</div>
+                  <div className="text-sm font-semibold">12/28</div>
+                </div>
               </div>
             </div>
           </div>
