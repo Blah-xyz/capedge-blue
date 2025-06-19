@@ -4,7 +4,11 @@ import { CheckCircle } from "lucide-react"
 
 export function WhyUsSection() {
 	return (
-		<section id="why-us" className="relative pt-16 pb-32 bg-gradient-to-br from-slate-50 via-rose-50/20 to-white dark:from-slate-950 dark:via-rose-950/5 dark:to-slate-900 overflow-hidden">
+		<section
+			id="why-us"
+			className="relative bg-gradient-to-br from-slate-50 via-rose-50/20 to-white dark:from-slate-950 dark:via-rose-950/5 dark:to-slate-900 overflow-hidden flex items-center"
+			style={{ height: 'calc(100vh - 4rem)', paddingTop: '4rem', paddingBottom: '4rem' }}
+		>
 			{/* Background Elements */}
 			<div className="absolute inset-0">
 				<div className="absolute top-20 left-10 w-72 h-72 bg-rose-100/15 dark:bg-rose-900/8 rounded-full blur-3xl"></div>
