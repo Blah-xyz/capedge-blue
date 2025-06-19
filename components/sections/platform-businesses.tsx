@@ -88,7 +88,7 @@ export function PlatformBusinessesSection() {
       className="bg-white dark:bg-slate-900 flex items-center overflow-hidden"
       style={{ height: 'calc(100vh - 4rem)', paddingTop: '4rem', paddingBottom: '4rem' }}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-7xl">
         {/* Header Badge */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
@@ -168,7 +168,7 @@ export function PlatformBusinessesSection() {
                 className="relative max-w-md mx-auto w-full"
               >
                 {/* Card with linear gradient background and partial image */}
-                <div className="relative rounded-2xl shadow-lg h-96 bg-gradient-to-b from-white via-gray-100 to-orange-400 dark:from-slate-800 dark:via-slate-700 dark:to-orange-500">
+                <div className="relative rounded-2xl shadow-lg h-96 bg-gradient-to-b from-white via-gray-100 to-orange-400">
                   {/* Image cut and squeezed, extending past card borders */}
                   <div className="absolute bottom-0 right-0 w-4/5 h-4/5 rounded-tl-xl overflow-hidden">
                     <img
