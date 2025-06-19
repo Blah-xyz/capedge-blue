@@ -80,7 +80,7 @@ function PhoneSVG() {
                       <p className="text-xs text-slate-500">Last 12 months</p>
                     </div>
                     <div className="text-right">
-                      <div className="text-lg font-bold text-green-600">+32.4%</div>
+                      <div className="text-lg font-bold text-green-600">+110%</div>
                       <div className="text-xs text-slate-500">Total Return</div>
                     </div>
                   </div>
@@ -103,11 +103,11 @@ function PhoneSVG() {
 
                   <div className="grid grid-cols-3 gap-2 text-center">
                     <div>
-                      <div className="text-sm font-semibold text-slate-800">$125M</div>
-                      <div className="text-xs text-slate-500">AUM</div>
+                      <div className="text-sm font-semibold text-slate-800">137%</div>
+                      <div className="text-xs text-slate-500">ROI</div>
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-blue-600">25+</div>
+                      <div className="text-sm font-semibold text-blue-600">17+</div>
                       <div className="text-xs text-slate-500">Investments</div>
                     </div>
                     <div>
