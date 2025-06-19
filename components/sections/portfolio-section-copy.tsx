@@ -224,26 +224,7 @@ export function PortfolioSectionCopy() {
           </AnimatedSection>
         </div>
 
-        {/* Stats and CTA Section - Below Graph and Headline */}
-        <AnimatedSection delay={0.4} className="text-center mb-32">
-          {/* Portfolio Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">25+</div>
-              <div className="text-lg text-slate-600 dark:text-slate-400">Successful Investments</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">99.9%</div>
-              <div className="text-lg text-slate-600 dark:text-slate-400">Success Rate</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">$3B+</div>
-              <div className="text-lg text-slate-600 dark:text-slate-400">Transactions Processed</div>
-            </div>
-          </div>
-
-
-        </AnimatedSection>
+       
 
         {/* Platform Businesses Section */}
         <div className="relative bg-slate-50 dark:bg-slate-900/50 py-16 -mx-4 px-4">
