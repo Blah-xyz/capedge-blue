@@ -85,10 +85,10 @@ export function PlatformBusinessesSection() {
 
   return (
     <section
-      className="bg-white dark:bg-slate-900 flex items-center overflow-hidden min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)] py-8 md:py-16"
+      className="bg-blue-50 dark:bg-slate-900 flex items-center overflow-hidden min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)] py-8 md:py-16"
     >
       <div className="container mx-auto px-4 max-w-7xl">
-      
+
 
         {/* Top Navigation - Moved from bottom */}
         <div className="mb-4 md:mb-8 flex items-center justify-between">
@@ -100,8 +100,8 @@ export function PlatformBusinessesSection() {
               exit={{ opacity: 0, x: 20 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="text-slate-400 dark:text-slate-500 text-sm">{String(business.id).padStart(2, '0')}.</span>
-              <h3 className="text-slate-900 dark:text-white text-lg font-medium">{business.title}</h3>
+              <span className="text-slate-400 dark:text-slate-500 text-md">{String(business.id).padStart(2, '0')}.</span>
+              <h2 className="text-slate-900 dark:text-white text-lg font-medium">{business.title}</h2>
               <p className="text-slate-500 dark:text-slate-400 uppercase text-sm tracking-wider mt-1">{business.subtitle}</p>
             </motion.div>
           </AnimatePresence>
@@ -150,7 +150,7 @@ export function PlatformBusinessesSection() {
           </div>
 
           {/* Right Content - Gradient Card with Partial Image */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center h-full">
+          <div className="w-full md:w-1/2 flex flex-col justify-center h-full rounded-full">
             <AnimatePresence mode="wait">
               <motion.div
                 key={business.id}
@@ -161,7 +161,7 @@ export function PlatformBusinessesSection() {
                 className="relative max-w-md mx-auto w-full"
               >
                 {/* Card with linear gradient background and partial image */}
-                <div className="relative rounded-2xl shadow-lg h-96 bg-gradient-to-b from-white via-gray-100 to-orange-400">
+                <div className="relative rounded-2xl shadow-sm h-96 bg-gradient-to-b from-white via-gray-100  to-orange-100">
                   {/* Image cut and squeezed, extending past card borders */}
                   <div className="absolute bottom-0 right-0 w-4/5 h-4/5 rounded-tl-xl overflow-hidden">
                     <img
