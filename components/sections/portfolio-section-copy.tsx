@@ -47,7 +47,11 @@ const chartConfig = {
 export function PortfolioSectionCopy() {
   const { setIsOpen } = useContactDialog();
   return (
-    <section id="portfolio" className="pb-32 pt-16 relative overflow-hidden">
+    <section
+      id="portfolio"
+      className="relative overflow-hidden flex items-center"
+      style={{ height: 'calc(100vh - 4rem)', paddingTop: '4rem', paddingBottom: '4rem' }}
+    >
       {/* Refined Background with Subtle Blue Accents */}
       <div className="absolute inset-0 bg-white dark:bg-slate-950" />
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/4 rounded-full blur-3xl" />
