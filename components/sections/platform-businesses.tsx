@@ -169,24 +169,23 @@ export function PlatformBusinessesSection() {
                 className="relative max-w-md mx-auto w-full"
               >
                 {/* Card with linear gradient background and partial image */}
-                <div className="relative rounded-2xl shadow-lg overflow-hidden h-96 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-700 dark:via-blue-800 dark:to-blue-900">
-                  {/* Partial image inside the card */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative w-4/5 h-4/5 rounded-xl overflow-hidden">
-                      <img
-                        src={`https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center`}
-                        alt={business.title}
-                        className="w-full h-full object-cover opacity-90"
-                      />
-                      {/* Subtle overlay for better integration */}
-                      <div className="absolute inset-0 bg-blue-900/20"></div>
-                    </div>
+                <div className="relative rounded-2xl shadow-lg overflow-hidden h-96 bg-gradient-to-b from-gray-200 via-gray-400 to-orange-500 dark:from-gray-700 dark:via-gray-600 dark:to-orange-600">
+                  {/* Image cut and squeezed to bottom right */}
+                  <div className="absolute bottom-0 right-0 w-3/5 h-3/5 overflow-hidden rounded-tl-2xl">
+                    <img
+                      src={`https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center`}
+                      alt={business.title}
+                      className="w-[150%] h-[150%] object-cover -bottom-4 -right-4 relative opacity-90"
+                      style={{ objectPosition: 'center center' }}
+                    />
+                    {/* Subtle overlay for better integration */}
+                    <div className="absolute inset-0 bg-orange-900/10"></div>
                   </div>
 
                   {/* Icon overlay */}
                   <div className="absolute top-6 left-6">
                     <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                      <IconComponent className="w-6 h-6 text-white" />
+                      <IconComponent className="w-6 h-6 text-gray-700 dark:text-white" />
                     </div>
                   </div>
                 </div>
