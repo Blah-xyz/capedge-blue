@@ -5,11 +5,11 @@ import { CheckCircle } from "lucide-react";
 // Overlapping Cards Component
 function OverlappingCards() {
   return (
-    <div className="relative flex items-center justify-center h-[600px] w-full">
-      <div className="relative w-[650px] h-[500px]">
+    <div className="relative flex items-center justify-center h-[400px] md:h-[500px] lg:h-[600px] w-full">
+      <div className="relative w-[320px] md:w-[500px] lg:w-[650px] h-[300px] md:h-[400px] lg:h-[500px]">
 
         {/* Card 1 - Back card (Real Investment Image with Graph) */}
-        <div className="absolute top-[60px] left-0 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[-8deg] z-10">
+        <div className="absolute top-[40px] md:top-[50px] lg:top-[60px] left-0 w-[280px] md:w-[320px] lg:w-[360px] h-[180px] md:h-[220px] lg:h-[260px]  rounded-xl shadow-lg overflow-hidden transform rotate-[-8deg] z-10">
           <div className="w-full h-full relative">
             {/* Real Investment Image */}
             <img
@@ -21,7 +21,7 @@ function OverlappingCards() {
         </div>
 
         {/* Card 2 - Middle card (Business Card) */}
-        <div className="absolute top-[76px] left-20 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[2deg] z-20">
+        <div className="absolute top-[55px] md:top-[66px] lg:top-[76px] left-[50px] md:left-[70px] lg:left-20 w-[280px] md:w-[320px] lg:w-[360px] h-[180px] md:h-[220px] lg:h-[260px]   rounded-xl shadow-lg overflow-hidden transform rotate-[2deg] z-20">
           <div className="w-full h-full relative">
             {/* Business Card Design */}
             <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 p-8 flex flex-col justify-between">
@@ -55,7 +55,7 @@ function OverlappingCards() {
         </div>
 
         {/* Card 3 - Front card (Credit Card) */}
-        <div className="absolute top-[92px] left-40 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-xl overflow-hidden transform rotate-[8deg] z-30">
+        <div className="absolute top-[70px] md:top-[81px] lg:top-[92px] left-[100px] md:left-[140px] lg:left-40 w-[280px] md:w-[320px] lg:w-[360px] h-[180px] md:h-[220px] lg:h-[260px]  rounded-xl shadow-xl overflow-hidden transform rotate-[8deg] z-30">
           <div className="w-full h-full relative">
             {/* Credit Card Design */}
             <div className="w-full h-full bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 p-6 flex flex-col justify-between relative overflow-hidden">
@@ -110,8 +110,7 @@ export function SmartInvestingSection() {
   return (
     <section
       id="smart-investing"
-      className="relative px-4 md:px-8 bg-blue-50 dark:bg-gray-800 overflow-visible flex items-center min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)]"
-      style={{ paddingTop: '6rem', paddingBottom: '6rem' }}
+      className="relative px-4 pt-8 md:px-8 bg-blue-50 dark:bg-gray-800 overflow-visible "
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
