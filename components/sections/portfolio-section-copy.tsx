@@ -140,7 +140,7 @@ export function PortfolioSectionCopy() {
                   {/* Chart Stats */}
                   <div className="grid grid-cols-3 gap-3 mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
                     <div className="text-center">
-                      <div className="text-lg font-bold text-green-600 dark:text-green-400">110%</div>
+                      <div className="text-lg font-bold text-green-600 dark:text-green-400">140%</div>
                       <div className="text-xs text-slate-600 dark:text-slate-400">Total Growth</div>
                     </div>
                     <div className="text-center">
@@ -162,7 +162,7 @@ export function PortfolioSectionCopy() {
                   <TrendingUp className="w-3 h-3 text-white" />
                 </div>
                 <span className="text-xs font-medium text-slate-700 dark:text-slate-100">Growth</span>
-                <div className="text-sm font-bold text-blue-700">+110%</div>
+                <div className="text-sm font-bold text-blue-700">+140%</div>
               </div>
 
               {/* Right Overflow Card - Revenue */}
@@ -170,18 +170,11 @@ export function PortfolioSectionCopy() {
                 <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-500 dark:to-blue-600 rounded-lg mb-2 flex items-center justify-center shadow-sm">
                   <Building2 className="w-3 h-3 text-white" />
                 </div>
-                <span className="text-xs font-medium text-slate-700 dark:text-slate-100">Transactions</span>
-                <div className="text-sm font-bold text-blue-600">$3B+</div>
+                <span className="text-xs font-medium text-slate-700 dark:text-slate-100">Countries</span>
+                <div className="text-sm font-bold text-blue-600">3+</div>
               </div>
 
-              {/* Bottom Overflow Card - Success Rate */}
-              <div className="absolute bottom-2 right-4 w-30 bg-gradient-to-br from-white to-slate-50/50 dark:from-slate-800 dark:to-slate-700/30 rounded-xl shadow-xl border border-slate-200/60 dark:border-slate-600/60 p-3 transform rotate-1 z-20 backdrop-blur-sm">
-                <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-500 dark:to-blue-600 rounded-lg mb-2 flex items-center justify-center shadow-sm">
-                  <CheckCircle className="w-3 h-3 text-white" />
-                </div>
-                <span className="text-xs font-medium text-slate-700 dark:text-slate-100">Users</span>
-                <div className="text-sm font-bold text-blue-600">750K+</div>
-              </div>
+            
 
               {/* Floating elements for depth */}
               <div className="absolute top-12 right-16 w-2 h-2 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full opacity-60 animate-pulse" />
@@ -224,7 +217,7 @@ export function PortfolioSectionCopy() {
           </AnimatedSection>
         </div>
 
-       
+
 
         {/* Platform Businesses Section */}
         <div className="relative bg-slate-50 dark:bg-slate-900/50 py-16 -mx-4 px-4">
