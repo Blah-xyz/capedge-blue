@@ -1,10 +1,9 @@
 
 "use client"
 
-import { ArrowLeft, ArrowRight, Building2, TrendingUp, Users, Zap, CheckCircle } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Building2, TrendingUp, Users, Zap } from 'lucide-react'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useContactDialog } from "@/contexts/contact-dialog-context"
 
 // Define the platform business type
 type PlatformBusiness = {
@@ -73,7 +72,6 @@ const platformBusinesses: PlatformBusiness[] = [
 
 export function PlatformBusinessesSection() {
   const [currentBusiness, setCurrentBusiness] = useState(0)
-  const { setIsOpen } = useContactDialog()
 
   const nextBusiness = () => {
     setCurrentBusiness((prev) => (prev + 1) % platformBusinesses.length)
@@ -132,9 +130,9 @@ export function PlatformBusinessesSection() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 h-full">
           {/* Left Content */}
-          <div className="w-full md:w-1/2 space-y-4">
+          <div className="w-full md:w-1/2 flex flex-col justify-center h-full">
             <AnimatePresence mode="wait">
               <motion.div
                 key={business.id}
@@ -142,9 +140,10 @@ export function PlatformBusinessesSection() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
+                className="space-y-6"
               >
                 <div>
-                  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
                     <span className="text-slate-900 dark:text-white">{business.heading}</span>
                     <br />
                     <span className="text-blue-600 dark:text-blue-400">{business.subheading}</span>
@@ -154,30 +153,12 @@ export function PlatformBusinessesSection() {
                 <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl">
                   {business.description}
                 </p>
-
-                {/* Features List with Checkmarks */}
-                <div className="mt-8 space-y-4">
-                  {business.features.map((feature, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.3, delay: index * 0.1 }}
-                      className="flex items-start gap-3 group/item"
-                    >
-                      <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
-                      <span className="text-slate-600 dark:text-slate-300 leading-relaxed group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">
-                        {feature}
-                      </span>
-                    </motion.div>
-                  ))}
-                </div>
               </motion.div>
             </AnimatePresence>
           </div>
 
-          {/* Right Content - Cut-off Image Card */}
-          <div className="w-full md:w-1/2 relative">
+          {/* Right Content - Gradient Card with Partial Image */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center h-full">
             <AnimatePresence mode="wait">
               <motion.div
                 key={business.id}
@@ -185,28 +166,28 @@ export function PlatformBusinessesSection() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.05 }}
                 transition={{ duration: 0.5 }}
-                className="relative max-w-md mx-auto"
+                className="relative max-w-md mx-auto w-full"
               >
-                {/* Card with cut-off image */}
-                <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden">
-                  {/* Image that appears cut off on the right */}
-                  <div className="relative h-64 overflow-hidden">
-                    <img
-                      src={`https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=left`}
-                      alt={business.title}
-                      className="w-[140%] h-full object-cover -ml-4"
-                      style={{ objectPosition: 'left center' }}
-                    />
+                {/* Card with linear gradient background and partial image */}
+                <div className="relative rounded-2xl shadow-lg overflow-hidden h-96 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-700 dark:via-blue-800 dark:to-blue-900">
+                  {/* Partial image inside the card */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="relative w-4/5 h-4/5 rounded-xl overflow-hidden">
+                      <img
+                        src={`https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center`}
+                        alt={business.title}
+                        className="w-full h-full object-cover opacity-90"
+                      />
+                      {/* Subtle overlay for better integration */}
+                      <div className="absolute inset-0 bg-blue-900/20"></div>
+                    </div>
                   </div>
 
-                  {/* Description below the image */}
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
-                      {business.heading} {business.subheading}
-                    </h3>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                      {business.description}
-                    </p>
+                  {/* Icon overlay */}
+                  <div className="absolute top-6 left-6">
+                    <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                      <IconComponent className="w-6 h-6 text-white" />
+                    </div>
                   </div>
                 </div>
               </motion.div>
