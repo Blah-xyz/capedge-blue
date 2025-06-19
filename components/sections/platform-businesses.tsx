@@ -168,9 +168,9 @@ export function PlatformBusinessesSection() {
                 className="relative max-w-md mx-auto w-full"
               >
                 {/* Card with linear gradient background and partial image */}
-                <div className="relative rounded-2xl shadow-lg h-96 bg-gradient-to-b from-white to-gray-200 dark:from-slate-800 dark:to-slate-700">
+                <div className="relative rounded-2xl shadow-lg h-96 bg-gradient-to-b from-white via-gray-100 to-gray-300 dark:from-slate-800 dark:via-slate-700 dark:to-slate-600">
                   {/* Image cut and squeezed, extending past card borders */}
-                  <div className="absolute bottom-0 right-0 w-3/5 h-3/5 rounded-tl-xl overflow-hidden">
+                  <div className="absolute bottom-0 right-0 w-3/5 h-4/5 rounded-tl-xl overflow-hidden">
                     <img
                       src={`https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center`}
                       alt={business.title}
