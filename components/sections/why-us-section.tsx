@@ -6,8 +6,8 @@ export function WhyUsSection() {
 	return (
 		<section
 			id="why-us"
-			className="relative bg-gradient-to-br from-slate-50 via-rose-50/20 to-white dark:from-slate-950 dark:via-rose-950/5 dark:to-slate-900 overflow-hidden flex items-center"
-			style={{ height: 'calc(100vh - 4rem)', paddingTop: '4rem', paddingBottom: '4rem' }}
+			className="relative bg-gradient-to-br from-slate-50 via-rose-50/20 to-white dark:from-slate-950 dark:via-rose-950/5 dark:to-slate-900 overflow-hidden flex items-center min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)]"
+			style={{ paddingTop: '4rem', paddingBottom: '4rem' }}
 		>
 			{/* Background Elements */}
 			<div className="absolute inset-0">

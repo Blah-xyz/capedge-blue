@@ -85,8 +85,8 @@ export function PlatformBusinessesSection() {
 
   return (
     <section
-      className="bg-white dark:bg-slate-900 flex items-center overflow-hidden"
-      style={{ height: 'calc(100vh - 4rem)', paddingTop: '4rem', paddingBottom: '4rem' }}
+      className="bg-white dark:bg-slate-900 flex items-center overflow-hidden min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)]"
+      style={{ paddingTop: '4rem', paddingBottom: '4rem' }}
     >
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header Badge */}

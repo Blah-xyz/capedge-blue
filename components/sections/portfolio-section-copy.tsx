@@ -49,8 +49,8 @@ export function PortfolioSectionCopy() {
   return (
     <section
       id="portfolio"
-      className="relative overflow-hidden flex items-center"
-      style={{ height: 'calc(100vh - 4rem)', paddingTop: '4rem', paddingBottom: '4rem' }}
+      className="relative overflow-hidden flex items-center min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)]"
+      style={{ paddingTop: '4rem', paddingBottom: '4rem' }}
     >
       {/* Refined Background with Subtle Blue Accents */}
       <div className="absolute inset-0 bg-white dark:bg-slate-950" />
