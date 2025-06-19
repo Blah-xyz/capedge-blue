@@ -17,6 +17,7 @@ type PlatformBusiness = {
   icon: React.ComponentType<any>
   status: string
   features: string[]
+  imageUrl: string
 }
 
 // Define the platform businesses data
@@ -35,7 +36,8 @@ const platformBusinesses: PlatformBusiness[] = [
       "Enterprise-grade scalability",
       "Global market presence",
       "Strategic growth implementation"
-    ]
+    ],
+    imageUrl: "https://media.istockphoto.com/id/1488294044/photo/businessman-works-on-laptop-showing-business-analytics-dashboard-with-charts-metrics-and-kpi.webp?a=1&b=1&s=612x612&w=0&k=20&c=Tlc0bCyVUKOylIX2VcdJTKZUzto8R0CviydpYtzGP7I="
   },
   {
     id: 2,
@@ -51,7 +53,8 @@ const platformBusinesses: PlatformBusiness[] = [
       "Real-time business intelligence",
       "Financial operations optimization",
       "Long-term strategic engagement"
-    ]
+    ],
+    imageUrl: "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRhc2hib2FyZHxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     id: 3,
@@ -67,7 +70,8 @@ const platformBusinesses: PlatformBusiness[] = [
       "Legacy system modernization",
       "Cloud-native architecture",
       "Comprehensive market analysis"
-    ]
+    ],
+    imageUrl: "https://media.istockphoto.com/id/1954841243/photo/data-analysis-chart-graph-3d-statistics-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=gnODeE-wDi0DlP0hqQFet84c9SYclckO_l3psFFkNxU="
   }
 ]
 
@@ -163,12 +167,12 @@ export function PlatformBusinessesSection() {
               >
                 {/* Card with linear gradient background and partial image */}
                 <div className="relative rounded-2xl shadow-sm h-96" style={{
-                  background: 'linear-gradient(to bottom, white 0%, #f3f4f6 25%, #e5e7eb 50%, #fed7aa 100%)'
+                  background: 'linear-gradient(to bottom, white 0%, #f3f4f6 25%, #e5e7eb 50%, #e5e7eb 100%)'
                 }}>
                   {/* Image cut and squeezed, extending past card borders */}
                   <div className="absolute bottom-0 right-0 w-4/5 h-4/5 rounded-tl-xl overflow-hidden">
                     <Image
-                      src={`https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center`}
+                      src={business.imageUrl}
                       alt={business.title}
                       className="w-[120%] h-[120%] object-cover relative opacity-90 rounded-tl-xl"
                       style={{ objectPosition: 'center center' }}
