@@ -2,94 +2,53 @@
 
 import { CheckCircle } from "lucide-react";
 
-// Skewed Graph Mesh with Zigzag Line SVG
-function SkewedGraphSVG() {
+// Overlapping Cards Component
+function OverlappingCards() {
   return (
-    <div className="relative flex items-center justify-center overflow-hidden h-[600px] w-full">
-      <div className="relative w-[500px] h-[400px] transform scale-95">
+    <div className="relative flex items-center justify-center h-[600px] w-full">
+      <div className="relative w-[650px] h-[500px]">
 
-        <svg
-          className="w-full h-full"
-          viewBox="0 0 500 400"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            {/* Arrow marker - smaller size, green to match zigzag line */}
-            <marker id="arrowhead" markerWidth="8" markerHeight="6"
-              refX="7" refY="3" orient="auto">
-              <polygon points="0 0, 8 3, 0 6" fill="#10b981" />
-            </marker>
-          </defs>
+        {/* Card 1 - Back card */}
+        <div className="absolute top-0 left-0 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[-8deg] z-10">
+          <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 flex items-center justify-center">
+            <div className="text-center p-8">
+              <div className="w-20 h-20 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white">Growth Analytics</h3>
+            </div>
+          </div>
+        </div>
 
-          {/* Graph Mesh - No background, transparent */}
-          <g>
-            {/* Vertical grid lines - black */}
-            <g stroke="#000000" strokeWidth="3" opacity="0.6">
-              <line x1="100" y1="80" x2="100" y2="330" />
-              <line x1="150" y1="80" x2="150" y2="330" />
-              <line x1="200" y1="80" x2="200" y2="330" />
-              <line x1="250" y1="80" x2="250" y2="330" />
-              <line x1="300" y1="80" x2="300" y2="330" />
-              <line x1="350" y1="80" x2="350" y2="330" />
-            </g>
+        {/* Card 2 - Middle card */}
+        <div className="absolute top-16 left-20 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[2deg] z-20">
+          <div className="w-full h-full bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 flex items-center justify-center">
+            <div className="text-center p-8">
+              <div className="w-20 h-20 bg-green-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white">Smart Investing</h3>
+            </div>
+          </div>
+        </div>
 
-            {/* Horizontal grid lines - black */}
-            <g stroke="#000000" strokeWidth="3" opacity="0.6">
-              <line x1="50" y1="120" x2="400" y2="120" />
-              <line x1="50" y1="160" x2="400" y2="160" />
-              <line x1="50" y1="200" x2="400" y2="200" />
-              <line x1="50" y1="240" x2="400" y2="240" />
-              <line x1="50" y1="280" x2="400" y2="280" />
-            </g>
-          </g>
-
-          {/* Simplified Zigzag Line with 5 corners */}
-          <g>
-            {/* Main zigzag path - solid green throughout */}
-            <path
-              d="M 60 300
-                 L 150 250
-                 L 220 280
-                 L 290 200
-                 L 360 230
-                 L 450 150"
-              stroke="#10b981"
-              strokeWidth="8"
-              fill="none"
-              markerEnd="url(#arrowhead)"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-
-            {/* Data points on the zigzag line - green */}
-            <g fill="#10b981">
-              <circle cx="150" cy="250" r="4" />
-              <circle cx="220" cy="280" r="4" />
-              <circle cx="290" cy="200" r="4" />
-              <circle cx="360" cy="230" r="4" />
-              <circle cx="450" cy="150" r="4" />
-            </g>
-
-            {/* Glowing effect for the line - green */}
-            <path
-              d="M 60 300
-                 L 150 250
-                 L 220 280
-                 L 290 200
-                 L 360 230
-                 L 450 150"
-              stroke="#10b981"
-              strokeWidth="12"
-              fill="none"
-              opacity="0.3"
-              filter="blur(3px)"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </g>
-
-
-        </svg>
+        {/* Card 3 - Front card */}
+        <div className="absolute top-32 left-40 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-xl overflow-hidden transform rotate-[8deg] z-30">
+          <div className="w-full h-full bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800 flex items-center justify-center">
+            <div className="text-center p-8">
+              <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white">Portfolio Management</h3>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -105,9 +64,9 @@ export function SmartInvestingSection() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Skewed Graph on the left side */}
+          {/* Overlapping Cards on the left side */}
           <div className="relative flex items-center justify-center lg:justify-start order-2 lg:order-1">
-            <SkewedGraphSVG />
+            <OverlappingCards />
           </div>
 
           {/* Content on the right side */}
