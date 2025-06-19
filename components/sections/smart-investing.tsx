@@ -8,44 +8,103 @@ function OverlappingCards() {
     <div className="relative flex items-center justify-center h-[600px] w-full">
       <div className="relative w-[650px] h-[500px]">
 
-        {/* Card 1 - Back card */}
+        {/* Card 1 - Back card (Real Dollar Bills) */}
         <div className="absolute top-[60px] left-0 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[-8deg] z-10">
-          <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="w-20 h-20 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
+          <div className="w-full h-full relative">
+            {/* Real Dollar Bills Pattern */}
+            <div className="absolute inset-0">
+              <div className="grid grid-cols-2 gap-1 p-2 h-full">
+                {[...Array(4)].map((_, i) => (
+                  <div key={i} className="relative bg-green-100 border border-green-300 rounded-sm overflow-hidden">
+                    {/* Dollar Bill Design */}
+                    <div className="w-full h-full bg-gradient-to-r from-green-100 to-green-50 p-2 text-xs">
+                      <div className="border border-green-400 h-full rounded-sm relative">
+                        <div className="absolute top-1 left-1 text-green-800 font-bold">$100</div>
+                        <div className="absolute top-1 right-1 text-green-800 font-bold">$100</div>
+                        <div className="absolute bottom-1 left-1 text-green-800 font-bold">$100</div>
+                        <div className="absolute bottom-1 right-1 text-green-800 font-bold">$100</div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 bg-green-200 rounded-full border border-green-400 flex items-center justify-center">
+                            <span className="text-green-800 font-bold text-xs">$</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white">Growth Analytics</h3>
+            </div>
+            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+              <div className="text-center p-8 relative z-10">
+                <div className="w-16 h-16 bg-green-600/90 backdrop-blur-sm rounded-full mx-auto mb-3 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-white drop-shadow-lg">Cash Flow</h3>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Card 2 - Middle card */}
+        {/* Card 2 - Middle card (Real Dollar Coins) */}
         <div className="absolute top-[76px] left-20 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform rotate-[2deg] z-20">
-          <div className="w-full h-full bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="w-20 h-20 bg-green-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                </svg>
+          <div className="w-full h-full relative">
+            {/* Real Dollar Coins Pattern */}
+            <div className="absolute inset-0">
+              <div className="flex flex-wrap gap-2 p-4 justify-center items-center h-full">
+                {[...Array(15)].map((_, i) => (
+                  <div key={i} className="relative">
+                    {/* Realistic Dollar Coin */}
+                    <div className="w-12 h-12 bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-500 rounded-full border-2 border-yellow-600 shadow-md relative overflow-hidden">
+                      {/* Coin Edge */}
+                      <div className="absolute inset-1 border border-yellow-600 rounded-full">
+                        {/* Coin Face */}
+                        <div className="w-full h-full flex flex-col items-center justify-center text-yellow-800">
+                          <div className="text-xs font-bold leading-none">$1</div>
+                          <div className="text-[6px] font-semibold">USA</div>
+                        </div>
+                      </div>
+                      {/* Coin Shine Effect */}
+                      <div className="absolute top-1 left-1 w-2 h-2 bg-yellow-200 rounded-full opacity-60"></div>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white">Smart Investing</h3>
+            </div>
+            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+              <div className="text-center p-8 relative z-10">
+                <div className="w-16 h-16 bg-yellow-600/90 backdrop-blur-sm rounded-full mx-auto mb-3 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-white drop-shadow-lg">Returns</h3>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Card 3 - Front card */}
+        {/* Card 3 - Front card (Real Investment Image) */}
         <div className="absolute top-[92px] left-40 w-[360px] h-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-xl overflow-hidden transform rotate-[8deg] z-30">
-          <div className="w-full h-full bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800 flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
+          <div className="w-full h-full relative">
+            {/* Real Investment Image */}
+            <img
+              src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="Investment and Financial Growth"
+              className="w-full h-full object-cover"
+            />
+
+            {/* Overlay with content */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end">
+              <div className="text-center p-6 w-full">
+                <div className="w-16 h-16 bg-blue-600/90 backdrop-blur-sm rounded-full mx-auto mb-3 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-white drop-shadow-lg">Smart Investing</h3>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white">Portfolio Management</h3>
             </div>
           </div>
         </div>
