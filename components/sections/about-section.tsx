@@ -283,7 +283,11 @@ function PhoneSVG() {
 
 export function AboutSection() {
   return (
-    <section id="about" className="relative py-24 px-4 md:px-8 bg-white dark:bg-gray-900 overflow-visible">
+    <section
+      id="about"
+      className="relative px-4 md:px-8 bg-white dark:bg-gray-900 overflow-visible flex items-center"
+      style={{ height: 'calc(100vh - 4rem)', paddingTop: '6rem', paddingBottom: '6rem' }}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6 lg:pr-6">
@@ -294,46 +298,37 @@ export function AboutSection() {
             </div>
 
             <div className="space-y-4">
-              <h2 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] text-gray-900">
+              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-[1.1] text-gray-900">
                 Building the Future
                 <br />
                 <span className="text-blue-600">of Enterprise Software.</span>
               </h2>
 
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed font-light max-w-2xl">
-                CapEdge Group partners with visionary management teams to build transformational technology platforms that reshape key markets through strategic collaboration and hands-on expertise.
+                We partner with visionary teams to build transformational technology platforms.
               </p>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-start gap-3 group/item hover:bg-blue-50/50 p-3 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-7 h-7 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5">
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 p-2 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center">
                   <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
                 </div>
-                <div className="space-y-0.5">
-                  <h4 className="text-lg font-bold text-gray-900">Enterprise Software Focus</h4>
-                  <p className="text-base text-gray-600 leading-relaxed">Specialized expertise in B2B software and financial technology platforms</p>
-                </div>
+                <h4 className="text-lg font-bold text-gray-900">Enterprise Software Focus</h4>
               </div>
 
-              <div className="flex items-start gap-3 group/item hover:bg-blue-50/50 p-3 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-7 h-7 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5">
+              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 p-2 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center">
                   <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
                 </div>
-                <div className="space-y-0.5">
-                  <h4 className="text-lg font-bold text-gray-900">Strategic Partnerships</h4>
-                  <p className="text-base text-gray-600 leading-relaxed">Long-term partnerships that go beyond capital investment</p>
-                </div>
+                <h4 className="text-lg font-bold text-gray-900">Strategic Partnerships</h4>
               </div>
 
-              <div className="flex items-start gap-3 group/item hover:bg-blue-50/50 p-3 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-7 h-7 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5">
+              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 p-2 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center">
                   <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
                 </div>
-                <div className="space-y-0.5">
-                  <h4 className="text-lg font-bold text-gray-900">Market Transformation</h4>
-                  <p className="text-base text-gray-600 leading-relaxed">Building solutions that reshape markets through innovation</p>
-                </div>
+                <h4 className="text-lg font-bold text-gray-900">Market Transformation</h4>
               </div>
             </div>
           </div>

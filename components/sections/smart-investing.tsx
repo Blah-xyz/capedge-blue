@@ -283,7 +283,11 @@ function PhoneSVG() {
 
 export function SmartInvestingSection() {
   return (
-    <section id="about" className="relative py-24 px-4 md:px-8 bg-white dark:bg-gray-900 overflow-visible">
+    <section
+      id="smart-investing"
+      className="relative px-4 md:px-8 bg-white dark:bg-gray-900 overflow-visible flex items-center"
+      style={{ height: 'calc(100vh - 4rem)', paddingTop: '6rem', paddingBottom: '6rem' }}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* SVG on the left side */}
@@ -300,7 +304,7 @@ export function SmartInvestingSection() {
             </div>
 
             <div className="space-y-4">
-              <h2 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] text-black dark:text-white">
+              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-[1.1] text-black dark:text-white">
                 Unlocking Financial
                 <br />
                 <span className="text-blue-600">Potential</span>
@@ -309,29 +313,23 @@ export function SmartInvestingSection() {
               </h2>
 
               <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed font-light max-w-2xl">
-                At CapEdge Group we believe that smart investing yield endless rewards; therefore, we approach investing with a realistic understanding of the associated risks and a well-thought-out strategy.
+                Smart investing with realistic risk understanding and well-thought-out strategy.
               </p>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-start gap-3 group/item hover:bg-blue-50/50 dark:hover:bg-blue-900/20 p-3 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-7 h-7 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mt-0.5">
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 dark:hover:bg-blue-900/20 p-2 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
                   <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
                 </div>
-                <div className="space-y-0.5">
-                  <h4 className="text-lg font-bold text-black dark:text-white">Scalable Business Model</h4>
-                  <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">Where growth and expansion are paramount</p>
-                </div>
+                <h4 className="text-lg font-bold text-black dark:text-white">Scalable Business Model</h4>
               </div>
 
-              <div className="flex items-start gap-3 group/item hover:bg-blue-50/50 dark:hover:bg-blue-900/20 p-3 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-7 h-7 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mt-0.5">
+              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 dark:hover:bg-blue-900/20 p-2 rounded-xl transition-all duration-300">
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
                   <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
                 </div>
-                <div className="space-y-0.5">
-                  <h4 className="text-lg font-bold text-black dark:text-white">Predictable Revenue Streams</h4>
-                  <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">Sustainable and reliable income generation models</p>
-                </div>
+                <h4 className="text-lg font-bold text-black dark:text-white">Predictable Revenue Streams</h4>
               </div>
             </div>
           </div>
