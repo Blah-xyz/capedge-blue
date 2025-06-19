@@ -9,9 +9,9 @@ export function CTASection() {
 	const { setIsOpen } = useContactDialog();
 
 	return (
-		<section id="contact" className="mb-10">
-			<div className="container">
-				<div className="relative rounded-3xl bg-[#002236] p-12 md:p-16">
+		<section id="contact" className="relative -mt-24 mb-10 z-10">
+			<div className="container max-w-7xl mx-auto px-6">
+				<div className="relative rounded-3xl bg-[#002236] p-12 md:p-16 shadow-2xl shadow-slate-900/20">
 					<div className="relative flex flex-col md:flex-row md:items-center md:justify-between">
 						<AnimatedSection className="max-w-xl">
 							<div className="text-sm text-blue-400 mb-2">TRY IT NOW</div>
