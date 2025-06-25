@@ -303,27 +303,19 @@ export function AboutSection() {
               </p>
             </div>
 
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 dark:hover:bg-blue-900/20 p-2 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
-                  <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
+            <div className="space-y-4">
+              {[
+                "Enterprise Software Focus",
+                "Strategic Partnerships",
+                "Market Transformation"
+              ].map((highlight, index) => (
+                <div key={index} className="flex items-start gap-3 group/item">
+                  <CheckCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform duration-200" />
+                  <span className="text-slate-600 dark:text-slate-300 leading-relaxed group-hover/item:text-slate-800 dark:group-hover/item:text-slate-200 transition-colors duration-200">
+                    {highlight}
+                  </span>
                 </div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white">Enterprise Software Focus</h4>
-              </div>
-
-              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 dark:hover:bg-blue-900/20 p-2 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
-                  <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
-                </div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white">Strategic Partnerships</h4>
-              </div>
-
-              <div className="flex items-center gap-3 group/item hover:bg-blue-50/50 dark:hover:bg-blue-900/20 p-2 rounded-xl transition-all duration-300">
-                <div className="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
-                  <CheckCircle className="w-4 h-4 text-blue-600 group-hover/item:scale-110 transition-transform duration-200" />
-                </div>
-                <h4 className="text-lg font-bold text-gray-900 dark:text-white">Market Transformation</h4>
-              </div>
+              ))}
             </div>
           </div>
 

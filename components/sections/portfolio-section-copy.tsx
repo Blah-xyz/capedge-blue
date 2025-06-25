@@ -190,7 +190,7 @@ export function PortfolioSectionCopy() {
                   <span className="text-slate-900 dark:text-white">Our </span>
                   <span className="text-blue-600 dark:text-blue-400">Portfolio</span>
                   <br />
-                  <span className="bg-gradient-to-r from-slate-600 via-slate-700 to-slate-800 dark:from-slate-300 dark:via-slate-200 dark:to-slate-100 bg-clip-text text-transparent">Impact</span>
+                  <span className="text-slate-900 dark:text-white">Impact</span>
                 </h1>
               </div>
 

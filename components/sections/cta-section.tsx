@@ -18,7 +18,7 @@ export function CTASection() {
 							<h2 className="font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
 								Ready to Scale Your Enterprise Platform?
 							</h2>
-							<p className="mt-4 text-gray-400 max-w-md">
+							<p className="mt-4 text-lg text-gray-400 max-w-md">
 							Partner with CapEdge Group to build and scale transformational
 technology platforms that reshape key markets through strategic
 collaboration and hands-on expertise.

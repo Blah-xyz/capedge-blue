@@ -106,7 +106,7 @@ export function PlatformBusinessesSection() {
               transition={{ duration: 0.5 }}
             >
               <span className="text-slate-400 dark:text-slate-500 text-md">{String(business.id).padStart(2, '0')}.</span>
-              <h2 className="text-slate-900 dark:text-white text-lg font-medium">{business.title}</h2>
+              <p className="text-slate-900 dark:text-white text-xl font-medium">{business.title}</p>
               <p className="text-slate-500 dark:text-slate-400 uppercase text-sm tracking-wider mt-1">{business.subtitle}</p>
             </motion.div>
           </AnimatePresence>

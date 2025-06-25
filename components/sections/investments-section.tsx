@@ -43,7 +43,7 @@ export function WhyUsSection() {
                     <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Investments</div>
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Successful Investments</h3>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Successful Investments</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                   Proven track record in enterprise software and business investments with consistent growth
                 </p>
@@ -70,7 +70,7 @@ export function WhyUsSection() {
                     <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Growth Rate</div>
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Portfolio Growth</h3>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Portfolio Growth</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                   Average growth rate across our enterprise software investment portfolio
                 </p>
@@ -97,7 +97,7 @@ export function WhyUsSection() {
                     <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Success Rate</div>
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Investment Success</h3>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Investment Success</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                   Exceptional success rate across our enterprise software investment portfolio
                 </p>
@@ -106,7 +106,7 @@ export function WhyUsSection() {
           </AnimatedSection>
         </div>
 
-      
+
       </div>
     </section>
   )
