@@ -1,5 +1,5 @@
 import type React from "react";
-import "@/app/globals.css";
+import "./globals.css";
 // Copilot chat commented out
 // import "@copilotkit/react-ui/styles.css";
 
