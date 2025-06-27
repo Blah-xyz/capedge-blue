@@ -30,62 +30,99 @@ export function ProductsHeroSection() {
             <AnimatedSection>
               <Badge variant="outline" className="mb-8 bg-white/90 backdrop-blur-sm border-blue-200 text-blue-700 px-4 py-2">
                 <Layers className="w-4 h-4 mr-2" />
-                Investment Products
+                Software Platforms
               </Badge>
 
               <h1 className="text-5xl md:text-7xl font-bold text-black dark:text-white mb-8 font-display leading-tight">
-                Investment
-                <span className="block text-blue-600 dark:text-blue-400">Solutions</span>
+                Enterprise
+                <span className="block text-blue-600 dark:text-blue-400">Platforms</span>
               </h1>
 
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed">
-                Institutional-grade funds targeting high-growth technology companies with proven market traction.
+                Cutting-edge software platforms designed to accelerate business growth and operational efficiency.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" onClick={handleContactClick} className="group px-8 py-4 text-lg">
-                  Explore Funds
+                  Explore Platforms
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
-                  Download Materials
+                  Request Demo
                 </Button>
               </div>
             </AnimatedSection>
 
-            {/* Right Content - Creative Visual */}
+            {/* Right Content - Creative Laptop Dashboard */}
             <AnimatedSection className="relative">
               <div className="relative">
-                {/* Main Visual Display */}
-                <div className="bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border border-white/20 overflow-hidden">
-                  {/* Header */}
-                  <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold text-black dark:text-white mb-2">Investment Excellence</h3>
-                    <p className="text-gray-600 dark:text-gray-400">Institutional-grade fund management</p>
+                {/* Laptop Mockup */}
+                <div className="relative bg-gray-800 dark:bg-gray-900 rounded-t-2xl p-4 shadow-2xl">
+                  {/* Laptop Screen Bezel */}
+                  <div className="bg-black rounded-t-xl p-1">
+                    {/* Screen Content */}
+                    <div className="bg-white dark:bg-slate-900 rounded-t-lg overflow-hidden relative h-80">
+                      {/* Browser Bar */}
+                      <div className="bg-gray-100 dark:bg-slate-800 px-4 py-3 flex items-center gap-2 border-b border-gray-200 dark:border-slate-700">
+                        <div className="flex gap-2">
+                          <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                          <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                          <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                        </div>
+                        <div className="flex-1 bg-white dark:bg-slate-700 rounded px-3 py-1 text-xs text-gray-600 dark:text-gray-300 ml-4">
+                          capedge.com/dashboard
+                        </div>
+                      </div>
+
+                      {/* Dashboard Content */}
+                      <div className="p-6 h-full bg-gradient-to-br from-blue-50 to-white dark:from-slate-900 dark:to-slate-800">
+                        {/* Dashboard Header */}
+                        <div className="flex items-center justify-between mb-6">
+                          <h3 className="text-lg font-bold text-black dark:text-white">Analytics Dashboard</h3>
+                          <div className="bg-blue-100 dark:bg-blue-900/30 rounded-lg px-3 py-1">
+                            <span className="text-blue-600 text-sm font-medium">Live</span>
+                          </div>
+                        </div>
+
+                        {/* Dashboard Widgets */}
+                        <div className="grid grid-cols-2 gap-4 mb-4">
+                          <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm">
+                            <div className="text-2xl font-bold text-blue-600 mb-1">$2.4M</div>
+                            <div className="text-xs text-gray-600 dark:text-gray-400">Revenue</div>
+                          </div>
+                          <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm">
+                            <div className="text-2xl font-bold text-green-600 mb-1">+24%</div>
+                            <div className="text-xs text-gray-600 dark:text-gray-400">Growth</div>
+                          </div>
+                        </div>
+
+                        {/* Chart Area */}
+                        <div className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow-sm h-32">
+                          <div className="flex items-end justify-between h-full">
+                            {[40, 65, 45, 80, 55, 90, 70].map((height, i) => (
+                              <div
+                                key={i}
+                                className="bg-blue-500 rounded-t w-4"
+                                style={{ height: `${height}%` }}
+                              ></div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Floating Platform Badges */}
+                      <div className="absolute top-20 -right-4 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-xl px-3 py-2 shadow-lg border border-white/20">
+                        <div className="text-sm font-semibold text-blue-600">Analytics</div>
+                      </div>
+                      <div className="absolute bottom-20 -left-4 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-xl px-3 py-2 shadow-lg border border-white/20">
+                        <div className="text-sm font-semibold text-blue-600">Automation</div>
+                      </div>
+                    </div>
                   </div>
 
-                  {/* Creative Visual Element */}
-                  <div className="relative h-48 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-2xl overflow-hidden mb-6">
-                    <img
-                      src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&h=300&fit=crop&crop=center"
-                      alt="Investment Portfolio"
-                      className="w-full h-full object-cover opacity-80"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent"></div>
-
-                    {/* Floating Elements */}
-                    <div className="absolute top-4 left-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-xl px-3 py-2">
-                      <div className="text-sm font-semibold text-blue-600">Enterprise</div>
-                    </div>
-                    <div className="absolute bottom-4 right-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-xl px-3 py-2">
-                      <div className="text-sm font-semibold text-blue-600">Growth</div>
-                    </div>
-                  </div>
-
-                  {/* Fund Summary */}
-                  <div className="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-6 text-center">
-                    <div className="text-lg font-semibold text-black dark:text-white mb-2">Premium Investment Funds</div>
-                    <div className="text-blue-600 dark:text-blue-400 font-medium">Technology-Focused Portfolio</div>
+                  {/* Laptop Base */}
+                  <div className="bg-gray-700 dark:bg-gray-800 h-4 rounded-b-2xl relative">
+                    <div className="absolute inset-x-0 top-1 h-2 bg-gray-600 dark:bg-gray-700 rounded-b-xl mx-8"></div>
                   </div>
                 </div>
 
