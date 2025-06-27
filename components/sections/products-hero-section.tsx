@@ -16,29 +16,29 @@ export function ProductsHeroSection() {
   return (
     <section
       id="products-hero"
-      className="relative flex items-center overflow-hidden -mt-4 min-h-[85vh]"
-      style={{ paddingTop: '8rem', paddingBottom: '8rem' }}
+      className="relative flex items-center overflow-hidden -mt-4 min-h-[60vh] lg:min-h-[calc(50vh-4rem)] xl:min-h-[calc(50vh-4rem)]"
+      style={{ paddingTop: '6rem', paddingBottom: '4rem' }}
     >
       {/* Clean Background */}
       <div className="absolute inset-0 -top-4 bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
 
       {/* Content */}
       <div className="relative z-10 w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
             {/* Left Content */}
             <AnimatedSection>
-              <Badge variant="outline" className="mb-8 bg-white/90 backdrop-blur-sm border-blue-200 text-blue-700 px-4 py-2">
+              <Badge variant="outline" className="mb-6 lg:mb-8 bg-white/90 backdrop-blur-sm border-blue-200 text-blue-700 px-4 py-2">
                 <Layers className="w-4 h-4 mr-2" />
                 Software Platforms
               </Badge>
 
-              <h1 className="text-5xl md:text-7xl font-bold text-black dark:text-white mb-8 font-display leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black dark:text-white mb-6 lg:mb-8 font-display leading-tight">
                 Enterprise
                 <span className="block text-blue-600 dark:text-blue-400">Platforms</span>
               </h1>
 
-              <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed">
+              <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 mb-8 lg:mb-10 leading-relaxed">
                 Cutting-edge software platforms designed to accelerate business growth and operational efficiency.
               </p>
 

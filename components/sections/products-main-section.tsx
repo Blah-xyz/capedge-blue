@@ -105,11 +105,11 @@ export function ProductsMainSection() {
   }
 
   return (
-    <section className="py-24 pb-40 bg-white dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-12 pb-40 lg:py-16 lg:pb-40 lg:min-h-[calc(50vh-4rem)] xl:min-h-[calc(50vh-4rem)] bg-white dark:bg-gray-900 flex flex-col justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-center">
         <AnimatedSection>
           {/* Section Header */}
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 lg:mb-16">
             <div className="text-center md:text-left mb-8 md:mb-0">
               <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-6 font-display">
                 Software
