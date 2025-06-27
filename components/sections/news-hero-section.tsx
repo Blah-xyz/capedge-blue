@@ -13,7 +13,7 @@ export function NewsHeroSection() {
       style={{ paddingTop: '8rem', paddingBottom: '6rem' }}
     >
       {/* Clean Background */}
-      <div className="absolute inset-0 -top-4 bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
+      <div className="absolute inset-0 -top-4 bg-gradient-to-br from-blue-100 via-blue-50 to-blue-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
 
       {/* Content */}
       <div className="relative z-10 w-full">
@@ -26,7 +26,7 @@ export function NewsHeroSection() {
                 Latest News
               </Badge>
 
-              <h1 className="text-5xl md:text-7xl font-bold text-black dark:text-white mb-8 font-display leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-8 font-display leading-tight">
                 Stay
                 <span className="block text-blue-600 dark:text-blue-400">Informed</span>
               </h1>

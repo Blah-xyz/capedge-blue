@@ -75,7 +75,7 @@ export function ProductsMainSection() {
   }
 
   return (
-    <section className="py-20 bg-white dark:bg-slate-900">
+    <section className="py-20 pb-32 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           {/* Section Header */}
@@ -84,7 +84,7 @@ export function ProductsMainSection() {
               <Building2 className="w-4 h-4 mr-2" />
               Investment Funds
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-6 font-display">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 font-display">
               Our Investment
               <span className="block text-emerald-600 dark:text-emerald-400">Products</span>
             </h2>
@@ -107,7 +107,7 @@ export function ProductsMainSection() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-2xl font-bold text-black dark:text-white mb-4 font-display">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 font-display">
                     {fund.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
@@ -127,11 +127,11 @@ export function ProductsMainSection() {
                   {/* Stats */}
                   <div className="grid grid-cols-3 gap-3 mb-6 p-4 bg-white/50 dark:bg-slate-800/50 rounded-lg backdrop-blur-sm">
                     <div className="text-center">
-                      <div className="text-lg font-bold text-black dark:text-white">{fund.aum}</div>
+                      <div className="text-lg font-bold text-gray-900 dark:text-white">{fund.aum}</div>
                       <div className="text-xs text-gray-600 dark:text-gray-400">AUM</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold text-black dark:text-white">{fund.companies}</div>
+                      <div className="text-lg font-bold text-gray-900 dark:text-white">{fund.companies}</div>
                       <div className="text-xs text-gray-600 dark:text-gray-400">Companies</div>
                     </div>
                     <div className="text-center">
@@ -143,7 +143,7 @@ export function ProductsMainSection() {
                   {/* Minimum Investment */}
                   <div className="text-center mb-6 p-3 bg-gray-50 dark:bg-slate-700/50 rounded-lg">
                     <div className="text-sm text-gray-600 dark:text-gray-400">Minimum Investment</div>
-                    <div className="text-xl font-bold text-black dark:text-white">{fund.minInvestment}</div>
+                    <div className="text-xl font-bold text-gray-900 dark:text-white">{fund.minInvestment}</div>
                   </div>
 
                   {/* CTA */}
@@ -161,14 +161,14 @@ export function ProductsMainSection() {
             <Card className="border-0 shadow-2xl bg-gradient-to-r from-emerald-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 overflow-hidden">
               <CardContent className="p-12">
                 <div className="text-center mb-12">
-                  <h3 className="text-3xl font-bold text-black dark:text-white mb-4 font-display">
+                  <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 font-display">
                     Performance Highlights
                   </h3>
                   <p className="text-xl text-gray-600 dark:text-gray-300">
                     Consistent outperformance across all investment products
                   </p>
                 </div>
-                
+
                 <div className="grid md:grid-cols-4 gap-8 text-center">
                   <div className="flex flex-col items-center">
                     <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-4">
@@ -206,7 +206,7 @@ export function ProductsMainSection() {
           {/* Investment Process */}
           <div className="text-center">
             <div className="bg-gradient-to-r from-emerald-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-12 border border-emerald-100 dark:border-slate-600">
-              <h3 className="text-3xl font-bold text-black dark:text-white mb-6 font-display">
+              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 font-display">
                 Ready to Invest?
               </h3>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">

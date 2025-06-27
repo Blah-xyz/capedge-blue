@@ -47,7 +47,7 @@ const getCategoryColor = (category: string) => {
 
 export function NewsMainSection() {
   return (
-    <section className="py-20 bg-white dark:bg-slate-900">
+    <section className="py-20 pb-32 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           {/* Section Header */}
@@ -56,7 +56,7 @@ export function NewsMainSection() {
               <TrendingUp className="w-4 h-4 mr-2" />
               Featured Stories
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-6 font-display">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 font-display">
               Latest News &
               <span className="block text-blue-600 dark:text-blue-400">Updates</span>
             </h2>
@@ -83,7 +83,7 @@ export function NewsMainSection() {
                   <Badge variant="outline" className={`w-fit mb-6 ${getCategoryColor(featuredNews[0].category)}`}>
                     {featuredNews[0].category}
                   </Badge>
-                  <h3 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-6 font-display leading-tight">
+                  <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 font-display leading-tight">
                     {featuredNews[0].title}
                   </h3>
                   <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
@@ -125,7 +125,7 @@ export function NewsMainSection() {
                   </Badge>
                 </div>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-black dark:text-white mb-4 font-display group-hover:text-blue-600 transition-colors leading-tight">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 font-display group-hover:text-blue-600 transition-colors leading-tight">
                     {article.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">

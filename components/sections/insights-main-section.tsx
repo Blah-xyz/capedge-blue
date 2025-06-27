@@ -62,7 +62,7 @@ const getTypeColor = (type: string) => {
 
 export function InsightsMainSection() {
   return (
-    <section className="py-20 bg-white dark:bg-slate-900">
+    <section className="py-20 pb-32 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           {/* Section Header */}
@@ -71,7 +71,7 @@ export function InsightsMainSection() {
               <Brain className="w-4 h-4 mr-2" />
               Research & Analysis
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-6 font-display">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 font-display">
               Investment
               <span className="block text-indigo-600 dark:text-indigo-400">Intelligence</span>
             </h2>
@@ -98,7 +98,7 @@ export function InsightsMainSection() {
                   <Badge variant="outline" className={`w-fit mb-6 ${getTypeColor(featuredInsights[0].type)}`}>
                     {featuredInsights[0].type}
                   </Badge>
-                  <h3 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-6 font-display leading-tight">
+                  <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 font-display leading-tight">
                     {featuredInsights[0].title}
                   </h3>
                   <p className="text-xl text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
@@ -157,7 +157,7 @@ export function InsightsMainSection() {
                     </div>
                   </div>
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-black dark:text-white mb-4 font-display group-hover:text-indigo-600 transition-colors leading-tight">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 font-display group-hover:text-indigo-600 transition-colors leading-tight">
                       {insight.title}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
@@ -191,14 +191,14 @@ export function InsightsMainSection() {
             <Card className="border-0 shadow-2xl bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 overflow-hidden">
               <CardContent className="p-12">
                 <div className="text-center mb-8">
-                  <h3 className="text-3xl font-bold text-black dark:text-white mb-4 font-display">
+                  <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 font-display">
                     Research Excellence
                   </h3>
                   <p className="text-xl text-gray-600 dark:text-gray-300">
                     Trusted insights backed by rigorous analysis
                   </p>
                 </div>
-                
+
                 <div className="grid md:grid-cols-4 gap-8 text-center">
                   <div>
                     <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">200+</div>
