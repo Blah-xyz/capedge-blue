@@ -3,7 +3,7 @@
 import { AnimatedSection } from "@/components/animated-section"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Building2, TrendingUp, ArrowRight, CheckCircle } from "lucide-react"
+import { Building2, TrendingUp, ArrowRight, CheckCircle, Zap } from "lucide-react"
 import { useContactDialog } from "@/contexts/contact-dialog-context"
 
 const softwarePlatforms = [
@@ -39,6 +39,22 @@ const softwarePlatforms = [
     iconBg: "bg-blue-100 dark:bg-blue-900/30",
     iconColor: "text-blue-600",
   },
+  {
+    icon: Zap,
+    title: "CapEdge Integration Hub",
+    description: "Seamless integration platform connecting all your business tools and data sources.",
+    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=400&fit=crop&crop=center",
+    pricing: "Pro",
+    features: [
+      "API management",
+      "Data synchronization",
+      "Real-time connections",
+      "Security protocols"
+    ],
+    bgGradient: "from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20",
+    iconBg: "bg-blue-100 dark:bg-blue-900/30",
+    iconColor: "text-blue-600",
+  },
 ]
 
 export function ProductsMainSection() {
@@ -63,60 +79,73 @@ export function ProductsMainSection() {
             </p>
           </div>
 
-          {/* Software Platforms Grid - Creative Layout */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-20">
-            {softwarePlatforms.map((platform, index) => (
-              <Card key={index} className={`group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden bg-gradient-to-br ${platform.bgGradient} relative`}>
-                <CardContent className="p-0">
-                  {/* Image Section */}
-                  <div className="relative h-64 overflow-hidden">
-                    <img
-                      src={platform.image}
-                      alt={platform.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+          {/* Software Platforms - Scrollable Layout */}
+          <div className="relative">
+            <div className="overflow-x-auto pb-6">
+              <div className="flex gap-8 min-w-max lg:grid lg:grid-cols-2 lg:gap-12 lg:min-w-0">
+                {softwarePlatforms.map((platform, index) => (
+                  <Card key={index} className={`group border-0 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden bg-gradient-to-br ${platform.bgGradient} relative flex-shrink-0 w-96 lg:w-auto`}>
+                    <CardContent className="p-0">
+                      {/* Image Section */}
+                      <div className="relative h-56 overflow-hidden">
+                        <img
+                          src={platform.image}
+                          alt={platform.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
 
-                    {/* Floating Icon */}
-                    <div className={`absolute top-6 right-6 w-16 h-16 ${platform.iconBg} rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 group-hover:scale-110 transition-transform duration-300`}>
-                      <platform.icon className={`w-8 h-8 ${platform.iconColor}`} />
-                    </div>
-
-                    {/* Pricing Badge */}
-                    <div className="absolute bottom-6 left-6 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-xl px-4 py-2 border border-white/20">
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Pricing</div>
-                      <div className="text-lg font-bold text-blue-600">{platform.pricing}</div>
-                    </div>
-                  </div>
-
-                  {/* Content Section */}
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold text-black dark:text-white mb-4 font-display">
-                      {platform.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                      {platform.description}
-                    </p>
-
-                    {/* Features */}
-                    <div className="space-y-3 mb-8">
-                      {platform.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center gap-3">
-                          <CheckCircle className={`w-5 h-5 ${platform.iconColor} flex-shrink-0`} />
-                          <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+                        {/* Floating Icon */}
+                        <div className={`absolute top-4 right-4 w-12 h-12 ${platform.iconBg} rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/20`}>
+                          <platform.icon className={`w-6 h-6 ${platform.iconColor}`} />
                         </div>
-                      ))}
-                    </div>
 
-                    {/* CTA */}
-                    <Button className="w-full group/btn text-lg py-4 bg-blue-600 hover:bg-blue-700" onClick={handleContactClick}>
-                      Request Demo
-                      <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                        {/* Pricing Badge */}
+                        <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/20">
+                          <div className="text-xs text-gray-600 dark:text-gray-400">Pricing</div>
+                          <div className="text-sm font-bold text-blue-600">{platform.pricing}</div>
+                        </div>
+                      </div>
+
+                      {/* Content Section */}
+                      <div className="p-6">
+                        <h3 className="text-xl font-bold text-black dark:text-white mb-3 font-display">
+                          {platform.title}
+                        </h3>
+                        <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-sm">
+                          {platform.description}
+                        </p>
+
+                        {/* Features */}
+                        <div className="space-y-2 mb-6">
+                          {platform.features.map((feature, featureIndex) => (
+                            <div key={featureIndex} className="flex items-center gap-2">
+                              <CheckCircle className={`w-4 h-4 ${platform.iconColor} flex-shrink-0`} />
+                              <span className="text-gray-700 dark:text-gray-300 text-sm">{feature}</span>
+                            </div>
+                          ))}
+                        </div>
+
+                        {/* CTA */}
+                        <Button className="w-full text-base py-3 bg-blue-600 hover:bg-blue-700" onClick={handleContactClick}>
+                          Request Demo
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* Scroll Indicator for Mobile */}
+            <div className="lg:hidden flex justify-center mt-4">
+              <div className="flex gap-2">
+                {softwarePlatforms.map((_, index) => (
+                  <div key={index} className="w-2 h-2 bg-blue-200 dark:bg-blue-800 rounded-full"></div>
+                ))}
+              </div>
+            </div>
           </div>
 
 
