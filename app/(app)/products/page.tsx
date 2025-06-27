@@ -3,9 +3,7 @@
 import { MegaHeader } from "@/components/mega-header"
 import { FooterSection } from "@/components/sections/footer-section"
 import { ProductsHeroSection } from "@/components/sections/products-hero-section"
-import { ProductsCategoriesSection } from "@/components/sections/products-categories-section"
-import { ProductsFeaturesSection } from "@/components/sections/products-features-section"
-import { ProductsPortfolioSection } from "@/components/sections/products-portfolio-section"
+import { ProductsMainSection } from "@/components/sections/products-main-section"
 import { CTASection } from "@/components/sections/cta-section"
 
 export default function ProductsPage() {
@@ -14,9 +12,7 @@ export default function ProductsPage() {
       <MegaHeader />
       <main className="flex-1">
         <ProductsHeroSection />
-        <ProductsCategoriesSection />
-        <ProductsFeaturesSection />
-        <ProductsPortfolioSection />
+        <ProductsMainSection />
         <CTASection />
       </main>
       <FooterSection />

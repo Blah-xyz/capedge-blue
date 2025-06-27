@@ -3,8 +3,8 @@
 import { MegaHeader } from "@/components/mega-header"
 import { FooterSection } from "@/components/sections/footer-section"
 import { NewsHeroSection } from "@/components/sections/news-hero-section"
-import { NewsGridSection } from "@/components/sections/news-grid-section"
-import { NewsletterSection } from "@/components/sections/newsletter-section"
+import { NewsMainSection } from "@/components/sections/news-main-section"
+import { CTASection } from "@/components/sections/cta-section"
 
 export default function NewsPage() {
   return (
@@ -12,8 +12,8 @@ export default function NewsPage() {
       <MegaHeader />
       <main className="flex-1">
         <NewsHeroSection />
-        <NewsGridSection />
-        <NewsletterSection />
+        <NewsMainSection />
+        <CTASection />
       </main>
       <FooterSection />
     </div>

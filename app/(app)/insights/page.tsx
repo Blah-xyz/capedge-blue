@@ -3,9 +3,8 @@
 import { MegaHeader } from "@/components/mega-header"
 import { FooterSection } from "@/components/sections/footer-section"
 import { InsightsHeroSection } from "@/components/sections/insights-hero-section"
-import { InsightsGridSection } from "@/components/sections/insights-grid-section"
-import { InsightsStatsSection } from "@/components/sections/insights-stats-section"
-import { NewsletterSection } from "@/components/sections/newsletter-section"
+import { InsightsMainSection } from "@/components/sections/insights-main-section"
+import { CTASection } from "@/components/sections/cta-section"
 
 export default function InsightsPage() {
   return (
@@ -13,9 +12,8 @@ export default function InsightsPage() {
       <MegaHeader />
       <main className="flex-1">
         <InsightsHeroSection />
-        <InsightsStatsSection />
-        <InsightsGridSection />
-        <NewsletterSection />
+        <InsightsMainSection />
+        <CTASection />
       </main>
       <FooterSection />
     </div>
