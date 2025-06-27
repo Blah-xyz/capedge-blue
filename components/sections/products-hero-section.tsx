@@ -56,10 +56,15 @@ export function ProductsHeroSection() {
             {/* Right Content - Creative Laptop Dashboard */}
             <AnimatedSection className="relative">
               <div className="relative">
-                {/* Realistic Laptop Mockup */}
+                {/* Professional Laptop Mockup */}
                 <div className="relative">
-                  {/* Laptop Screen */}
-                  <div className="bg-gray-900 dark:bg-black rounded-t-3xl p-3 shadow-2xl transform perspective-1000 rotate-x-12">
+                  {/* Subtle Shadow Base */}
+                  <div className="absolute inset-0 top-6 bg-black/8 dark:bg-black/15 rounded-3xl blur-xl transform scale-105 translate-y-6"></div>
+
+                  {/* Laptop Screen - Straight */}
+                  <div className="relative bg-gray-900 dark:bg-black rounded-t-3xl p-3
+                                  shadow-lg shadow-black/10 dark:shadow-black/20
+                                  before:absolute before:inset-0 before:rounded-t-3xl before:bg-gradient-to-b before:from-white/5 before:to-transparent before:pointer-events-none">
                     {/* Screen Bezel */}
                     <div className="bg-black rounded-t-2xl p-2">
                       {/* Actual Screen */}
@@ -78,19 +83,31 @@ export function ProductsHeroSection() {
 
                         {/* Dashboard Layout */}
                         <div className="flex h-full">
-                          {/* Sidebar */}
-                          <div className="w-16 bg-slate-800 dark:bg-slate-900 flex flex-col items-center py-4 space-y-4">
-                            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                              <div className="w-4 h-4 bg-white rounded-sm"></div>
+                          {/* Enhanced Sidebar */}
+                          <div className="w-16 bg-gradient-to-b from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black flex flex-col items-center py-4 space-y-3 border-r border-slate-700/50 dark:border-slate-600/30">
+                            {/* Logo/Brand */}
+                            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/25 mb-2">
+                              <div className="w-4 h-4 bg-white rounded-sm opacity-90"></div>
                             </div>
-                            <div className="w-8 h-8 bg-slate-700 dark:bg-slate-800 rounded-lg flex items-center justify-center">
-                              <div className="w-3 h-3 bg-slate-400 rounded-sm"></div>
+
+                            {/* Navigation Items */}
+                            <div className="w-8 h-8 bg-gradient-to-br from-slate-700 to-slate-800 dark:from-slate-800 dark:to-slate-900 rounded-lg flex items-center justify-center hover:from-blue-600 hover:to-blue-700 transition-all duration-200 shadow-sm">
+                              <div className="w-3 h-3 bg-slate-300 dark:bg-slate-400 rounded-sm"></div>
                             </div>
-                            <div className="w-8 h-8 bg-slate-700 dark:bg-slate-800 rounded-lg flex items-center justify-center">
-                              <div className="w-3 h-3 bg-slate-400 rounded-sm"></div>
+                            <div className="w-8 h-8 bg-gradient-to-br from-slate-700 to-slate-800 dark:from-slate-800 dark:to-slate-900 rounded-lg flex items-center justify-center hover:from-blue-600 hover:to-blue-700 transition-all duration-200 shadow-sm">
+                              <div className="w-3 h-3 bg-slate-300 dark:bg-slate-400 rounded-sm"></div>
                             </div>
-                            <div className="w-8 h-8 bg-slate-700 dark:bg-slate-800 rounded-lg flex items-center justify-center">
-                              <div className="w-3 h-3 bg-slate-400 rounded-sm"></div>
+                            <div className="w-8 h-8 bg-gradient-to-br from-slate-700 to-slate-800 dark:from-slate-800 dark:to-slate-900 rounded-lg flex items-center justify-center hover:from-blue-600 hover:to-blue-700 transition-all duration-200 shadow-sm">
+                              <div className="w-3 h-3 bg-slate-300 dark:bg-slate-400 rounded-sm"></div>
+                            </div>
+                            <div className="w-8 h-8 bg-gradient-to-br from-slate-700 to-slate-800 dark:from-slate-800 dark:to-slate-900 rounded-lg flex items-center justify-center hover:from-blue-600 hover:to-blue-700 transition-all duration-200 shadow-sm">
+                              <div className="w-3 h-3 bg-slate-300 dark:bg-slate-400 rounded-sm"></div>
+                            </div>
+
+                            {/* Bottom Section */}
+                            <div className="flex-1"></div>
+                            <div className="w-8 h-8 bg-gradient-to-br from-slate-600 to-slate-700 dark:from-slate-700 dark:to-slate-800 rounded-lg flex items-center justify-center shadow-sm">
+                              <div className="w-2 h-2 bg-slate-400 dark:bg-slate-500 rounded-full"></div>
                             </div>
                           </div>
 
@@ -143,16 +160,28 @@ export function ProductsHeroSection() {
                     </div>
                   </div>
 
-                  {/* Laptop Base */}
-                  <div className="bg-gray-800 dark:bg-gray-900 h-6 rounded-b-3xl relative shadow-lg">
+                  {/* Laptop Base - Professional */}
+                  <div className="relative bg-gray-800 dark:bg-gray-900 h-6 rounded-b-3xl
+                                  shadow-md shadow-black/15 dark:shadow-black/25
+                                  before:absolute before:inset-0 before:rounded-b-3xl before:bg-gradient-to-b before:from-white/5 before:to-transparent before:pointer-events-none">
                     <div className="absolute inset-x-0 top-2 h-2 bg-gray-700 dark:bg-gray-800 rounded-b-2xl mx-12"></div>
                     {/* Trackpad */}
                     <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-16 h-3 bg-gray-700 dark:bg-gray-800 rounded"></div>
+
+                    {/* Subtle Ground Shadow */}
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-4/5 h-3 bg-black/10 dark:bg-black/20 rounded-full blur-lg"></div>
                   </div>
                 </div>
 
-                {/* Floating Element */}
-                <div className="absolute -top-6 -right-6 w-20 h-20 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center shadow-lg">
+                {/* Subtle Professional Effects */}
+                <div className="absolute -inset-6 bg-gradient-radial from-blue-50/20 to-transparent dark:from-blue-900/10 rounded-full blur-2xl"></div>
+
+                {/* Subtle Screen Glow */}
+                <div className="absolute top-3 left-3 right-3 h-80 bg-blue-400/5 dark:bg-blue-400/10 rounded-t-2xl blur-lg"></div>
+
+                {/* Professional Floating Element */}
+                <div className="absolute -top-6 -right-6 w-20 h-20 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center
+                                shadow-lg shadow-blue-500/10 dark:shadow-blue-400/20">
                   <Layers className="w-6 h-6 text-blue-600" />
                 </div>
               </div>
