@@ -139,16 +139,6 @@ export function ProductsHeroSection() {
                           </div>
                         </div>
 
-                        {/* Floating Platform Badges - Overflowing from screen */}
-                        <div className="absolute top-8 -right-10 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-xl px-4 py-3 shadow-xl border border-white/20 z-10">
-                          <div className="text-sm font-semibold text-blue-600">Analytics</div>
-                        </div>
-                        <div className="absolute bottom-8 -left-10 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-xl px-4 py-3 shadow-xl border border-white/20 z-10">
-                          <div className="text-sm font-semibold text-blue-600">Automation</div>
-                        </div>
-                        <div className="absolute top-1/2 -right-12 transform -translate-y-1/2 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-xl px-4 py-3 shadow-xl border border-white/20 z-10">
-                          <div className="text-sm font-semibold text-blue-600">Integration</div>
-                        </div>
                       </div>
                     </div>
                   </div>
