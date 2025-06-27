@@ -103,14 +103,30 @@ const company = [
     description: "Technology excellence and our track record of success.",
   },
   {
-    title: "Investment Insights",
-    href: "#insights",
-    description: "Market analysis and perspectives from our investment team.",
-  },
-  {
     title: "Contact Us",
     href: "#contact",
     description: "Partner with us to scale your enterprise platform.",
+  },
+]
+
+const resources = [
+  {
+    title: "News & Updates",
+    href: "/news",
+    description: "Latest company announcements, press releases, and industry news.",
+    featured: true,
+  },
+  {
+    title: "Investment Insights",
+    href: "/insights",
+    description: "Market analysis, research reports, and thought leadership content.",
+    featured: true,
+  },
+  {
+    title: "Investment Products",
+    href: "/products",
+    description: "Comprehensive overview of our investment funds and solutions.",
+    featured: false,
   },
 ]
 
@@ -235,13 +251,51 @@ export function MegaHeader() {
             <NavigationMenuItem>
               <NavigationMenuTrigger>Company</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-2">
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-1">
                   {company.map((item) => (
                     <ListItem key={item.title} title={item.title} href={item.href}>
                       {item.description}
                     </ListItem>
                   ))}
                 </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+
+            {/* Resources Menu */}
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-1">
+                  <div className="space-y-3">
+                    <h4 className="text-sm font-medium leading-none mb-3">Latest Updates</h4>
+                    <ul className="space-y-2">
+                      {resources
+                        .filter((resource) => resource.featured)
+                        .map((resource) => (
+                          <ListItem
+                            key={resource.title}
+                            title={resource.title}
+                            href={resource.href}
+                            featured={resource.featured}
+                          >
+                            {resource.description}
+                          </ListItem>
+                        ))}
+                    </ul>
+                  </div>
+                  <div className="space-y-3">
+                    <h4 className="text-sm font-medium leading-none mb-3">Investment Information</h4>
+                    <ul className="space-y-2">
+                      {resources
+                        .filter((resource) => !resource.featured)
+                        .map((resource) => (
+                          <ListItem key={resource.title} title={resource.title} href={resource.href}>
+                            {resource.description}
+                          </ListItem>
+                        ))}
+                    </ul>
+                  </div>
+                </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
@@ -328,6 +382,22 @@ export function MegaHeader() {
                   <h4 className="font-medium">Company</h4>
                   <div className="space-y-2 pl-4">
                     {company.slice(0, 4).map((item) => (
+                      <Link
+                        key={item.title}
+                        href={item.href}
+                        className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Mobile Resources */}
+                <div className="space-y-3">
+                  <h4 className="font-medium">Resources</h4>
+                  <div className="space-y-2 pl-4">
+                    {resources.map((item) => (
                       <Link
                         key={item.title}
                         href={item.href}
