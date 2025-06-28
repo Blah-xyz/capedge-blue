@@ -54,6 +54,7 @@ const softwarePlatforms = [
     pricing: "AI-Powered",
     features: ["Machine learning models", "Predictive analytics", "Natural language processing", "Computer vision"],
     iconColor: "text-blue-600",
+
   },
 ]
 
@@ -133,16 +134,8 @@ export function ProductsMainSection() {
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
-                          {/* Floating Icon */}
-                          <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-10 h-10 sm:w-12 sm:h-12 bg-white/90 dark:bg-gray-800/90 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/20">
-                            <platform.icon className={`w-5 h-5 sm:w-6 sm:h-6 ${platform.iconColor}`} />
-                          </div>
 
-                          {/* Pricing Badge */}
-                          <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-white/20">
-                            <div className="text-xs text-gray-600 dark:text-gray-400">Pricing</div>
-                            <div className="text-sm font-bold text-blue-600 truncate">{platform.pricing}</div>
-                          </div>
+
                         </div>
 
                         {/* Content Section */}
@@ -169,7 +162,7 @@ export function ProductsMainSection() {
                             ))}
                             {platform.features.length > 3 && (
                               <div className="text-xs text-gray-500 dark:text-gray-400 ml-5 sm:ml-6">
-                                +{platform.features.length - 3} more features
+                                + more features
                               </div>
                             )}
                           </div>
@@ -177,10 +170,12 @@ export function ProductsMainSection() {
                           {/* CTA */}
                           <Button
                             className="w-full text-sm sm:text-base py-2.5 sm:py-3 bg-blue-600 hover:bg-blue-700 mt-auto"
-                            onClick={handleContactClick}
+                            asChild
                           >
-                            Request Demo
-                            <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-2" />
+                            <a href={platform.image || "#"} target="_blank" rel="noopener noreferrer">
+                              View Platform
+                              <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-2" />
+                            </a>
                           </Button>
                         </div>
                       </CardContent>
