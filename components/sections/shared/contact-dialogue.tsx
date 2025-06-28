@@ -14,7 +14,7 @@ import { Mail, ArrowRight } from "lucide-react";
 import type React from "react";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
-import { Counter } from "../Counter";
+import { Counter } from "../../Counter";
 
 export default function ContactDialog() {
 	const [email, setEmail] = useState("");

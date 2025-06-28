@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation"
 import { MegaHeader } from "@/components/mega-header"
-import { FooterSection } from "@/components/sections/footer-section"
-import { ProductDetailSection } from "@/components/sections/product-detail-section"
-import { CTASection } from "@/components/sections/cta-section"
+import { FooterSection } from "@/components/sections/shared/footer-section"
+import { ProductDetailSection } from "@/components/sections/products/product-detail-section"
+import { CTASection } from "@/components/sections/shared/cta-section"
 import { findProductById } from "@/lib/data"
 
 interface ProductDetailPageProps {

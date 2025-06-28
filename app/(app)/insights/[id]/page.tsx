@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation"
 import { MegaHeader } from "@/components/mega-header"
-import { FooterSection } from "@/components/sections/footer-section"
-import { InsightDetailSection } from "@/components/sections/insight-detail-section"
-import { CTASection } from "@/components/sections/cta-section"
+import { FooterSection } from "@/components/sections/shared/footer-section"
+import { InsightDetailSection } from "@/components/sections/insights/insight-detail-section"
+import { CTASection } from "@/components/sections/shared/cta-section"
 import { findInsightById } from "@/lib/data"
 
 interface InsightDetailPageProps {

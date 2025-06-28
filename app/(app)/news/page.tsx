@@ -1,10 +1,10 @@
 "use client"
 
 import { MegaHeader } from "@/components/mega-header"
-import { FooterSection } from "@/components/sections/footer-section"
-import { NewsHeroSection } from "@/components/sections/news-hero-section"
-import { NewsMainSection } from "@/components/sections/news-main-section"
-import { CTASection } from "@/components/sections/cta-section"
+import { FooterSection } from "@/components/sections/shared/footer-section"
+import { NewsHeroSection } from "@/components/sections/news/news-hero-section"
+import { NewsMainSection } from "@/components/sections/news/news-main-section"
+import { CTASection } from "@/components/sections/shared/cta-section"
 
 export default function NewsPage() {
   return (

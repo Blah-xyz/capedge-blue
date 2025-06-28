@@ -1,7 +1,7 @@
 "use client"
 
 import { AnimatedSection } from "@/components/animated-section"
-import { Counter } from "../Counter"
+import { Counter } from "../../Counter"
 import { TrendingUp, Shield, Zap, Award } from "lucide-react"
 
 export function WhyUsSection() {

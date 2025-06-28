@@ -5,7 +5,7 @@ import "./globals.css";
 
 
 
-import ContactDialog from "@/components/sections/contact-dialogue";
+import ContactDialog from "@/components/sections/shared/contact-dialogue";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ContactDialogProvider } from "@/contexts/contact-dialog-context";
 // import { CopilotKit } from "@copilotkit/react-core";

@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation"
 import { MegaHeader } from "@/components/mega-header"
-import { FooterSection } from "@/components/sections/footer-section"
-import { NewsDetailSection } from "@/components/sections/news-detail-section"
-import { CTASection } from "@/components/sections/cta-section"
+import { FooterSection } from "@/components/sections/shared/footer-section"
+import { NewsDetailSection } from "@/components/sections/news/news-detail-section"
+import { CTASection } from "@/components/sections/shared/cta-section"
 import { findNewsById } from "@/lib/data"
 
 interface NewsDetailPageProps {

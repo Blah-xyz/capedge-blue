@@ -1,10 +1,10 @@
 "use client"
 
 import { MegaHeader } from "@/components/mega-header"
-import { FooterSection } from "@/components/sections/footer-section"
-import { ResourcesHeroSection } from "@/components/sections/resources-hero-section"
-import { ResourcesMainSection } from "@/components/sections/resources-main-section"
-import { CTASection } from "@/components/sections/cta-section"
+import { FooterSection } from "@/components/sections/shared/footer-section"
+import { ResourcesHeroSection } from "@/components/sections/resources/resources-hero-section"
+import { ResourcesMainSection } from "@/components/sections/resources/resources-main-section"
+import { CTASection } from "@/components/sections/shared/cta-section"
 
 export default function ResourcesPage() {
   return (

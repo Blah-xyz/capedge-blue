@@ -1,10 +1,10 @@
 "use client"
 
 import { MegaHeader } from "@/components/mega-header"
-import { FooterSection } from "@/components/sections/footer-section"
-import { InsightsHeroSection } from "@/components/sections/insights-hero-section"
-import { InsightsMainSection } from "@/components/sections/insights-main-section"
-import { CTASection } from "@/components/sections/cta-section"
+import { FooterSection } from "@/components/sections/shared/footer-section"
+import { InsightsHeroSection } from "@/components/sections/insights/insights-hero-section"
+import { InsightsMainSection } from "@/components/sections/insights/insights-main-section"
+import { CTASection } from "@/components/sections/shared/cta-section"
 
 export default function InsightsPage() {
   return (
