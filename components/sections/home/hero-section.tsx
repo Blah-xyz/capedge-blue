@@ -43,13 +43,12 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex items-center overflow-hidden -mt-4 min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)]"
-      style={{ paddingTop: '8rem', paddingBottom: '5rem' }}
+      className="relative flex items-center overflow-hidden min-h-screen -mt-24"
     >
       {/* Clean Linear Background - Seamless with header */}
-      <div className="absolute inset-0 -top-4 bg-gradient-to-br from-blue-100 via-blue-50 to-blue-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
+      <div className="absolute inset-0 -top-24 bg-gradient-to-br from-blue-100 via-blue-50 to-blue-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
 
-      <div className="container relative mx-auto px-4 max-w-7xl">
+      <div className="container relative mx-auto px-4 max-w-7xl pt-24 pb-20">
         {/* Two-Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[600px]">
 
