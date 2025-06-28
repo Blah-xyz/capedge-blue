@@ -16,7 +16,7 @@ export function ProductsHeroSection() {
   return (
     <section
       id="products-hero"
-      className="relative flex items-center overflow-hidden -mt-4 min-h-[60vh] lg:min-h-[calc(50vh-4rem)] xl:min-h-[calc(50vh-4rem)]"
+      className="relative flex items-center overflow-hidden -mt-4 min-h-[70vh] sm:min-h-[60vh] lg:min-h-[calc(50vh-4rem)] xl:min-h-[calc(50vh-4rem)]"
       style={{ paddingTop: '6rem', paddingBottom: '4rem' }}
     >
       {/* Clean Background */}
@@ -25,58 +25,58 @@ export function ProductsHeroSection() {
       {/* Content */}
       <div className="relative z-10 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center w-full">
             {/* Left Content */}
-            <AnimatedSection>
-              <Badge variant="outline" className="mb-6 lg:mb-8 bg-white/90 backdrop-blur-sm border-blue-200 text-blue-700 px-4 py-2">
-                <Layers className="w-4 h-4 mr-2" />
+            <AnimatedSection className="text-center lg:text-left">
+              <Badge variant="outline" className="mb-4 sm:mb-6 lg:mb-8 bg-white/90 backdrop-blur-sm border-blue-200 text-blue-700 px-3 sm:px-4 py-1.5 sm:py-2 text-sm">
+                <Layers className="w-3 sm:w-4 h-3 sm:h-4 mr-1.5 sm:mr-2" />
                 Software Platforms
               </Badge>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black dark:text-white mb-6 lg:mb-8 font-display leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black dark:text-white mb-4 sm:mb-6 lg:mb-8 font-display leading-tight">
                 Enterprise
                 <span className="block text-blue-600 dark:text-blue-400">Platforms</span>
               </h1>
 
-              <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 mb-8 lg:mb-10 leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 lg:mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
                 Cutting-edge software platforms designed to accelerate business growth and operational efficiency.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" onClick={handleContactClick} className="group px-8 py-4 text-lg">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                <Button size="lg" onClick={handleContactClick} className="group px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg">
                   Explore Platforms
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
+                <Button variant="outline" size="lg" className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg">
                   Request Demo
                 </Button>
               </div>
             </AnimatedSection>
 
             {/* Right Content - Creative Laptop Dashboard */}
-            <AnimatedSection className="relative">
-              <div className="relative">
+            <AnimatedSection className="relative mt-8 lg:mt-0">
+              <div className="relative max-w-lg mx-auto lg:max-w-none">
                 {/* Professional Laptop Mockup */}
                 <div className="relative">
                   {/* Subtle Shadow Base */}
-                  <div className="absolute inset-0 top-6 bg-black/8 dark:bg-black/15 rounded-3xl blur-xl transform scale-105 translate-y-6"></div>
+                  <div className="absolute inset-0 top-3 sm:top-6 bg-black/8 dark:bg-black/15 rounded-2xl sm:rounded-3xl blur-xl transform scale-105 translate-y-3 sm:translate-y-6"></div>
 
                   {/* Laptop Screen - Straight */}
-                  <div className="relative bg-gray-900 dark:bg-black rounded-t-3xl p-3
+                  <div className="relative bg-gray-900 dark:bg-black rounded-t-2xl sm:rounded-t-3xl p-2 sm:p-3
                                   shadow-lg shadow-black/10 dark:shadow-black/20
-                                  before:absolute before:inset-0 before:rounded-t-3xl before:bg-gradient-to-b before:from-white/5 before:to-transparent before:pointer-events-none">
+                                  before:absolute before:inset-0 before:rounded-t-2xl sm:before:rounded-t-3xl before:bg-gradient-to-b before:from-white/5 before:to-transparent before:pointer-events-none">
                     {/* Screen Bezel */}
-                    <div className="bg-black rounded-t-2xl p-2">
+                    <div className="bg-black rounded-t-xl sm:rounded-t-2xl p-1.5 sm:p-2">
                       {/* Actual Screen */}
-                      <div className="bg-white dark:bg-slate-900 rounded-t-xl overflow-hidden relative h-80">
+                      <div className="bg-white dark:bg-slate-900 rounded-t-lg sm:rounded-t-xl overflow-hidden relative h-48 sm:h-64 lg:h-80">
                         {/* Browser Bar */}
-                        <div className="bg-gray-50 dark:bg-slate-800 px-4 py-2 flex items-center gap-3 border-b border-gray-200 dark:border-slate-700">
-                          <div className="flex gap-2">
-                            <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                            <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                        <div className="bg-gray-50 dark:bg-slate-800 px-2 sm:px-4 py-1.5 sm:py-2 flex items-center gap-2 sm:gap-3 border-b border-gray-200 dark:border-slate-700">
+                          <div className="flex gap-1 sm:gap-2">
+                            <div className="w-2 sm:w-3 h-2 sm:h-3 bg-red-500 rounded-full"></div>
+                            <div className="w-2 sm:w-3 h-2 sm:h-3 bg-yellow-500 rounded-full"></div>
+                            <div className="w-2 sm:w-3 h-2 sm:h-3 bg-green-500 rounded-full"></div>
                           </div>
-                          <div className="flex-1 bg-white dark:bg-slate-700 rounded-md px-3 py-1 text-xs text-gray-500 dark:text-gray-400 ml-4">
+                          <div className="flex-1 bg-white dark:bg-slate-700 rounded-md px-2 sm:px-3 py-0.5 sm:py-1 text-xs text-gray-500 dark:text-gray-400 ml-2 sm:ml-4 hidden sm:block">
                             app.capedge.com/platform
                           </div>
                         </div>
