@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu, Building2, TrendingUp, Users, BookOpen, ArrowRight } from "lucide-react"
+import { Menu, Building2, TrendingUp, Users, BookOpen, ArrowRight, Target, Handshake, BarChart3, Zap, Info, Lightbulb, Briefcase, Shield, Layers, Database, CreditCard, Globe, FileText, Newspaper, Library, Package } from "lucide-react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
@@ -47,21 +47,29 @@ const investmentStrategy = [
     title: "Growth Capital",
     href: "#investment-approach",
     description: "Capital for expanding technology companies and market leaders.",
+    icon: Target,
+    iconColor: "text-green-600 dark:text-green-400",
   },
   {
     title: "Strategic Partnerships",
     href: "#about",
     description: "Long-term partnerships beyond capital with operational guidance.",
+    icon: Handshake,
+    iconColor: "text-purple-600 dark:text-purple-400",
   },
   {
     title: "Market Transformation",
     href: "#why-us",
     description: "Investments that reshape key markets through innovation.",
+    icon: BarChart3,
+    iconColor: "text-orange-600 dark:text-orange-400",
   },
   {
     title: "Value Creation",
     href: "#why-us",
     description: "Building transformational technology platforms that scale globally.",
+    icon: Zap,
+    iconColor: "text-yellow-600 dark:text-yellow-400",
   },
 ]
 
@@ -71,21 +79,29 @@ const companyInfo = [
     title: "About CapEdge",
     href: "#about",
     description: "Learn about our mission to build the future of enterprise software.",
+    icon: Info,
+    iconColor: "text-blue-600 dark:text-blue-400",
   },
   {
     title: "Investment Philosophy",
     href: "#investment-approach",
     description: "Our three-step approach: Deepen, Understand, Invest.",
+    icon: Lightbulb,
+    iconColor: "text-amber-600 dark:text-amber-400",
   },
   {
     title: "Portfolio",
     href: "#portfolio",
     description: "Explore our successful investments and platform businesses.",
+    icon: Briefcase,
+    iconColor: "text-slate-600 dark:text-slate-400",
   },
   {
     title: "Why CapEdge",
     href: "#why-us",
     description: "Technology excellence and our track record of success.",
+    icon: Shield,
+    iconColor: "text-emerald-600 dark:text-emerald-400",
   },
 ]
 
@@ -95,21 +111,29 @@ const solutions = [
     title: "Entrepreneurs",
     href: "#about",
     description: "Partnership and capital for scaling your enterprise platform.",
+    icon: Lightbulb,
+    iconColor: "text-yellow-600 dark:text-yellow-400",
   },
   {
     title: "Investors",
     href: "/products",
     description: "Investment opportunities in enterprise software and platforms.",
+    icon: TrendingUp,
+    iconColor: "text-green-600 dark:text-green-400",
   },
   {
     title: "Platform Owners",
     href: "#platform-businesses",
     description: "Strategic guidance for technology platform businesses.",
+    icon: Layers,
+    iconColor: "text-indigo-600 dark:text-indigo-400",
   },
   {
     title: "Enterprise Leaders",
     href: "#portfolio",
     description: "Transformational software solutions for enterprise growth.",
+    icon: Building2,
+    iconColor: "text-gray-600 dark:text-gray-400",
   },
 ]
 
@@ -120,24 +144,32 @@ const resources = [
     href: "/insights",
     description: "Market analysis, research reports, and thought leadership content.",
     featured: true,
+    icon: BarChart3,
+    iconColor: "text-purple-600 dark:text-purple-400",
   },
   {
     title: "News & Updates",
     href: "/news",
     description: "Latest company announcements, press releases, and industry news.",
     featured: true,
+    icon: Newspaper,
+    iconColor: "text-red-600 dark:text-red-400",
   },
   {
     title: "Resource Center",
     href: "/resources",
     description: "Complete library of guides, research, tools, and case studies.",
     featured: false,
+    icon: Library,
+    iconColor: "text-teal-600 dark:text-teal-400",
   },
   {
     title: "Investment Products",
     href: "/products",
     description: "Comprehensive overview of our investment funds and solutions.",
     featured: false,
+    icon: Package,
+    iconColor: "text-orange-600 dark:text-orange-400",
   },
 ]
 
@@ -146,8 +178,9 @@ const ListItem = React.forwardRef<
   React.ComponentPropsWithoutRef<"a"> & {
     featured?: boolean
     icon?: React.ComponentType<{ className?: string }>
+    iconColor?: string
   }
->(({ className, title, children, featured, icon: Icon, ...props }, ref) => {
+>(({ className, title, children, featured, icon: Icon, iconColor, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -163,7 +196,7 @@ const ListItem = React.forwardRef<
           <div className="flex items-center gap-3">
             {Icon && (
               <div className="flex-shrink-0">
-                <Icon className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                <Icon className={`h-4 w-4 ${iconColor || "text-blue-600 dark:text-blue-400"}`} />
               </div>
             )}
             <div className="flex-1">
@@ -229,7 +262,7 @@ export function MegaHeader() {
               <NavigationMenuTrigger className="text-sm font-medium rounded-full px-4 py-2 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200">
                 Investments
               </NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="mt-2">
                 <div className="grid gap-6 p-6 w-[800px] lg:grid-cols-3">
                   {/* Focus Areas */}
                   <div className="space-y-4">
@@ -257,7 +290,7 @@ export function MegaHeader() {
                     </h4>
                     <ul className="space-y-1">
                       {investmentStrategy.map((item) => (
-                        <ListItem key={item.title} title={item.title} href={item.href}>
+                        <ListItem key={item.title} title={item.title} href={item.href} icon={item.icon} iconColor={item.iconColor}>
                           {item.description}
                         </ListItem>
                       ))}
@@ -271,7 +304,7 @@ export function MegaHeader() {
                     </h4>
                     <ul className="space-y-1">
                       {solutions.map((item) => (
-                        <ListItem key={item.title} title={item.title} href={item.href}>
+                        <ListItem key={item.title} title={item.title} href={item.href} icon={item.icon} iconColor={item.iconColor}>
                           {item.description}
                         </ListItem>
                       ))}
@@ -305,10 +338,10 @@ export function MegaHeader() {
               <NavigationMenuTrigger className="text-sm font-medium rounded-full px-4 py-2 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200">
                 Company
               </NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="mt-2">
                 <ul className="grid gap-3 p-6 w-[400px] lg:grid-cols-1">
                   {companyInfo.map((item) => (
-                    <ListItem key={item.title} title={item.title} href={item.href}>
+                    <ListItem key={item.title} title={item.title} href={item.href} icon={item.icon} iconColor={item.iconColor}>
                       {item.description}
                     </ListItem>
                   ))}
@@ -321,18 +354,18 @@ export function MegaHeader() {
               <NavigationMenuTrigger className="text-sm font-medium rounded-full px-4 py-2 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200">
                 Products
               </NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="mt-2">
                 <ul className="grid gap-3 p-6 w-[400px] lg:grid-cols-1">
-                  <ListItem title="Investment Products" href="/products">
+                  <ListItem title="Investment Products" href="/products" icon={Package} iconColor="text-orange-600 dark:text-orange-400">
                     Comprehensive overview of our investment funds and solutions.
                   </ListItem>
-                  <ListItem title="Enterprise Platforms" href="/products#platforms">
+                  <ListItem title="Enterprise Platforms" href="/products#platforms" icon={Layers} iconColor="text-indigo-600 dark:text-indigo-400">
                     Cutting-edge software platforms for business growth.
                   </ListItem>
-                  <ListItem title="Financial Services" href="/products#financial">
+                  <ListItem title="Financial Services" href="/products#financial" icon={CreditCard} iconColor="text-green-600 dark:text-green-400">
                     Technology-driven financial services and fintech solutions.
                   </ListItem>
-                  <ListItem title="Platform Businesses" href="/products#businesses">
+                  <ListItem title="Platform Businesses" href="/products#businesses" icon={Globe} iconColor="text-blue-600 dark:text-blue-400">
                     Scalable technology platforms with global market potential.
                   </ListItem>
                 </ul>
@@ -344,7 +377,7 @@ export function MegaHeader() {
               <NavigationMenuTrigger className="text-sm font-medium rounded-full px-4 py-2 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200">
                 Resources
               </NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="mt-2">
                 <div className="grid gap-6 p-6 w-[500px] lg:grid-cols-1">
                   <div className="space-y-4">
                     <h4 className="text-sm font-semibold leading-none text-foreground uppercase tracking-wide">
@@ -359,6 +392,8 @@ export function MegaHeader() {
                             title={resource.title}
                             href={resource.href}
                             featured={resource.featured}
+                            icon={resource.icon}
+                            iconColor={resource.iconColor}
                           >
                             {resource.description}
                           </ListItem>
@@ -373,7 +408,7 @@ export function MegaHeader() {
                       {resources
                         .filter((resource) => !resource.featured)
                         .map((resource) => (
-                          <ListItem key={resource.title} title={resource.title} href={resource.href}>
+                          <ListItem key={resource.title} title={resource.title} href={resource.href} icon={resource.icon} iconColor={resource.iconColor}>
                             {resource.description}
                           </ListItem>
                         ))}
