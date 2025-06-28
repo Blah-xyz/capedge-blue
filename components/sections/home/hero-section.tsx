@@ -82,36 +82,10 @@ export function HeroSection() {
 
           {/* Right Column - Main Illustration */}
           <AnimatedSection delay={0.3}>
-            <div className="relative w-full max-w-6xl mx-auto h-[300px] sm:h-[400px] lg:h-[500px] overflow-visible">
-
-              {/* Photorealistic Background Base with depth */}
-              <div className="absolute inset-0 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-gray-50 via-white to-gray-100 shadow-2xl border border-gray-200/30"
-                   style={{
-                     background: `
-                       linear-gradient(135deg,
-                         #f8fafc 0%,
-                         #ffffff 25%,
-                         #f1f5f9 50%,
-                         #e2e8f0 75%,
-                         #cbd5e1 100%
-                       ),
-                       radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
-                       radial-gradient(circle at 70% 80%, rgba(16, 185, 129, 0.03) 0%, transparent 50%)
-                     `,
-                     boxShadow: `
-                       0 25px 50px -12px rgba(0, 0, 0, 0.15),
-                       0 0 0 1px rgba(255, 255, 255, 0.8),
-                       inset 0 1px 0 rgba(255, 255, 255, 0.9),
-                       inset 0 -1px 0 rgba(0, 0, 0, 0.05)
-                     `
-                   }} />
-
-              {/* Ambient lighting effects */}
-              <div className="absolute top-0 left-0 right-0 h-[200px] sm:h-[300px] bg-gradient-to-b from-blue-50/40 via-transparent to-transparent rounded-t-2xl sm:rounded-t-3xl" />
-              <div className="absolute bottom-0 left-0 right-0 h-[150px] sm:h-[200px] bg-gradient-to-t from-slate-100/60 via-transparent to-transparent rounded-b-2xl sm:rounded-b-3xl" />
+            <div className="relative w-full max-w-4xl mx-auto h-[300px] sm:h-[350px] md:h-[300px] lg:h-[320px] overflow-visible">
 
               {/* Main Interface Window - Photorealistic with glass effect */}
-              <div className="absolute top-8 sm:top-12 left-2 sm:left-4 lg:left-8 w-[95%] sm:w-[90%] lg:w-[650px] max-w-[650px] rounded-xl sm:rounded-2xl overflow-hidden z-10"
+              <div className="absolute top-0 sm:top-1 left-2 sm:left-4 lg:left-8 w-[95%] sm:w-[90%] lg:w-[650px] max-w-[650px] rounded-xl sm:rounded-2xl overflow-hidden z-10"
                    style={{
                      background: `
                        linear-gradient(145deg,
@@ -220,7 +194,7 @@ export function HeroSection() {
               </div>
 
               {/* Floating Selection Panel - Photorealistic glass effect */}
-              <div className="hidden sm:block absolute top-24 lg:top-32 right-2 sm:right-4 lg:right-12 w-[240px] sm:w-[280px] lg:w-[300px] rounded-xl sm:rounded-2xl overflow-visible z-20"
+              <div className="hidden sm:block absolute top-8 lg:top-12 right-0 sm:right-2 lg:right-4 w-[240px] sm:w-[280px] lg:w-[300px] rounded-xl sm:rounded-2xl overflow-visible z-20"
                    style={{
                      background: `
                        linear-gradient(145deg,

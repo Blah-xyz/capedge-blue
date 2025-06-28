@@ -316,13 +316,27 @@ export function MegaHeader() {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            {/* Products Link */}
+            {/* Products Menu */}
             <NavigationMenuItem>
-              <Link href="/products" legacyBehavior passHref>
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-full bg-background px-4 py-2 text-sm font-medium transition-all duration-200 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-700 dark:hover:text-blue-300 focus:bg-blue-50 focus:text-blue-700 focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                  Products
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuTrigger className="text-sm font-medium rounded-full px-4 py-2 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200">
+                Products
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 w-[400px] lg:grid-cols-1">
+                  <ListItem title="Investment Products" href="/products">
+                    Comprehensive overview of our investment funds and solutions.
+                  </ListItem>
+                  <ListItem title="Enterprise Platforms" href="/products#platforms">
+                    Cutting-edge software platforms for business growth.
+                  </ListItem>
+                  <ListItem title="Financial Services" href="/products#financial">
+                    Technology-driven financial services and fintech solutions.
+                  </ListItem>
+                  <ListItem title="Platform Businesses" href="/products#businesses">
+                    Scalable technology platforms with global market potential.
+                  </ListItem>
+                </ul>
+              </NavigationMenuContent>
             </NavigationMenuItem>
 
             {/* Resources Menu */}
@@ -369,26 +383,14 @@ export function MegaHeader() {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            {/* Simple Links */}
-            <NavigationMenuItem>
-              <Link href="#contact" legacyBehavior passHref>
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-full bg-background px-4 py-2 text-sm font-medium transition-all duration-200 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-700 dark:hover:text-blue-300 focus:bg-blue-50 focus:text-blue-700 focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                  Contact
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
+
           </NavigationMenuList>
         </NavigationMenu>
 
           {/* Right Side Actions */}
           <div className="flex items-center gap-3">
-            {/* Desktop CTA Buttons */}
-            <div className="hidden lg:flex items-center gap-2">
-              <Link href="#contact">
-                <Button variant="ghost" size="sm" className="text-sm font-medium rounded-full px-4 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200">
-                  Contact Sales
-                </Button>
-              </Link>
+            {/* Desktop CTA Button */}
+            <div className="hidden lg:flex items-center">
               <Link href="#contact">
                 <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 shadow-md hover:shadow-lg transition-all duration-200">
                   Get Started
@@ -434,19 +436,12 @@ export function MegaHeader() {
                 {/* Mobile Content */}
                 <div className="flex-1 overflow-y-auto">
                   <div className="p-6 space-y-8">
-                    {/* Mobile CTA Buttons */}
-                    <div className="grid grid-cols-2 gap-3">
+                    {/* Mobile CTA Button */}
+                    <div className="mb-6">
                       <SheetTrigger asChild>
                         <Link href="#contact">
                           <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-md hover:shadow-lg transition-all duration-200">
                             Get Started
-                          </Button>
-                        </Link>
-                      </SheetTrigger>
-                      <SheetTrigger asChild>
-                        <Link href="#contact">
-                          <Button variant="outline" className="w-full rounded-full border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300 hover:bg-blue-50 dark:hover:bg-blue-950/50 transition-all duration-200">
-                            Contact Sales
                           </Button>
                         </Link>
                       </SheetTrigger>
@@ -478,6 +473,41 @@ export function MegaHeader() {
                               </Link>
                             </SheetTrigger>
                           ))}
+                        </div>
+                      </div>
+
+                      {/* Mobile Products */}
+                      <div className="space-y-4">
+                        <h4 className="font-bold text-base text-blue-600 dark:text-blue-400 uppercase tracking-wide border-b border-blue-100 dark:border-blue-900 pb-2">
+                          Products
+                        </h4>
+                        <div className="space-y-3">
+                          <SheetTrigger asChild>
+                            <Link
+                              href="/products"
+                              className="block p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/30 transition-all duration-200 group"
+                            >
+                              <div className="font-medium text-sm group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                Investment Products
+                              </div>
+                              <div className="text-xs text-muted-foreground line-clamp-1 mt-1">
+                                Comprehensive overview of our investment funds and solutions
+                              </div>
+                            </Link>
+                          </SheetTrigger>
+                          <SheetTrigger asChild>
+                            <Link
+                              href="/products#platforms"
+                              className="block p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/30 transition-all duration-200 group"
+                            >
+                              <div className="font-medium text-sm group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                Enterprise Platforms
+                              </div>
+                              <div className="text-xs text-muted-foreground line-clamp-1 mt-1">
+                                Cutting-edge software platforms for business growth
+                              </div>
+                            </Link>
+                          </SheetTrigger>
                         </div>
                       </div>
 
@@ -561,25 +591,7 @@ export function MegaHeader() {
                       </div>
                     </div>
 
-                    {/* Mobile Products Link */}
-                    <div className="mt-6 pt-6 border-t border-blue-100 dark:border-blue-900">
-                      <SheetTrigger asChild>
-                        <Link
-                          href="/products"
-                          className="flex items-center justify-between p-4 rounded-lg bg-blue-50 dark:bg-blue-950/30 hover:bg-blue-100 dark:hover:bg-blue-950/50 transition-all duration-200 group"
-                        >
-                          <div>
-                            <div className="font-semibold text-blue-700 dark:text-blue-300 group-hover:text-blue-800 dark:group-hover:text-blue-200">
-                              View All Products
-                            </div>
-                            <div className="text-sm text-blue-600 dark:text-blue-400">
-                              Explore our investment platforms
-                            </div>
-                          </div>
-                          <ArrowRight className="h-5 w-5 text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform" />
-                        </Link>
-                      </SheetTrigger>
-                    </div>
+
                   </div>
                 </div>
 
