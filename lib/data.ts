@@ -47,6 +47,73 @@ export interface NewsArticle {
   tags?: string[]
 }
 
+export interface ResourceGuide {
+  id: number
+  title: string
+  description: string
+  category: string
+  type: string
+  downloadUrl: string
+  image: string
+  fileSize: string
+  pages: number
+  date: string
+  author: string
+  tags: string[]
+  iconColor: string
+  featured?: boolean
+}
+
+export interface Whitepaper {
+  id: number
+  title: string
+  description: string
+  abstract: string
+  downloadUrl: string
+  image: string
+  fileSize: string
+  pages: number
+  date: string
+  author: string
+  category: string
+  tags: string[]
+  iconColor: string
+  featured?: boolean
+}
+
+export interface Tool {
+  id: number
+  title: string
+  description: string
+  category: string
+  type: string
+  accessUrl: string
+  image: string
+  features: string[]
+  pricing: string
+  date: string
+  tags: string[]
+  iconColor: string
+  featured?: boolean
+}
+
+export interface CaseStudy {
+  id: number
+  title: string
+  description: string
+  company: string
+  industry: string
+  challenge: string
+  solution: string
+  results: string[]
+  image: string
+  date: string
+  readTime: string
+  tags: string[]
+  iconColor: string
+  featured?: boolean
+}
+
 export const products: Product[] = [
   {
     id: 1,
@@ -246,6 +313,191 @@ export const newsArticles: NewsArticle[] = [
   }
 ]
 
+export const resourceGuides: ResourceGuide[] = [
+  {
+    id: 1,
+    title: "Enterprise Software Investment Guide 2024",
+    description: "Comprehensive guide to evaluating and investing in enterprise software companies, covering market trends, valuation methods, and due diligence processes.",
+    category: "Investment Strategy",
+    type: "PDF Guide",
+    downloadUrl: "/resources/guides/enterprise-software-investment-guide-2024.pdf",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop&crop=center",
+    fileSize: "2.4 MB",
+    pages: 45,
+    date: "2024-06-20",
+    author: "CapEdge Research Team",
+    tags: ["Investment", "Enterprise Software", "Valuation", "Due Diligence"],
+    iconColor: "text-blue-600",
+    featured: true
+  },
+  {
+    id: 2,
+    title: "SaaS Metrics That Matter",
+    description: "Essential metrics for evaluating SaaS businesses, including ARR, churn rates, customer acquisition costs, and lifetime value calculations.",
+    category: "Analytics",
+    type: "PDF Guide",
+    downloadUrl: "/resources/guides/saas-metrics-guide.pdf",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center",
+    fileSize: "1.8 MB",
+    pages: 32,
+    date: "2024-06-15",
+    author: "Dr. Sarah Chen",
+    tags: ["SaaS", "Metrics", "Analytics", "Performance"],
+    iconColor: "text-green-600",
+    featured: true
+  },
+  {
+    id: 3,
+    title: "AI Integration in Enterprise Software",
+    description: "Strategic framework for understanding how artificial intelligence is transforming enterprise software and creating new investment opportunities.",
+    category: "Technology Trends",
+    type: "PDF Guide",
+    downloadUrl: "/resources/guides/ai-integration-enterprise.pdf",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop&crop=center",
+    fileSize: "3.1 MB",
+    pages: 58,
+    date: "2024-06-10",
+    author: "Technology Research Division",
+    tags: ["AI", "Machine Learning", "Enterprise", "Innovation"],
+    iconColor: "text-purple-600",
+    featured: false
+  }
+]
+
+export const whitepapers: Whitepaper[] = [
+  {
+    id: 1,
+    title: "The Future of Enterprise Software: Market Outlook 2024-2027",
+    description: "In-depth analysis of enterprise software market trends, growth projections, and emerging opportunities in the global technology landscape.",
+    abstract: "This comprehensive whitepaper examines the evolving enterprise software market, analyzing key trends, growth drivers, and investment opportunities. Our research indicates a compound annual growth rate of 12.3% through 2027, driven by cloud adoption, AI integration, and digital transformation initiatives.",
+    downloadUrl: "/resources/whitepapers/enterprise-software-outlook-2024-2027.pdf",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center",
+    fileSize: "4.2 MB",
+    pages: 72,
+    date: "2024-06-25",
+    author: "CapEdge Market Research",
+    category: "Market Analysis",
+    tags: ["Market Research", "Growth Projections", "Enterprise Software", "Investment"],
+    iconColor: "text-blue-600",
+    featured: true
+  },
+  {
+    id: 2,
+    title: "Cloud Infrastructure Investment Strategies",
+    description: "Strategic analysis of cloud infrastructure investments, examining market dynamics, competitive landscape, and emerging opportunities in the cloud computing sector.",
+    abstract: "This whitepaper provides a comprehensive analysis of cloud infrastructure investment opportunities, covering public cloud providers, edge computing, and hybrid cloud solutions. We examine the $500B+ market opportunity and identify key investment themes for the next decade.",
+    downloadUrl: "/resources/whitepapers/cloud-infrastructure-strategies.pdf",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop&crop=center",
+    fileSize: "3.8 MB",
+    pages: 64,
+    date: "2024-06-18",
+    author: "Infrastructure Investment Team",
+    category: "Technology Infrastructure",
+    tags: ["Cloud Computing", "Infrastructure", "Investment Strategy", "Technology"],
+    iconColor: "text-indigo-600",
+    featured: true
+  }
+]
+
+export const tools: Tool[] = [
+  {
+    id: 1,
+    title: "CapEdge Valuation Calculator",
+    description: "Advanced SaaS valuation tool that helps investors calculate enterprise value using multiple methodologies including revenue multiples, DCF, and comparable company analysis.",
+    category: "Valuation Tools",
+    type: "Web Application",
+    accessUrl: "/tools/valuation-calculator",
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=500&fit=crop&crop=center",
+    features: ["Multiple valuation methods", "Scenario analysis", "Export to Excel", "Real-time market data"],
+    pricing: "Free for registered users",
+    date: "2024-06-20",
+    tags: ["Valuation", "SaaS", "Calculator", "Analysis"],
+    iconColor: "text-blue-600",
+    featured: true
+  },
+  {
+    id: 2,
+    title: "Market Intelligence Dashboard",
+    description: "Real-time dashboard providing market insights, competitor analysis, and industry trends for enterprise software sectors.",
+    category: "Market Intelligence",
+    type: "Dashboard",
+    accessUrl: "/tools/market-dashboard",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center",
+    features: ["Real-time data", "Custom alerts", "Competitor tracking", "Trend analysis"],
+    pricing: "Premium feature",
+    date: "2024-06-15",
+    tags: ["Market Intelligence", "Dashboard", "Analytics", "Trends"],
+    iconColor: "text-green-600",
+    featured: true
+  },
+  {
+    id: 3,
+    title: "Due Diligence Checklist Generator",
+    description: "Comprehensive checklist generator for enterprise software due diligence, customizable by company stage, sector, and investment size.",
+    category: "Due Diligence",
+    type: "Generator Tool",
+    accessUrl: "/tools/dd-checklist",
+    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=500&fit=crop&crop=center",
+    features: ["Customizable templates", "Progress tracking", "Team collaboration", "Export options"],
+    pricing: "Free",
+    date: "2024-06-10",
+    tags: ["Due Diligence", "Checklist", "Investment", "Process"],
+    iconColor: "text-purple-600",
+    featured: false
+  }
+]
+
+export const caseStudies: CaseStudy[] = [
+  {
+    id: 1,
+    title: "TechFlow Solutions: From Startup to Market Leader",
+    description: "How CapEdge Group's strategic investment and guidance helped TechFlow Solutions scale from a $5M ARR startup to a $100M+ market leader in workflow automation.",
+    company: "TechFlow Solutions",
+    industry: "Workflow Automation",
+    challenge: "Limited market reach and scalability challenges despite strong product-market fit",
+    solution: "Strategic investment, executive team expansion, and international market entry strategy",
+    results: ["20x revenue growth in 3 years", "Expanded to 15 countries", "Achieved market leadership position", "Successful exit at $1.2B valuation"],
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=500&fit=crop&crop=center",
+    date: "2024-06-22",
+    readTime: "8 min read",
+    tags: ["Success Story", "Workflow Automation", "Scale-up", "Exit"],
+    iconColor: "text-blue-600",
+    featured: true
+  },
+  {
+    id: 2,
+    title: "DataVault: Transforming Enterprise Data Security",
+    description: "Strategic partnership that helped DataVault become the leading enterprise data security platform through product innovation and market expansion.",
+    company: "DataVault",
+    industry: "Data Security",
+    challenge: "Intense competition in cybersecurity market and need for rapid product development",
+    solution: "Growth capital investment, strategic partnerships, and R&D acceleration program",
+    results: ["300% increase in enterprise customers", "Launched 5 new security modules", "Achieved SOC 2 Type II compliance", "Raised Series C at $800M valuation"],
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop&crop=center",
+    date: "2024-06-18",
+    readTime: "6 min read",
+    tags: ["Data Security", "Growth Capital", "Product Innovation", "Compliance"],
+    iconColor: "text-red-600",
+    featured: true
+  },
+  {
+    id: 3,
+    title: "CloudOps Pro: Revolutionizing DevOps Management",
+    description: "Early-stage investment that supported CloudOps Pro's journey to becoming the preferred DevOps platform for Fortune 500 companies.",
+    company: "CloudOps Pro",
+    industry: "DevOps Tools",
+    challenge: "Breaking into enterprise market dominated by established players",
+    solution: "Seed funding, product development support, and enterprise sales strategy",
+    results: ["Secured 50+ Fortune 500 clients", "Achieved 99.9% uptime SLA", "Grew team from 15 to 200 employees", "Became category leader in DevOps automation"],
+    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&h=500&fit=crop&crop=center",
+    date: "2024-06-12",
+    readTime: "7 min read",
+    tags: ["DevOps", "Early Stage", "Enterprise Sales", "Category Leader"],
+    iconColor: "text-green-600",
+    featured: false
+  }
+]
+
 // Utility functions
 export function findProductById(id: number): Product | undefined {
   return products.find(product => product.id === id)
@@ -269,6 +521,45 @@ export function getRelatedInsights(currentId: number, limit: number = 3): Insigh
 
 export function getRelatedNews(currentId: number, limit: number = 3): NewsArticle[] {
   return newsArticles.filter(article => article.id !== currentId).slice(0, limit)
+}
+
+export function findResourceGuideById(id: number): ResourceGuide | undefined {
+  return resourceGuides.find(guide => guide.id === id)
+}
+
+export function findWhitepaperById(id: number): Whitepaper | undefined {
+  return whitepapers.find(whitepaper => whitepaper.id === id)
+}
+
+export function findToolById(id: number): Tool | undefined {
+  return tools.find(tool => tool.id === id)
+}
+
+export function findCaseStudyById(id: number): CaseStudy | undefined {
+  return caseStudies.find(caseStudy => caseStudy.id === id)
+}
+
+export function getFeaturedResources() {
+  return {
+    guides: resourceGuides.filter(guide => guide.featured),
+    whitepapers: whitepapers.filter(whitepaper => whitepaper.featured),
+    tools: tools.filter(tool => tool.featured),
+    caseStudies: caseStudies.filter(caseStudy => caseStudy.featured)
+  }
+}
+
+export function getAllResourcesByCategory(category: string) {
+  const allResources = [
+    ...resourceGuides.map(guide => ({ ...guide, resourceType: 'guide' })),
+    ...whitepapers.map(whitepaper => ({ ...whitepaper, resourceType: 'whitepaper' })),
+    ...tools.map(tool => ({ ...tool, resourceType: 'tool' })),
+    ...caseStudies.map(caseStudy => ({ ...caseStudy, resourceType: 'caseStudy' }))
+  ]
+
+  return allResources.filter(resource =>
+    resource.category?.toLowerCase().includes(category.toLowerCase()) ||
+    resource.tags?.some(tag => tag.toLowerCase().includes(category.toLowerCase()))
+  )
 }
 
 // Icon mapping utility

@@ -141,7 +141,7 @@ export function NewsDetailSection({ article }: NewsDetailSectionProps) {
       </AnimatedSection>
 
       {/* Content Section */}
-      <AnimatedSection className="py-16 bg-white dark:bg-gray-800">
+      <AnimatedSection className={`py-16 ${relatedNews.length === 0 ? 'pb-32 sm:pb-40 lg:pb-40' : ''} bg-white dark:bg-gray-800`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           {/* Key Highlights */}
           <div className="mb-12">
@@ -185,7 +185,7 @@ export function NewsDetailSection({ article }: NewsDetailSectionProps) {
 
       {/* Related News */}
       {relatedNews.length > 0 && (
-        <AnimatedSection className="py-16 mt-16 bg-gray-50 dark:bg-gray-900">
+        <AnimatedSection className="py-16 pb-32 sm:pb-40 lg:pb-40 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8 sm:mb-12 lg:mb-16">
               <div className="text-center md:text-left mb-6 md:mb-0">

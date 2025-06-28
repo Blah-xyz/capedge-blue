@@ -111,6 +111,12 @@ const company = [
 
 const resources = [
   {
+    title: "Resource Center",
+    href: "/resources",
+    description: "Complete library of guides, research, tools, and case studies.",
+    featured: true,
+  },
+  {
     title: "News & Updates",
     href: "/news",
     description: "Latest company announcements, press releases, and industry news.",
@@ -120,7 +126,7 @@ const resources = [
     title: "Investment Insights",
     href: "/insights",
     description: "Market analysis, research reports, and thought leadership content.",
-    featured: true,
+    featured: false,
   },
   {
     title: "Investment Products",
