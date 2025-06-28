@@ -5,9 +5,12 @@ import { AnimatedSection } from "@/components/animated-section"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
 import { Calendar, Clock, User, ArrowLeft, CheckCircle, ArrowRight, Share2 } from "lucide-react"
 import { useContactDialog } from "@/contexts/contact-dialog-context"
 import { NewsArticle, getRelatedNews } from "@/lib/data"
+import { useState } from "react"
+import type { CarouselApi } from "@/components/ui/carousel"
 
 interface NewsDetailSectionProps {
   article: NewsArticle
@@ -16,6 +19,7 @@ interface NewsDetailSectionProps {
 export function NewsDetailSection({ article }: NewsDetailSectionProps) {
   const { setIsOpen } = useContactDialog()
   const relatedNews = getRelatedNews(article.id, 3)
+  const [api, setApi] = useState<CarouselApi>()
 
   const handleShare = () => {
     if (navigator.share) {
@@ -32,6 +36,14 @@ export function NewsDetailSection({ article }: NewsDetailSectionProps) {
 
   const handleContactClick = () => {
     setIsOpen(true)
+  }
+
+  const scrollPrev = () => {
+    api?.scrollPrev()
+  }
+
+  const scrollNext = () => {
+    api?.scrollNext()
   }
 
   const getCategoryColor = (category: string) => {
@@ -51,7 +63,7 @@ export function NewsDetailSection({ article }: NewsDetailSectionProps) {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           {/* Back Navigation */}
           <div className="mb-8">
-            <Link 
+            <Link
               href="/news"
               className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
             >
@@ -66,11 +78,11 @@ export function NewsDetailSection({ article }: NewsDetailSectionProps) {
               <Badge variant="outline" className={`mb-4 ${getCategoryColor(article.category)}`}>
                 {article.category}
               </Badge>
-              
+
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black dark:text-white mb-6 font-display leading-tight">
                 {article.title}
               </h1>
-              
+
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 {article.excerpt}
               </p>
@@ -95,7 +107,7 @@ export function NewsDetailSection({ article }: NewsDetailSectionProps) {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap gap-4">
-                <Button 
+                <Button
                   onClick={handleShare}
                   variant="outline"
                   className="px-8 py-3"
@@ -103,8 +115,8 @@ export function NewsDetailSection({ article }: NewsDetailSectionProps) {
                   <Share2 className="w-4 h-4 mr-2" />
                   Share Article
                 </Button>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   onClick={handleContactClick}
                   className="px-8 py-3"
                 >
@@ -150,7 +162,7 @@ export function NewsDetailSection({ article }: NewsDetailSectionProps) {
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
               {article.fullContent || "This breaking news story represents a significant development in our ongoing commitment to innovation and growth. Our team continues to work diligently to deliver exceptional results for our clients and stakeholders."}
             </p>
-            
+
             <h3 className="text-xl font-semibold text-black dark:text-white mb-4">Impact and Implications</h3>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
               This development has far-reaching implications for our industry and reinforces our position as a leader in enterprise software investment. We remain committed to identifying and supporting innovative companies that are transforming their respective markets.
@@ -173,53 +185,91 @@ export function NewsDetailSection({ article }: NewsDetailSectionProps) {
 
       {/* Related News */}
       {relatedNews.length > 0 && (
-        <AnimatedSection className="py-16 bg-gray-50 dark:bg-gray-900">
+        <AnimatedSection className="py-16 mt-16 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-black dark:text-white mb-4">Related News</h2>
-              <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Stay updated with the latest news and announcements from CapEdge Group
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8 sm:mb-12 lg:mb-16">
+              <div className="text-center md:text-left mb-6 md:mb-0">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black dark:text-white mb-4 sm:mb-6 font-display leading-tight">
+                  Related
+                  <span className="block text-blue-600 dark:text-blue-400">News</span>
+                </h2>
+                <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
+                  Stay updated with the latest news and announcements from CapEdge Group
+                </p>
+              </div>
+
+              {/* Navigation Buttons - Hidden on mobile, shown on larger screens */}
+              <div className="hidden sm:flex gap-2 justify-center md:justify-end">
+                <button
+                  onClick={scrollPrev}
+                  className="h-10 w-10 sm:h-12 sm:w-12 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                >
+                  <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600 dark:text-gray-400" />
+                </button>
+                <button
+                  onClick={scrollNext}
+                  className="h-10 w-10 sm:h-12 sm:w-12 rounded-lg bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors"
+                >
+                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
+                </button>
+              </div>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {relatedNews.map((relatedArticle) => (
-                <Link key={relatedArticle.id} href={`/news/${relatedArticle.id}`}>
-                  <Card className="group border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden bg-white dark:bg-gray-800 h-full cursor-pointer">
-                    <CardContent className="p-0 flex flex-col h-full">
-                      <div className="relative h-48 overflow-hidden">
-                        <img
-                          src={relatedArticle.image}
-                          alt={relatedArticle.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      </div>
-                      
-                      <div className="p-6 flex-1 flex flex-col">
-                        <Badge variant="outline" className={`w-fit mb-3 text-xs ${getCategoryColor(relatedArticle.category)}`}>
-                          {relatedArticle.category}
-                        </Badge>
-                        
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-3 font-display leading-tight line-clamp-2">
-                          {relatedArticle.title}
-                        </h3>
-                        
-                        <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm flex-1 line-clamp-3">
-                          {relatedArticle.excerpt}
-                        </p>
+            {/* Related News Carousel */}
+            <div className="relative w-full overflow-hidden">
+              <Carousel
+                setApi={setApi}
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-1 sm:-ml-2 md:-ml-4">
+                  {relatedNews.map((relatedArticle) => (
+                    <CarouselItem
+                      key={relatedArticle.id}
+                      className="pl-1 sm:pl-2 md:pl-4 basis-[85%] sm:basis-[80%] md:basis-1/2 lg:basis-1/2 min-w-0"
+                    >
+                      <Link href={`/news/${relatedArticle.id}`}>
+                        <Card className="group border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden bg-white dark:bg-gray-800 h-full cursor-pointer">
+                          <CardContent className="p-0 flex flex-col h-full">
+                            <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                              <img
+                                src={relatedArticle.image}
+                                alt={relatedArticle.title}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              />
+                            </div>
 
-                        <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-                          <span>{new Date(relatedArticle.date).toLocaleDateString()}</span>
-                          <div className="flex items-center gap-1 text-blue-600 dark:text-blue-400 group-hover:gap-2 transition-all">
-                            <span>Read more</span>
-                            <ArrowRight className="w-3 h-3" />
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
+                            <div className="p-6 flex-1 flex flex-col">
+                              <Badge variant="outline" className={`w-fit mb-3 text-xs ${getCategoryColor(relatedArticle.category)}`}>
+                                {relatedArticle.category}
+                              </Badge>
+
+                              <h3 className="text-lg font-bold text-black dark:text-white mb-3 font-display leading-tight line-clamp-2">
+                                {relatedArticle.title}
+                              </h3>
+
+                              <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm flex-1 line-clamp-3">
+                                {relatedArticle.excerpt}
+                              </p>
+
+                              <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+                                <span>{new Date(relatedArticle.date).toLocaleDateString()}</span>
+                                <div className="flex items-center gap-1 text-blue-600 dark:text-blue-400 group-hover:gap-2 transition-all">
+                                  <span>Read more</span>
+                                  <ArrowRight className="w-3 h-3" />
+                                </div>
+                              </div>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </Link>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </Carousel>
             </div>
           </div>
         </AnimatedSection>

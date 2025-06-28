@@ -30,7 +30,9 @@ export default async function InsightDetailPage({ params }: InsightDetailPagePro
       <MegaHeader />
       <main className="flex-1">
         <InsightDetailSection insight={insight} />
-        <CTASection />
+        <div className="py-8">
+          <CTASection />
+        </div>
       </main>
       <FooterSection />
     </div>

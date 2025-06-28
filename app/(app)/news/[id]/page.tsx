@@ -30,7 +30,9 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
       <MegaHeader />
       <main className="flex-1">
         <NewsDetailSection article={article} />
-        <CTASection />
+        <div className="py-8">
+          <CTASection />
+        </div>
       </main>
       <FooterSection />
     </div>

@@ -5,9 +5,12 @@ import { AnimatedSection } from "@/components/animated-section"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
 import { ArrowLeft, CheckCircle, ArrowRight, Zap, Shield, Globe, Settings } from "lucide-react"
 import { useContactDialog } from "@/contexts/contact-dialog-context"
 import { Product, getRelatedProducts, getIconComponent } from "@/lib/data"
+import { useState } from "react"
+import type { CarouselApi } from "@/components/ui/carousel"
 
 interface ProductDetailSectionProps {
   product: Product
@@ -16,10 +19,19 @@ interface ProductDetailSectionProps {
 export function ProductDetailSection({ product }: ProductDetailSectionProps) {
   const { setIsOpen } = useContactDialog()
   const relatedProducts = getRelatedProducts(product.id, 3)
+  const [api, setApi] = useState<CarouselApi>()
   const IconComponent = getIconComponent(product.icon)
 
   const handleContactClick = () => {
     setIsOpen(true)
+  }
+
+  const scrollPrev = () => {
+    api?.scrollPrev()
+  }
+
+  const scrollNext = () => {
+    api?.scrollNext()
   }
 
   const handleRequestDemo = () => {
@@ -223,60 +235,98 @@ export function ProductDetailSection({ product }: ProductDetailSectionProps) {
 
       {/* Related Products */}
       {relatedProducts.length > 0 && (
-        <AnimatedSection className="py-16 bg-gray-50 dark:bg-gray-900">
+        <AnimatedSection className="py-16 mt-16 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-black dark:text-white mb-4">Related Products</h2>
-              <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Explore our other software platforms and solutions
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8 sm:mb-12 lg:mb-16">
+              <div className="text-center md:text-left mb-6 md:mb-0">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black dark:text-white mb-4 sm:mb-6 font-display leading-tight">
+                  Related
+                  <span className="block text-blue-600 dark:text-blue-400">Products</span>
+                </h2>
+                <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
+                  Explore our other software platforms and solutions
+                </p>
+              </div>
+
+              {/* Navigation Buttons - Hidden on mobile, shown on larger screens */}
+              <div className="hidden sm:flex gap-2 justify-center md:justify-end">
+                <button
+                  onClick={scrollPrev}
+                  className="h-10 w-10 sm:h-12 sm:w-12 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                >
+                  <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600 dark:text-gray-400" />
+                </button>
+                <button
+                  onClick={scrollNext}
+                  className="h-10 w-10 sm:h-12 sm:w-12 rounded-lg bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors"
+                >
+                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
+                </button>
+              </div>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {relatedProducts.map((relatedProduct) => {
-                const RelatedIconComponent = getIconComponent(relatedProduct.icon)
-                return (
-                  <Link key={relatedProduct.id} href={`/products/${relatedProduct.id}`}>
-                    <Card className="group border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden bg-white dark:bg-gray-800 h-full cursor-pointer">
-                      <CardContent className="p-0 flex flex-col h-full">
-                        <div className="relative h-48 overflow-hidden">
-                          <img
-                            src={relatedProduct.image}
-                            alt={relatedProduct.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                          />
-                        </div>
+            {/* Related Products Carousel */}
+            <div className="relative w-full overflow-hidden">
+              <Carousel
+                setApi={setApi}
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-1 sm:-ml-2 md:-ml-4">
+                  {relatedProducts.map((relatedProduct) => {
+                    const RelatedIconComponent = getIconComponent(relatedProduct.icon)
+                    return (
+                      <CarouselItem
+                        key={relatedProduct.id}
+                        className="pl-1 sm:pl-2 md:pl-4 basis-[85%] sm:basis-[80%] md:basis-1/2 lg:basis-1/3 min-w-0"
+                      >
+                        <Link href={`/products/${relatedProduct.id}`}>
+                          <Card className="group border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden bg-white dark:bg-gray-800 h-full cursor-pointer">
+                            <CardContent className="p-0 flex flex-col h-full">
+                              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                                <img
+                                  src={relatedProduct.image}
+                                  alt={relatedProduct.title}
+                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                              </div>
 
-                        <div className="p-6 flex-1 flex flex-col">
-                          <div className="flex items-center gap-3 mb-3">
-                            <div className={`p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30`}>
-                              <RelatedIconComponent className={`w-4 h-4 ${relatedProduct.iconColor}`} />
-                            </div>
-                            <Badge variant="outline" className="text-xs capitalize">
-                              {relatedProduct.pricing}
-                            </Badge>
-                          </div>
+                              <div className="p-6 flex-1 flex flex-col">
+                                <div className="flex items-center gap-3 mb-3">
+                                  <div className={`p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30`}>
+                                    <RelatedIconComponent className={`w-4 h-4 ${relatedProduct.iconColor}`} />
+                                  </div>
+                                  <Badge variant="outline" className="text-xs capitalize">
+                                    {relatedProduct.pricing}
+                                  </Badge>
+                                </div>
 
-                        <h3 className="text-lg font-bold text-black dark:text-white mb-3 font-display leading-tight line-clamp-2">
-                          {relatedProduct.title}
-                        </h3>
+                                <h3 className="text-lg font-bold text-black dark:text-white mb-3 font-display leading-tight line-clamp-2">
+                                  {relatedProduct.title}
+                                </h3>
 
-                        <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm flex-1 line-clamp-3">
-                          {relatedProduct.description}
-                        </p>
+                                <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm flex-1 line-clamp-3">
+                                  {relatedProduct.description}
+                                </p>
 
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-1 text-blue-600 dark:text-blue-400 group-hover:gap-2 transition-all text-sm">
-                            <span>Learn more</span>
-                            <ArrowRight className="w-3 h-3" />
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              )
-              })}
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center gap-1 text-blue-600 dark:text-blue-400 group-hover:gap-2 transition-all text-sm">
+                                    <span>Learn more</span>
+                                    <ArrowRight className="w-3 h-3" />
+                                  </div>
+                                </div>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </Link>
+                      </CarouselItem>
+                    )
+                  })}
+                </CarouselContent>
+              </Carousel>
             </div>
           </div>
         </AnimatedSection>

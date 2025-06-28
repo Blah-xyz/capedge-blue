@@ -30,7 +30,9 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
       <MegaHeader />
       <main className="flex-1">
         <ProductDetailSection product={product} />
-        <CTASection />
+        <div className="py-8">
+          <CTASection />
+        </div>
       </main>
       <FooterSection />
     </div>
