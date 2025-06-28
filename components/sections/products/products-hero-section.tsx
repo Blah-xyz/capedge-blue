@@ -16,14 +16,13 @@ export function ProductsHeroSection() {
   return (
     <section
       id="products-hero"
-      className="relative flex items-center overflow-hidden -mt-4 min-h-[70vh] sm:min-h-[60vh] lg:min-h-[calc(50vh-4rem)] xl:min-h-[calc(50vh-4rem)]"
-      style={{ paddingTop: '6rem', paddingBottom: '4rem' }}
+      className="relative flex items-center overflow-hidden -mt-24 min-h-[70vh] sm:min-h-[60vh] lg:min-h-[calc(50vh-4rem)] xl:min-h-[calc(50vh-4rem)]"
     >
       {/* Clean Background */}
-      <div className="absolute inset-0 -top-4 bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
+      <div className="absolute inset-0 -top-24 bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
 
       {/* Content */}
-      <div className="relative z-10 w-full">
+      <div className="relative z-10 w-full pt-24 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center w-full">
             {/* Left Content */}

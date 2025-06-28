@@ -9,14 +9,13 @@ export function ResourcesHeroSection() {
   return (
     <section
       id="resources-hero"
-      className="relative flex items-center overflow-hidden -mt-4 min-h-[80vh]"
-      style={{ paddingTop: '8rem', paddingBottom: '6rem' }}
+      className="relative flex items-center overflow-hidden -mt-24 min-h-[80vh]"
     >
       {/* Clean Background */}
-      <div className="absolute inset-0 -top-4 bg-gradient-to-br from-emerald-100 via-teal-50 to-blue-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
+      <div className="absolute inset-0 -top-24 bg-gradient-to-br from-emerald-100 via-teal-50 to-blue-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
 
       {/* Content */}
-      <div className="relative z-10 w-full">
+      <div className="relative z-10 w-full pt-24 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}

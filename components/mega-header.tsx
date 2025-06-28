@@ -209,8 +209,8 @@ function ThemeToggle() {
 export function MegaHeader() {
   return (
     <header className="sticky top-0 z-50 w-full">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex h-14 items-center justify-between bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-blue-100 dark:border-blue-900/50 rounded-full px-8 shadow-lg shadow-blue-500/10 dark:shadow-blue-400/10">
+      <div className="max-w-5xl mx-auto px-4 py-4">
+        <div className="flex h-14 items-center justify-between bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-blue-100 dark:border-blue-900/50 rounded-full px-6 shadow-lg shadow-blue-500/10 dark:shadow-blue-400/10">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
@@ -314,6 +314,15 @@ export function MegaHeader() {
                   ))}
                 </ul>
               </NavigationMenuContent>
+            </NavigationMenuItem>
+
+            {/* Products Link */}
+            <NavigationMenuItem>
+              <Link href="/products" legacyBehavior passHref>
+                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-full bg-background px-4 py-2 text-sm font-medium transition-all duration-200 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-700 dark:hover:text-blue-300 focus:bg-blue-50 focus:text-blue-700 focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+                  Products
+                </NavigationMenuLink>
+              </Link>
             </NavigationMenuItem>
 
             {/* Resources Menu */}
@@ -550,6 +559,26 @@ export function MegaHeader() {
                           ))}
                         </div>
                       </div>
+                    </div>
+
+                    {/* Mobile Products Link */}
+                    <div className="mt-6 pt-6 border-t border-blue-100 dark:border-blue-900">
+                      <SheetTrigger asChild>
+                        <Link
+                          href="/products"
+                          className="flex items-center justify-between p-4 rounded-lg bg-blue-50 dark:bg-blue-950/30 hover:bg-blue-100 dark:hover:bg-blue-950/50 transition-all duration-200 group"
+                        >
+                          <div>
+                            <div className="font-semibold text-blue-700 dark:text-blue-300 group-hover:text-blue-800 dark:group-hover:text-blue-200">
+                              View All Products
+                            </div>
+                            <div className="text-sm text-blue-600 dark:text-blue-400">
+                              Explore our investment platforms
+                            </div>
+                          </div>
+                          <ArrowRight className="h-5 w-5 text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                      </SheetTrigger>
                     </div>
                   </div>
                 </div>
